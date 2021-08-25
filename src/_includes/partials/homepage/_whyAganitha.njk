@@ -1,0 +1,27 @@
+{% import "macros/cards.njk" as cards %}
+
+<div class="why-aganitha">
+    <div class=" font-lexend container mx-auto py-16 px-16">
+        <div class="px-16">
+
+            <h1 class="text-2xl  font-medium text-center mb-8 text-gray-50 sm:text-5xl "> Why Aganitha?</h1>
+
+            <h4 class="text-lg text-gray-100 leading-relaxed tracking-wide text-center w-4/5 mx-auto  mb-8">
+                Leverage our experience and strengths to build transformational solutions in Biopharma
+            </h4>
+        </div>
+
+        <div class="cards-container">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-8 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        {% for item in reasons %}
+                            {{ cards.hoverCard(item.name, item.icon, item.description)}}
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

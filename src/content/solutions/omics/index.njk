@@ -1,0 +1,19 @@
+{% extends "default.njk" %} {% block title%} Aganitha {% endblock %} {% block
+content %} {% include "partials/omics/_banner.njk" %}
+
+<div class="border-green-200 relative mx-auto content-wrapper">
+  <div class="main-content pt-10" id="content">
+    {% include "partials/omics/_intro.njk" %}
+    <div class="background-light">
+      {% include "partials/omics/_solution.njk" %}
+    </div>
+    {% include "partials/omics/_highlights.njk" %}
+    <div class="background-benefits">
+      {% include "partials/omics/_benefits.njk" %}
+    </div>
+  </div>
+</div>
+{% include "partials/_demo.njk" %} {% include "partials/_blog.njk" %}
+<div class="bg-gray-100">{% include "contact.njk" %}</div>
+
+{% endblock %}

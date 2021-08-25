@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <title>
+      {% block title %}Does it work?{% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    {% block head %}{% endblock %}
+    <script defer src="/js/alpine.js?v={% version %}"></script>
+
+  </head>
+  <body>
+
+    {% block header %}
+      {% include "header.njk" %}
+    {% endblock %}
+
+    <div class="mt-20">
+      {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+    </div>
+   
+
+    {% block footer%}
+      {% include "footer.njk" %}
+    {% endblock %}
+
+    <script src="/assets/scripts/acc.js"></script>
+  </body>
+</html>
