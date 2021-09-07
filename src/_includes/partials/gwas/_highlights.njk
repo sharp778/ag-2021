@@ -1,0 +1,309 @@
+<div class="omics-highlights-wrapper container py-24 px-16">
+  {#
+  <h3 class="text-4xl text-black my-8 w-4/5" id="content">
+    Solution Highlights
+  </h3>
+  #}
+
+  <div class="grid gap-8 grid-cols-3 px-16">
+    <!-- {# {% for item in solutions.omics.solutionHighlights %}
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="p-6">
+        <h2
+          class="
+            mb-8
+            text-sm
+            font-semibold
+            tracking-widest
+            text-black
+            uppercase
+            title-font
+          "
+        >
+          {{ item.title }}
+        </h2>
+        <p
+          class="mb-3 text-base leading-relaxed text-gray-500"
+          class="{{item.background"
+          }}
+        >
+          {{ item.description }}
+        </p>
+        <p></p>
+      </div>
+    </div>
+    {% endfor %} #} -->
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="card-heading h-16 flex items-center justify-center bg-blue-50"
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-blue-700
+              uppercase
+              title-font
+            "
+          >
+            in built functions
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          Piranha provides several CohortBuilder classes for filtering variants
+          based on different parameters
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="
+            card-heading
+            h-16
+            flex
+            items-center
+            justify-center
+            bg-yellow-50
+          "
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-yellow-700
+              uppercase
+              title-font
+            "
+          >
+            data manipulation
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          Filter, group, aggregate and visualize genomic data, control for
+          confounding caused by population stratification using Hail
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="card-heading h-16 flex items-center justify-center bg-green-50"
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-green-700
+              uppercase
+              title-font
+            "
+          >
+            Unified Genomic Data Representation
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          A single interface for working with all kinds of genomic data powered
+          by Hail’s matrix table
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="card-heading h-16 flex items-center justify-center bg-red-50"
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-red-700
+              uppercase
+              title-font
+            "
+          >
+            Scalability
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          Easy to use with both small and biobank-scale genomic data, scales
+          from laptop to large compute cluster or cloud, with the same code
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="
+            card-heading
+            h-16
+            flex
+            items-center
+            justify-center
+            bg-purple-50
+          "
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-purple-700
+              uppercase
+              title-font
+            "
+          >
+            Integration
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          Contains python wrapper classes for defining concepts like cohorts,
+          Analysis results, Variant Effect Predictor(VEP) etc.
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div
+      class="
+        my-2
+        bg-white
+        border border-gray-50
+        rounded-lg
+        shadow
+        transform
+        hover:-translate-y-1 hover:shadow-lg
+        transition
+        duration-300
+      "
+    >
+      <div class="">
+        <div
+          class="card-heading h-16 flex items-center justify-center bg-pink-50"
+        >
+          <h2
+            class="
+              text-sm
+              font-semibold
+              tracking-widest
+              text-pink-700
+              uppercase
+              title-font
+            "
+          >
+            insert phrase here
+          </h2>
+        </div>
+
+        <p
+          class="px-8 py-4 text-base text-center leading-relaxed text-gray-500"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          recusandae deleniti vero voluptates
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
