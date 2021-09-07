@@ -2,7 +2,7 @@ module.exports = {
   solutionPoints: [
     "Aganitha Omics Kube (AOK) on AWS/GCP/Azure/HPC",
     "Open-source state-of-art platforms for Omics pipelines from Broad Institute",
-    "ntegrated with Illumina BaseSpace, PacBio SMRT Link, 10x Genomics Cell Ranger, Trans-Proteomic Pipeline from Institute for Systems Biology (Seattle)",
+    "Integration with Illumina BaseSpace, PacBio SMRT Link, 10x Genomics Cell Ranger, Trans-Proteomic Pipeline from Institute for Systems Biology (Seattle)",
     "APIs for integration with ELNs such as Benchling",
   ],
   solutionHighlights: [

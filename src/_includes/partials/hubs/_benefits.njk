@@ -1,0 +1,29 @@
+<div class="omics-benefits-wrapper container  mx-auto px-16 py-12">
+  <h3 class="text-4xl text-gray-800 font-semibold mb-8  text-center" id="content">Benefits/Outcomes</h3>
+
+  <div class="text-lg text-gray-600  w-2/3 mx-auto leading-8">
+    <ul class="">
+      {% for item in solutions.hubs.benefits %}
+      <li class="flex items-center my-2">
+        <span class="">
+         <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 mr-4 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+        </span>
+        <span class="">{{ item }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
