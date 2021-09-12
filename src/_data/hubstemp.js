@@ -23,11 +23,11 @@ module.exports = [
   {
     title: `Near Real Time Updates`,
     description: `In-built pull-based systems such as APIs for data sources where subscriptions are available, for near real-time updates`,
-    icon: "/assets/images/solutions/hubs/internet.png",
+    icon: "/assets/images/solutions/hubs/time.svg",
   },
   {
     title: `Structured Information`,
     description: `Structuring the information in graph database enabling the flexibility to continuously expand data ingestion sources`,
-    icon: "/assets/images/solutions/hubs/internet.png",
+    icon: "/assets/images/solutions/hubs/structure.svg",
   },
 ];
