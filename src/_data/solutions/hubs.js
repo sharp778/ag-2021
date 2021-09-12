@@ -1,9 +1,9 @@
 module.exports = {
   solutionPoints: [
-    // "Aganitha Omics Kube (AOK) on AWS/GCP/Azure/HPC",
-    // "Open-source state-of-art platforms for Omics pipelines from Broad Institute",
-    // "Integration with Illumina BaseSpace, PacBio SMRT Link, 10x Genomics Cell Ranger, Trans-Proteomic Pipeline from Institute for Systems Biology (Seattle)",
-    // "APIs for integration with ELNs such as Benchling",
+    "Unlock efficiencies by leveraging the latest technology in web mining, data pipelining and AI",
+    "A Bot army that feeds off data sources and processes the information",
+    "Processed knowledge is updated in knowledge graph with relevant nodes and edges capturing key entities and their relationships",
+    "Automation helps with long term advantages, replicability and flexibility",
   ],
   solutionHighlights: [
     {
@@ -42,7 +42,7 @@ module.exports = {
     "Build disease hubs spanning Covid-19, Oncology, Alzheimer’s, Immunology, Hepatitis, Rare diseases",
     "Derive valuable insights on competitive intelligence for informed decision making across functions",
     "Scalable, reusable, and repeatable solution for large scale  information consumption and collation",
-    "Successfully mind and organize public information in easily consumable format",
+    "Successfully mine and organize public information in easily consumable format",
     "Latest updates from research and market landscape with zero incremental resource deployment cost",
   ],
   contents: [
