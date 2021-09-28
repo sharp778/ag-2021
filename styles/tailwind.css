@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 
 @layer utilities {
   .change {
@@ -17,14 +16,12 @@
   }
 }
 
-
 @layer components {
   .btn-blue {
-    @apply py-2 px-4 bg-white text-black  rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply py-2 px-4 bg-white text-black transition duration-300   rounded shadow-md hover:bg-blue-600 hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }
 
 .arrow-container:hover > .arrow {
   transform: translateX(5px);
 }
-

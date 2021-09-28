@@ -1,9 +1,8 @@
 module.exports = {
   solutionPoints: [
-    "Unlock efficiencies by leveraging the latest technology in web mining, data pipelining and AI",
-    "A Bot army that feeds off data sources and processes the information",
-    "Processed knowledge is updated in knowledge graph with relevant nodes and edges capturing key entities and their relationships",
-    "Automation helps with long term advantages, replicability and flexibility",
+    "Aganitha’s solution utilizes an army of bots to feed off data sources",
+    "The information is then processed and ingested by a knowledge graph with relevant nodes and edges that capture key entities and their relationships",
+    "Automation ensures long term robustness and replicability without sacrificing flexibility",
   ],
   solutionHighlights: [
     {
@@ -39,10 +38,10 @@ module.exports = {
     },
   ],
   benefits: [
-    "Build disease hubs spanning Covid-19, Oncology, Alzheimer’s, Immunology, Hepatitis, Rare diseases",
+    "Build multiple disease hubs focusing on Covid-19, Oncology, Alzheimer’s, Immunology, Hepatitis, Rare diseases, and more",
+    "Mine and organize public information in an easily consumable format",
     "Derive valuable insights on competitive intelligence for informed decision making across functions",
-    "Scalable, reusable, and repeatable solution for large scale  information consumption and collation",
-    "Successfully mine and organize public information in easily consumable format",
+    "Scalable, reusable, and repeatable solution for large scale information consumption and collation",
     "Latest updates from research and market landscape with zero incremental resource deployment cost",
   ],
   contents: [

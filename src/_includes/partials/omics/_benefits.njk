@@ -1,12 +1,48 @@
-<div class="omics-benefits-wrapper container  mx-auto px-16 py-12">
-  <h3 class="text-4xl text-gray-800 font-semibold mb-8  text-center" id="content">Benefits/Outcomes</h3>
+<div
+  class="
+    hubs-benefits-wrapper
+    container
+    border-blue-400
+    mx-auto
+    px-16
+    font-lexend
+    py-16
+  "
+>
+  <div class="grid grid-cols-2">
+    <div class="hubs-benefits-left-side-content">
+      <h3
+        class="text-5xl mx-auto text-gray-600 font-medium text-center w-4/5"
+        id="content"
+      >
+        Benefits
+      </h3>
 
-  <div class="text-lg text-gray-600  w-2/3 mx-auto leading-8">
-    <ul class="">
-      {% for item in solutions.omics.benefits %}
-      <li class="flex items-center my-2">
-        <span class="">
-         <svg
+      <div
+        class="
+          overflow-hidden
+          mx-auto
+          my-14
+          flex
+          items-center
+          justify-center
+          w-4/5
+        "
+      >
+        <img
+          src="/assets/images/solutions/hubs/benefits.png"
+          class="w-1/2"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="hubgs-benefits-right-side-content">
+      <div class="text-lg text-gray-600 mx-auto leading-8">
+        <ul class="">
+          {% for item in solutions.omics.benefits %}
+          <li class="flex items-center my-2">
+            <span class="">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 mr-4 text-blue-600"
                 fill="none"
@@ -20,10 +56,12 @@
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-        </span>
-        <span class="">{{ item }}</span>
-      </li>
-      {% endfor %}
-    </ul>
+            </span>
+            <span class="">{{ item }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,69 @@
+<div class="w-2/3 mx-auto text-gray-700 py-12 container">
+  <h2 class="mx-auto mb-6 text-3xl text-blue-800 font-medium">
+    Reference solution architecture and solution
+  </h2>
+
+  <h2 class="mx-auto  text-lg title-font mb-16">
+    Aganitha’s reference architecture and its building blocks: from
+    computational infrastructure to pipelining to functional solution components
+    for building Omics models, pipelines, and platforms.
+  </h2>
+
+  <div class="ref-image-wrapper">
+    <img src="/assets/images/ref3.png" alt="" />
+  </div>
+
+  <div class="ref-card-wrapper grid grid-cols-2 gap-8  p-4 mt-32">
+    {% for item in reference %}
+
+    <div class="card-1__outer-wrapper w-full mb-10">
+      <div
+        class="
+          card-2__inner-wrapper
+          transition
+          hover:shadow-lg
+          duration-300
+          relative
+          rounded-lg
+          bg-blue-50
+        "
+      >
+        <div
+          class="
+            card-2__image-wrapper
+            absolute
+            rounded-lg
+            shadow
+            w-14
+            bg-blue-600
+          "
+        >
+          <img src={{item.icon}} class="p-2" alt="" />
+        </div>
+
+        <div class="card-2__text">
+          <div
+            class="
+              card-1__heading
+              flex
+              items-center
+              justify-center
+              text-gray-700 text-xl
+            "
+          >
+            <h1 class="px-8 text-center mt-10">
+              {{ item.title }}
+            </h1>
+          </div>
+          <div class="card-1__desc px-5 text-center text-gray-400">
+            <p class="my-6 leading-relaxed">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>

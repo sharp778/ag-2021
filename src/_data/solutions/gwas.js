@@ -1,9 +1,9 @@
 module.exports = {
   solutionPoints: [
-    //   "Aganitha Omics Kube (AOK) on AWS/GCP/Azure/HPC",
-    //   "Open-source state-of-art platforms for Omics pipelines from Broad Institute",
-    //   "Integration with Illumina BaseSpace, PacBio SMRT Link, 10x Genomics Cell Ranger, Trans-Proteomic Pipeline from Institute for Systems Biology (Seattle)",
-    //   "APIs for integration with ELNs such as Benchling",
+    "Enhanced open source tools to provide outputs in a myriad of formats (HTML, jupyter, web viewers and more)",
+    "A high performance computing platform, open source tools such as Hail and Luigi to enable a distributed, scalable computing system",
+    "Integration with databases like VEP (variant effect predictor), gnomad",
+    "VCF files obtained as outputs make it easier for bioinformaticians to conduct preliminary analysis",
   ],
   solutionHighlights: [
     {

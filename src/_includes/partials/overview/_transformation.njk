@@ -1,0 +1,43 @@
+<div class="w-2/3 mx-auto py-12 text-gray-700 container ">
+          <h2 class="mx-auto mb-6 text-3xl text-blue-800 font-medium">
+            What is powering this transformation?
+          </h2>
+
+          <h2 class="mx-auto mb-6 text-lg title-font">
+            The core drivers accelerating the rate at which the pharma industry
+            delivers to the marketplace include:
+          </h2>
+
+          {% for item in drivers %}
+
+          <p class="flex items-center text-lg mb-2 text-gray-700">
+            <span
+              class="
+                inline-flex
+                items-center
+                justify-center
+                flex-shrink-0
+                w-6
+                h-6
+                mr-2
+                rounded-full
+              "
+            >
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="text-blue-700"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+                ></path>
+              </svg>
+            </span>
+            {{ item.point }}
+          </p>
+          {% endfor %}
+        </div>
