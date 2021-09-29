@@ -11,12 +11,12 @@ module.exports = [
   },
   {
     title: `Contextualized in silico models`,
-    description: `Enable a virtuous round-tripping cycle between in silico and in vitro experiments by developing custom-specific models blending advances in biology, chemistry, and computing.`,
+    description: `Enable a virtuous round-tripping cycle between in silico and in vitro experiments by developing customer specific models blending advances in biology, chemistry, and computing.`,
     icon: "/assets/images/homepage/computer.png",
   },
   {
     title: `High concentration biological design`,
-    description: `Characterize high concentration samples to maximize the efficiency of screening, while minimizing the total amount of samples required for analysis with in silico models.`,
+    description: `Characterize high concentration samples to maximize the efficiency of screening, while minimizing the total amount of samples required for analysis using in silico models.`,
     icon: "/assets/images/homepage/biology.png",
   },
   {
