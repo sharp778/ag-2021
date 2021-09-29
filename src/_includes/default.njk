@@ -11,10 +11,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    {# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> #}
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+       <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+   <link rel="stylesheet" href="/assets/styles/styles.css">
+ 
+
+
+    
     {% block head %}{% endblock %}
-    <script defer src="/js/alpine.js?v={% version %}"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
 
   </head>
   <body>
@@ -23,7 +31,7 @@
       {% include "header.njk" %}
     {% endblock %}
 
-    <div class="mt-20">
+    <div class="mt-16">
       {% block content %}
       {{ content | safe }}
     {% endblock %}
@@ -34,7 +42,7 @@
       {% include "footer.njk" %}
     {% endblock %}
 
-    {# <script src="path-to-the-file/splide.min.js"></script> #}
+   
     <script src="/assets/scripts/acc.js"></script>
   </body>
 </html>

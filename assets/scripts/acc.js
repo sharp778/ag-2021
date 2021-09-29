@@ -78,8 +78,8 @@ function myFunction() {
 
 const navHeaders = document.getElementsByClassName("nav-header");
 const homepageBanners = document.getElementsByClassName("homepage-banner");
-homepageBanner = homepageBanners[0];
-navHeader = navHeaders[0];
+let homepageBanner = homepageBanners[0];
+let navHeader = navHeaders[0];
 
 const sectionOneOptions = {
   // rootMargin: "100px 0px 0px 0px",
@@ -104,4 +104,23 @@ const sectionOneObserver = new IntersectionObserver(
   sectionOneOptions
 );
 
-sectionOneObserver.observe(homepageBanner);
+// sectionOneObserver.observe(homepageBanner);
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+});
