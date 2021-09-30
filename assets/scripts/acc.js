@@ -1,5 +1,3 @@
-console.log("hey");
-
 let acc = document.getElementsByClassName("accordion");
 
 // console.log(acc);
