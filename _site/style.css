@@ -609,10 +609,12 @@ video {
 }
 
 .btn-blue {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
@@ -645,6 +647,15 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-duration: 300ms;
+}
+
+@media (min-width: 768px) {
+  .btn-blue {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .sr-only {

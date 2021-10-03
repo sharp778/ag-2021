@@ -1,23 +1,24 @@
 {% import "macros/cards.njk" as cards %}
 
 <div class="why-aganitha ">
-  <div class="container mx-auto pt-24 px-6">
-    <div class="px-16">
+  <div class="md:container mx-auto pt-12 md:pt-24 px-6">
+    <div class="md:px-16">
       <h1
-        class="text-2xl font-medium text-center mb-8 text-blue-700 sm:text-5xl"
+        class="text-4xl font-medium text-center mb-6 md:mb-8 text-blue-700 sm:text-5xl"
       >
         Why Aganitha?
       </h1>
 
       <h4
         class="
-          text-xl text-gray-600
+          md:text-xl text-gray-600
           leading-relaxed
-          tracking-wide
+          text-base
           text-center
-          w-4/5
+          md:w-4/5
           mx-auto
-          mb-8
+          
+          md:mb-8
         "
       >
         Leverage our experience and strengths to build transformational
@@ -28,10 +29,10 @@
     <div class="cards-container ">
       <section class="text-gray-600 body-font">
         <section class="text-gray-600 body-font">
-          <div class="container py-12 mx-auto">
-            <div class="grid grid-cols-2">
+          <div class="md:container md:py-12 py-8 mx-auto">
+            <div class="grid sm:grid-cols-2">
               {% for item in reasons %}
-              <div class="p-2 group w-full">
+              <div class="p-2  group w-full">
                 <div
                   class="
                     flex
@@ -47,8 +48,10 @@
                 >
                   <div
                     class="
-                      w-16
-                      h-16
+                      sm:w-16
+                      sm:h-16
+                      h-12
+                      w-12
                       sm:mr-8 sm:mb-0
                       mb-4
                       p-2

@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600&display=swap");
+
 :root {
   --light-bg: #f7f8fa;
   --test-bg: #081e44;
+  font-family: "Assistant", sans-serif;
 }
 
 .swiper {
@@ -106,6 +109,13 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   grid-template-rows: 90px 80px 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .colorful-card {
+    grid-template-rows: 60px 30px 120px;
+    gap: 0.7rem;
+  }
 }
 .call-to-action {
   /* background-color: #170AFF;
