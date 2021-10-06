@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: "Topical Hubs",
+    title: "Knowledge Hubs",
     link: `/content/solutions/hubs-1`,
     description: `Build a digital encyclopedia on the go: fully automated, competitive intelligence hubs as a managed service.`,
     image: "/assets/images/solutions/hubs/hubs.jpeg",

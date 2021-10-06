@@ -18,11 +18,14 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
    <link rel="stylesheet" href="/assets/styles/styles.css">
+   <link rel="stylesheet" href="/assets/styles/nav.css">
  
 
 
     
-    {% block head %}{% endblock %}
+    {% block head %}
+    {% include "header.njk"%} 
+    {% endblock %}
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
 
