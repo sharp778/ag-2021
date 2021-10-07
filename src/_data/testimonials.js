@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: "Chanukya Nanduri",
+    name: "Chanukya Nanduru",
     title: "Tech Project Manager and Solutions Specialist",
     image: `/assets/images/careers/chanukya.jpg`,
     aspects: [
