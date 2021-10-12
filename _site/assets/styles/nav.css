@@ -19,7 +19,7 @@ header {
 :root {
   /* --primary-color: #e91e63; */
   --primary-color: #045c8c;
-  --secondary-color: yellow;
+  --secondary-color: #8c241f;
 }
 .nav-container {
   width: 100%;
@@ -41,7 +41,7 @@ header {
 .header-main {
   background-color: white;
   display: flex;
-  height: 4rem;
+  height: 4.6rem;
   max-width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
@@ -49,14 +49,14 @@ header {
   padding: 0;
   border-radius: 4px;
 }
-.header .logo {
+/* .header .logo {
   padding: 0 15px;
-}
+} */
 .header .logo a {
-  font-size: 30px;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  font-weight: 600;
+  /* font-size: 30px; */
+  /* text-transform: capitalize; */
+  color: var(--secondary-color);
+  /* font-weight: 600; */
 }
 
 .header .menu > .menu-item {

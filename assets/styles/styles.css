@@ -18,6 +18,18 @@
   /* font-family: "Inter", sans-serif; */
 }
 
+@font-face {
+  font-family: "Gill Sans";
+  font-style: normal;
+  /* font-weight: 400; */
+  src: url("/assets/fonts/ag-gill-light.otf") format("otf");
+  /* font-display: swap; */
+}
+
+.logo-text {
+  font-family: "Gill Sans";
+}
+
 .swiper {
   width: 100%;
   height: 700px;

@@ -4,10 +4,9 @@
     <div class="lg:container  flex flex-col  md:px-5 pt-12 md:mt-8 lg:mt-12 mx-auto lg:items-center">
         <div class="flex flex-col w-full  sm:px-3  mb-6 md:mb-12 text-left lg:text-center">
             <h1 class="mb-8 md:mb-12  text-2xl sm:text-3xl md:text-4xl sm:text-center px-6 font-medium leading-snug md:leading-snug lg:w-2/3 mx-auto  text-blue-800  ">Transforming biopharma R&D using computational sciences and AI</h1>
-          
+
             <p class="mx-auto mb-8 px-6  text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-600 lg:w-2/3">Our solutions enable biopharma R&D and IT to efficiently tackle the complexity, scale, and richness of modern R&D and clinical domains. They are built on the following enablers that deliver valuable outcomes and significantly enhance the pace of innovation.</p>
 
-           
         </div>
     </div>
 </section>
@@ -25,21 +24,17 @@
                             {{item.link }}
                         </div>
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
-                            {{ item.title | myFilter | safe }}
+                            {{ item.title | safe }}
                         </h1>
                         <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
-                            {{ item.description | myFilter | safe}}
+                            {{ item.description | safe}}
                         </p>
-
-                        
 
                     </div>
                 </div>
 
             {% endfor %}
 
-            
         </div>
     </div>
 </section>
-
