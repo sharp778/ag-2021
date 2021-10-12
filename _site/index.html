@@ -7,7 +7,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="/style.css?v=1633529352450"/>
+    <link rel="stylesheet" href="/style.css?v=1634064312446"/>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
        <link
   rel="stylesheet"
@@ -22,59 +22,69 @@
 
     
     
-    
+    <header class="header">
+   <div class="nav-container">
+      <div class="header-main">
+         <div class="logo w-48">
+            <a href="/">
+               <img src="/assets/images/logo.svg" alt="">
+            </a>
+         </div>
+         <div class="open-nav-menu">
+            <span></span>
+         </div>
+         <div class="menu-overlay"></div>
+         <!-- navigation menu start -->
+         <nav class="nav-menu">
+            <div class="close-nav-menu">
+               <img src="/assets/images/navbar/close.svg" alt="close">
+            </div>
+            <ul class="menu">
 
+               
+               <li class="menu-item menu-item-has-children">
+                  <a  data-toggle="sub-menu">Solutions <i class="plus"></i>
+                  </a>
+                  <ul class="sub-menu">
+                     <li class="menu-item">
+                        <a href="/biopharma/solutions-overview">Solution Overview</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="/biopharma/knowledge-hubs">Knowledge Hubs</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="/biopharma/omics-pipelines">Omics Pipeline</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="/biopharma/genome-wide-association-studies">GWAS Pipeline</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Company <i class="plus"></i>
+                  </a>
+                  <ul class="sub-menu">
+                     <li class="menu-item">
+                        <a href="/about">About Us</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="/team">Leadership</a>
+                     </li>
+                     
+                     <li class="menu-item">
+                        <a href="/contact">Contact Us</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="menu-item  ">
+                  <a href="/careers" class="hover:text-red-700">Join Us</a>
+               </li>
 
-<header class="header">
-  <div class="nav-container">
-     <div class="header-main">
-        <div class="logo w-48">
-           <a href="/">
-             <img src="/assets/images/logo.svg" alt="">
-           </a>
-        </div>
-        <div class="open-nav-menu">
-           <span></span>
-        </div>
-        <div class="menu-overlay">
-        </div>
-        <!-- navigation menu start -->
-        <nav class="nav-menu">
-          <div class="close-nav-menu">
-             <img src="/assets/images/navbar/close.svg" alt="close">
-          </div>
-          <ul class="menu">
-             
-            
-             <li class="menu-item menu-item-solo">
-                <a href="/">Home</a>
-             </li>
-             <li class="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">Solutions <i class="plus"></i></a>
-              <ul class="sub-menu">
-                  <li class="menu-item"><a href="/biopharma/solutions-overview">Solution Overview</a></li>
-                  <li class="menu-item"><a href="/biopharma/knowledge-hubs">Knowledge Hubs</a></li>
-                  <li class="menu-item"><a href="/biopharma/omics-pipelines">Omics Pipeline</a></li>
-                  <li class="menu-item"><a href="/biopharma/genome-wide-association-studies">GWAS Pipeline</a></li>
-              </ul>
-           </li>
-             <li class="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">Company <i class="plus"></i></a>
-              <ul class="sub-menu">
-                  <li class="menu-item"><a href="/about">About Us</a></li>
-                  <li class="menu-item"><a href="/team">Leadership</a></li>
-                  <li class="menu-item"><a href="/careers">Careers</a></li>
-                  <li class="menu-item"><a href="/contact">Contact Us</a></li>
-              </ul>
-           </li>
-             
-             
-             
-          </ul>
-        </nav>
-        <!-- navigation menu end -->
-     </div>
-  </div>
+            </ul>
+         </nav>
+         <!-- navigation menu end -->
+      </div>
+   </div>
 </header> 
     
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -93,10 +103,10 @@
     <!-- left side of hero section-->
     <div class=" lg:w-2/3 md:mx-auto  text-center md:py-24">
       <h1 class="text-4xl sm:text-5xl sm:leading-tight leading-snug md:leading-tight md:text-6xl text-gray-50 mb-8 md:mb-12">
-       Accelerate  drug discovery and development with in silico solutions.
+       Accelerate  drug discovery and development with  <span class="italic">in silico</span> solutions 
      </h1>
       <h4 class="text-base sm:text-lg md:text-xl leading-8 md:leading-relaxed text-gray-200 font-light mb-12">
-      Aganitha partners with global biopharma to accelerate research and development through in silico based bioinformatics solutions leveraging Cloud, Data, Analytics, DevOps, and AI/ML.
+      Aganitha partners with global biopharma to accelerate research and development through <span class="italic">in silico</span> based bioinformatics solutions leveraging Cloud, Data, Analytics, DevOps, and AI/ML.
      </h4>
       <!--button container-->
       <div>
@@ -115,7 +125,7 @@
     <div class="curiosity-inner__wrapper py-4 px-6   md:px-8 lg:px-12    md:flex xl:container  mx-auto  md:py-8 ">
         <div class="left-section   mb-4 md:mb-0  py-2  w-full  border-gray-700 font-medium ">
             <p class="text-base sm:text-xl md:text-2xl md:px-2    border-gray-700  leading-tight">
-                The biopharma industry is in the early stages of a dramatic transformation in how it  operates, from drug discovery to clinical trials to clinical operations.We partner with the biopharma companies to drive this transformation.
+                The biopharma industry is in the early stages of a dramatic transformation in how it  operates, from drug discovery to clinical trials to clinical operations. We partner with the biopharma companies to drive this transformation.
             </p>
         </div>
         
@@ -129,6 +139,8 @@
             <h1 class="mb-8 md:mb-12  text-2xl sm:text-3xl md:text-4xl sm:text-center px-6 font-medium leading-snug md:leading-snug lg:w-2/3 mx-auto  text-blue-800  ">Transforming biopharma R&D using computational sciences and AI</h1>
           
             <p class="mx-auto mb-8 px-6  text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-600 lg:w-2/3">Our solutions enable biopharma R&D and IT to efficiently tackle the complexity, scale, and richness of modern R&D and clinical domains. They are built on the following enablers that deliver valuable outcomes and significantly enhance the pace of innovation.</p>
+
+           
         </div>
     </div>
 </section>
@@ -146,11 +158,13 @@
                             
                         </div>
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
-                            Data as an R&amp;D Asset
+                            Data as an R&D Asset
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
                             Organize and enrich enterprise data in an easy to consume format for scientists helping them increase research productivity and speed of strategic decision making.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -166,9 +180,11 @@
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
                             High throughput automation
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
                             Provide quick insights by intertwining analytics and AI in conjunction with high throughput automation helping reduce cycle times and drive efficiencies.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -182,11 +198,13 @@
                             
                         </div>
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
-                            Contextualized in silico models
+                            Contextualized undefined models
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
-                            Enable a virtuous round-tripping cycle between in silico and in vitro experiments by developing customer specific models blending advances in biology, chemistry, and computing.
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
+                            Enable a virtuous round-tripping cycle between undefined and undefined experiments by developing customer specific models blending advances in biology, chemistry, and computing.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -202,9 +220,11 @@
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
                             High concentration biological design
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
-                            Characterize high concentration samples to maximize the efficiency of screening, while minimizing the total amount of samples required for analysis using in silico models.
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
+                            Characterize high concentration samples to maximize the efficiency of screening, while minimizing the total amount of samples required for analysis using undefined models.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -220,9 +240,11 @@
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
                             Quantum chemical descriptors
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
                             Predict low yielding reactions and enable accurate predictions of activation energy with quantum chemical descriptors with machine learning while decreasing avoidable experiment expenditure.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -236,11 +258,13 @@
                             
                         </div>
                         <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
-                            R&amp;D platform tools in a box
+                            R&D platform tools in a box
                         </h1>
-                        <p class="mx-auto text-sm sm:text-base  text-center  leading-relaxed text-gray-500 ">
-                            Simplify setting up the in silico computing platform and artificial intelligence building blocks that complement the traditional lab-based approaches across drug research and development activities.
+                        <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
+                            Simplify setting up the undefined computing platform and artificial intelligence building blocks that complement the traditional lab-based approaches across drug research and development activities.
                         </p>
+
+                        
 
                     </div>
                 </div>
@@ -253,31 +277,61 @@
 </section>
 
 
-   <!--make this a macro -->
+    <!--make this a macro -->
 
-<div class="border-red-500 demo-cta ">
-    <div class="section-inner-wrapper font-lexend container px-16  mx-auto  border-black">
-        <!-- left side of hero section-->
-        <div class="py-12">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl  text-center mb-4  text-white md:mb-8 w-full">
-            Would you like to get in touch?
-            </h1>
+<div class="border-red-500 bg-ag-primary-blue-30">
+  <div
+    class="section-inner-wrapper max-w-screen-xl ag-container-padding py-4 sm:flex mx-auto justify-between"
+  >
+    <!-- left side of hero section-->
+    <div class=" py-4 sm:py-16 w-full sm:w-auto">
+      <h1
+        class="
+          ag-h3
+          text-center
+          font-bold
+          sm:text-left
+          md:mb-2
+          text-ag-primary-blue-800
+          w-full
+        "
+      >
+        Ready to get started? <br/>
+      </h1>
+      <h1 class="ag-h3 text-center
+          font-bold
+          sm:text-left text-ag-primary-blue-400">
+        Book your demo today.
+      </h1>
 
-            <!--button container-->
-            <div class="w-full text-center" >
-                <button class="btn-blue text-sm">
-        REQUEST A DEMO
-      </button>
-
-            </div>
-        </div>
-
-        <!--right side of hero section -->
-        <div></div>
+      <!--button container-->
     </div>
+
+    <div class="py-2  sm:py-0 sm:w-auto  w-full text-center flex items-center justify-center">
+      <button
+        class="
+          text-base
+          bg-ag-tertiary-yellow-400
+          md:text-lg
+          transform
+          text-ag-primary-blue-600
+          transition-all
+          duration-300
+          hover:scale-110
+          px-4
+          py-3
+          sm:px-6
+          sm:py-4
+          rounded-lg
+        "
+      >
+        Get in touch
+      </button>
+    </div>
+  </div>
 </div>
- 
-   
+
+    
 
 <div class="why-aganitha ">
   <div class="lg:container mx-auto pt-12 md:pt-24 px-6">
@@ -595,274 +649,134 @@
   </div>
 </div>
 
-    <div class="bg-gray-50">
-    <div class="py-16">
-  <div class="xl:container lg:px-24 xl:px-16 px-6 mx-auto">
-    <div class="mb-8 ml-4">
-      <h1 class="md:text-4xl text-center lg:text-left text-3xl text-blue-700 font-medium mb-8 w-full">
+    <div class="">
+        <div class="py-16">
+  <div class="max-w-screen-xl relative  solutions-drawer ag-container-padding mx-auto">
+
+    <div class="mb-8">
+      <h1 class="ag-h2 z-40 text-center   text-ag-primary-blue font-medium mb-4  w-full">
         Our Solutions
       </h1>
-      <p class="text-gray-600 md:text-xl text-center lg:text-left text-base sm:text-lg leading-relaxed">
+      <p class="text-gray-600 z-40 ag-h4 text-center leading-relaxed">
         Discover our solutions across the biopharma value chain.
       </p>
+      <!-- <div class="dot-container z-0 absolute top-0 left-0">
+        <img src="/assets/images/dot-grid.png" alt="">
+      </div> -->
     </div>
 
-    
-    <div class="border-red-500">
-      <section class="text-gray-700">
-        <div class="lg:container mx-auto sm:flex">
-          
-          <div class="p-2  mb-6 sm:bm-0 mx-auto sm:w-1/2 md:w-1/3">
-            <a href= /content/solutions/hubs-1 >
-              <div
-                class="
-                  shadow-lg
-                  group
-                  hover:shadow-2xl
-                  solution-card
-                  transition
-                  duration-300
-                  rounded-xl
-                  bg-gray-50
-                "
-              >
-                <img
-                  class="
-                    object-cover 
-                    w-full
-                    lg:h-48
-                    md:h-36
-                    rounded-t-xl
-                  "
-                  src=/assets/images/solutions/hubs/hubs.jpeg
-                  alt="blog"
-                />
-                <div class="p-4 lg:p-8 bg-gray-50">
-                  <h1
-                    class="
-                      mx-auto
-                      md:mb-6
-                      mb-4
-                      mt-4
-                      md:mt-0
-                      text-2xl
-                      group-hover:text-blue-700
-                      leading-none
-                      font-medium
-                      px-2
-                      md:px-0
-                      duration-300
-                      transition
-                      text-gray-800
-                      lg:text-3xl
-                      title-font
-                    "
-                  >
-                    Knowledge Hubs
-                  </h1>
-                  <p class="text-sm md:text-base md:px-0 px-2 text-gray-600">
-                    Build a digital encyclopedia on the go: fully automated, competitive intelligence hubs as a managed service.
-                  </p>
-                </div>
+    <div class="border-red-500  gap-4  grid md:grid-cols-2 xl:grid-cols-3">
 
-                
-              </div>
+
+      
+      <div
+        class=" rounded-lg  solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md xl:max-w-sm">
+        <a href=/biopharma/knowledge-hubs/>
+          <div class="solution-image-wrapper">
+            <img src=/assets/images/solutions/hubs/hubs.jpeg class="object-cover h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+          </div>
+          <div class="solution-text-wrapper">
+            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+              Knowledge Hubs
+            </h1>
+            <h4 class="text-base lg:text-lg text-gray-600 ">
+              Build a digital encyclopedia on the go: fully automated, competitive intelligence hubs as a managed service.
+            </h4>
+            <a href=/biopharma/knowledge-hubs/ class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+              Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </a>
           </div>
+        </a>
+      </div>
 
-          
-          <div class="p-2  mb-6 sm:bm-0 mx-auto sm:w-1/2 md:w-1/3">
-            <a href= /content/solutions/gwas >
-              <div
-                class="
-                  shadow-lg
-                  group
-                  hover:shadow-2xl
-                  solution-card
-                  transition
-                  duration-300
-                  rounded-xl
-                  bg-gray-50
-                "
-              >
-                <img
-                  class="
-                    object-cover 
-                    w-full
-                    lg:h-48
-                    md:h-36
-                    rounded-t-xl
-                  "
-                  src=/assets/images/gwas.jpeg
-                  alt="blog"
-                />
-                <div class="p-4 lg:p-8 bg-gray-50">
-                  <h1
-                    class="
-                      mx-auto
-                      md:mb-6
-                      mb-4
-                      mt-4
-                      md:mt-0
-                      text-2xl
-                      group-hover:text-blue-700
-                      leading-none
-                      font-medium
-                      px-2
-                      md:px-0
-                      duration-300
-                      transition
-                      text-gray-800
-                      lg:text-3xl
-                      title-font
-                    "
-                  >
-                    GWAS Pipeline
-                  </h1>
-                  <p class="text-sm md:text-base md:px-0 px-2 text-gray-600">
-                    Scalable genomic data analysis platform to interrogate biobank-scale genomic datasets Technical pipeline for genome wide association studies (GWAS)
-                  </p>
-                </div>
-
-                
-              </div>
+      
+      <div
+        class=" rounded-lg  solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md xl:max-w-sm">
+        <a href=/biopharma/gwas/>
+          <div class="solution-image-wrapper">
+            <img src=/assets/images/gwas.jpeg class="object-cover h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+          </div>
+          <div class="solution-text-wrapper">
+            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+              GWAS Pipeline
+            </h1>
+            <h4 class="text-base lg:text-lg text-gray-600 ">
+              Scalable genomic data analysis platform to interrogate biobank-scale genomic datasets Technical pipeline for genome wide association studies (GWAS).
+            </h4>
+            <a href=/biopharma/gwas/ class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+              Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </a>
           </div>
+        </a>
+      </div>
 
-          
-          <div class="p-2  mb-6 sm:bm-0 mx-auto sm:w-1/2 md:w-1/3">
-            <a href= /content/solutions/omics >
-              <div
-                class="
-                  shadow-lg
-                  group
-                  hover:shadow-2xl
-                  solution-card
-                  transition
-                  duration-300
-                  rounded-xl
-                  bg-gray-50
-                "
-              >
-                <img
-                  class="
-                    object-cover 
-                    w-full
-                    lg:h-48
-                    md:h-36
-                    rounded-t-xl
-                  "
-                  src=/assets/images/solutions/omics/omics.jpeg
-                  alt="blog"
-                />
-                <div class="p-4 lg:p-8 bg-gray-50">
-                  <h1
-                    class="
-                      mx-auto
-                      md:mb-6
-                      mb-4
-                      mt-4
-                      md:mt-0
-                      text-2xl
-                      group-hover:text-blue-700
-                      leading-none
-                      font-medium
-                      px-2
-                      md:px-0
-                      duration-300
-                      transition
-                      text-gray-800
-                      lg:text-3xl
-                      title-font
-                    "
-                  >
-                    Omics Pipeline
-                  </h1>
-                  <p class="text-sm md:text-base md:px-0 px-2 text-gray-600">
-                    Rapid, scalable, affordable, managed enterprise-class Omics pipelining on HPC/Cloud as a managed service.
-                  </p>
-                </div>
-
-                
-              </div>
+      
+      <div
+        class=" rounded-lg  solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md xl:max-w-sm">
+        <a href=/biopharma/omics>
+          <div class="solution-image-wrapper">
+            <img src=/assets/images/solutions/omics/omics.jpeg class="object-cover h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+          </div>
+          <div class="solution-text-wrapper">
+            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+              Omics Pipeline
+            </h1>
+            <h4 class="text-base lg:text-lg text-gray-600 ">
+              Rapid, scalable, affordable, managed enterprise-class Omics pipelining on HPC/Cloud as a managed service.
+            </h4>
+            <a href=/biopharma/omics class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+              Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </a>
           </div>
+        </a>
+      </div>
 
-          
-        </div>
-      </section>
+      
     </div>
-   
 
-  
   </div>
 </div>
-
-    </div> 
-    
-    
-    <section class="text-gray-600 body-font  relative">
-    <div class="xl:container bg-transparent px-5  py-10 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-blue-800">Contact Us</h1>
-            
-        </div>
-        <div class="w-full lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <div class="relative">
-                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <button class="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-md">SUBMIT</button>
-                </div>
-                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                    <a class="text-blue-700">info@aganitha.ai</a>
-                    
-                    
-                </div>
-            </div>
-        </div>
     </div>
-</section>
+
+    
+    
 
 
     </div>
    
 
     
-      
-
-<footer class="text-gray-50 border-4 bg-blue-900 body-font">
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <footer class="text-gray-50 bg-ag-primary-blue-600 body-font">
+  <div class="max-w-screen-lg  px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="/">
+      <a class="flex title-font mb-3 font-medium items-center md:justify-start justify-center text-gray-900" href="/">
         <img src="/assets/images/ag-white.png" class="w-12" alt="">
         <span class="ml-3 text-gray-50 text-xl">aganitha</span>
       </a>
-      <p class="mt-2 text-base text-gray-50">Accelerate drug discovery and development with in silico solutions.</p>
+      <p class="mt-2 text-base text-gray-50">Accelerate drug discovery and development with <span class="italic">in silico</span> solutions.</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-yellow-400 tracking-widest text-sm mb-3">SOLUTIONS</h2>
+        <h2 class="title-font font-bold text-ag-tertiary-yellow-500 tracking-widest text-sm mb-3">SOLUTIONS</h2>
         <nav class="list-none mb-10">
-            <li>
-                <a href="/biopharma/solutions-overview/" class="footer-link">Overview</a>
-              </li>
+          <li>
+            <a href="/biopharma/solutions-overview/" class="footer-link">Overview</a>
+          </li>
           <li>
             <a class="footer-link" href="/biopharma/knowledge-hubs/" >Knowledge Hubs</a>
           </li>
@@ -872,11 +786,11 @@
           <li>
             <a class="footer-link" href="/biopharma/genome-wide-association-studies">GWAS Pipelines</a>
           </li>
-          
+
         </nav>
       </div>
       <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-yellow-400 tracking-widest text-sm mb-3">COMPANY</h2>
+        <h2 class="title-font font-bold text-ag-tertiary-yellow-500 tracking-widest text-sm mb-3">COMPANY</h2>
         <nav class="list-none mb-10">
           <li>
             <a class="footer-link" href="/about">About Us</a>
@@ -888,12 +802,12 @@
             <a class="footer-link" href="/contact/">Contact Us</a>
           </li>
           <li>
-            <a class="footer-link" href="/careers/">Careers</a>
+            <a class="footer-link" href="/careers/">Join Us</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-yellow-400 tracking-widest text-sm mb-3">LEGAL</h2>
+        <h2 class="title-font font-bold text-ag-tertiary-yellow-500 tracking-widest text-sm mb-3">LEGAL</h2>
         <nav class="list-none mb-10">
           <li>
             <a class="footer-link">Privacy Policy</a>
@@ -901,44 +815,44 @@
           <li>
             <a class="footer-link">Cookie Policy</a>
           </li>
-         
-          </li>
-        </nav>
-      </div>
-     
+
+        </li>
+      </nav>
     </div>
+
   </div>
-  <div class="bg-blue-50">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2017-2021 Aganitha AI
+</div>
+<div class="bg-blue-50">
+  <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+    <p class="text-gray-500 text-sm text-center sm:text-left">© 2017-2021 Aganitha AI
     
       </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
-        </a>
-      </span>
-    </div>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
   </div>
+</div>
 </footer>
     
 

@@ -1,48 +1,35 @@
+{% import "macros/cards.njk" as cards %}
+
 <div
   class="
-    omics-highlights-wrapper
-    container
-    font-lexend
+    hubs-highlights-wrapper
+    
+    max-w-screen-xl
      border-yellow-400
     mx-auto
     py-10
-    px-16
+    ag-container-padding
   "
 >
 
-  
-      <h4 class=" leading-8 text-4xl  text-center py-8 text-gray-800 font-medium mb-16">
+  <h4 class="   text-center py-4 sm:py-8 text-ag-primary-blue-500 ag-h3 mb-16">
        Highlights
       </h4>
-  <div class="grid grid-cols-3 gap-4">
-     {% for item in hubstemp %}
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl ">
+    {% for item in solutions.hubs.solutionHighlights %}
+
+      {{cards.highlightCard(item.icon, item.title, item.description)}}
+
+    {% endfor %}
+
+  </div>
+
+  {# <div class="grid grid-cols-3 max-w-screen-xl gap-8">
+  {% for item in solutions.hubs.solutionHighlights.slice(3,6) %}
 
 
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src={{item.icon}} class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        {{item.title}}
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        {{item.description}}
-          </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
+      {{cards.highlightCard(item.icon, item.title, item.description)}}
 
     {% endfor %} 
-
-  
-  </div>
+  </div> #}
 </div>

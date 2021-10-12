@@ -1,109 +1,64 @@
-<div
-  x-data="{active: 0}"
-  class="flex container mb-16  border-yellow-700 py-4 px-16 mx-auto"
->
-  <div
-    class="container w-1/3 flex flex-col border-black overflow-hidden -mb-px"
-  >
-    <div
-      class="px-8 py-6 w-full rounded-lg overflow-hidden text-gray-700"
-      x-on:click="active = 0"
-      x-bind:class="{'bg-blue-50 text-blue-800': active === 0}"
-    >
-      <h1
-        class="text-2xl font-medium mb-2"
-        x-bind:class="{'block' : active === 0 }"
-      >
+<div x-data="{active: 0}"
+  class="py-8 sm:py-10 md:py-16 lg:flex  max-w-screen-xl  border-yellow-700  ag-container-padding mx-auto">
+  <div class=" w-full lg:w-1/3 mb-4 lg:mb-0 border-black overflow-hidden">
+    <div class="px-4 lg:px-8 py-6 w-full rounded-lg overflow-hidden text-gray-700" x-on:click="active = 0"
+      x-bind:class="{'bg-ag-primary-blue-30 text-ag-primary-blue': active === 0}">
+      <h1 class="text-xl lg:text-2xl font-medium mb-2" x-bind:class="{'block' : active === 0 }">
         Covid Hub
       </h1>
 
-      <p class="text-base leading-8">
+      <p class="text-base lg:leading-8">
         A highly automated hub for Covid related research and development.
       </p>
     </div>
 
-    <div
-      class="px-8 rounded-lg overflow-hidden py-6 w-full text-gray-700"
-      x-on:click.prevent="active = 1"
-      x-bind:class="{'bg-blue-50 text-blue-800': active === 1}"
-    >
-      <h1
-        class="text-2xl mb-2 font-medium"
-        x-bind:class="{'block' : active === 1 }"
-      >
+    <div class="px-4 lg:px-8 rounded-lg overflow-hidden py-6 w-full text-gray-700" x-on:click.prevent="active = 1"
+      x-bind:class="{'bg-ag-primary-blue-30 text-ag-primary-blue': active === 1}">
+      <h1 class="text-xl lg:text-2xl mb-2 font-medium" x-bind:class="{'block' : active === 1 }">
         Oncology Hub
       </h1>
 
-      <p class="text-base leading-8">
-       A highly automated hub for Genitourinary cancer research and development.
+      <p class="text-base lg:leading-8">
+        A highly automated hub for Genitourinary cancer research and development.
 
       </p>
     </div>
-    <div
-      class="rounded-lg overflow-hidden px-8 py-6 w-full text-gray-700"
-      x-on:click.prevent="active = 2"
-      x-bind:class="{'bg-blue-50 text-blue-800': active === 2}"
-    >
-      <h1
-        class="text-2xl mb-2 font-medium"
-        x-bind:class="{'block' : active === 2 }"
-      >
+    <div class="rounded-lg overflow-hidden px-4 lg:px-8 py-6 w-full text-gray-700" x-on:click.prevent="active = 2"
+      x-bind:class="{'bg-ag-primary-blue-30 text-ag-primary-blue': active === 2}">
+      <h1 class="text-xl lg:text-2xl mb-2 font-medium" x-bind:class="{'block' : active === 2 }">
         Rare Disease Hub
       </h1>
 
-      <p class="text-base leading-8">
+      <p class="text-base lg:leading-8">
         A highly automated hub for rare disease research and development, therapeutics and
-vaccines.
+        vaccines.
 
       </p>
     </div>
   </div>
 
-  <div class="w-2/3 ml-12 bg-opacity-10  border-black -mt-px">
-    <div
-      class=""
-      x-show="active === 0"
-      x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 transform scale-90"
-      x-transition:enter-end="opacity-100 transform scale-100"
-    >
-      <div class="image-wrapper h-full shadow-xl border-blue-200 rounded overflow-hidden flex items-center">
-        <img
-          src="/assets/images/solutions/hubs/covidhub.png"
-          class="object-fit object-cover"
-          alt=""
-        />
+  <div class=" w-full  lg:w-2/3  lg:ml-12 bg-opacity-10  border-black ">
+    <div class="" x-show="active === 0" x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100">
+      <div
+        class="image-wrapper lg:h-full  shadow-agBlue border-ag-primary-blue-500 rounded overflow-hidden flex items-center">
+        <img src="/assets/images/solutions/hubs/covidhub.png" class="object-cover w-full" alt=""/>
       </div>
+      <!-- <p class="tracking-wide">Screenshot</p> -->
     </div>
-    <div
-      class=""
-      x-show="active === 1"
-      x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 transform scale-90"
-      x-transition:enter-end="opacity-100 transform scale-100"
-    >
-      <div class="image-wrapper shadow-xl  rounded overflow-hidden border-blue-200 h-full flex items-center">
-        <img
-          src="/assets/images/solutions/hubs/oncohub.png"
-          class="object-fit object-cover"
-          alt=""
-        />
+    <div class="" x-show="active === 1" x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100">
+      <div
+        class="image-wrapper shadow-agBlue rounded overflow-hidden  border-ag-primary-blue-500 lg:h-full flex items-center">
+        <img src="/assets/images/solutions/hubs/oncohub.png" class=" object-cover w-full" alt=""/>
       </div>
     </div>
 
-    <div
-      class=""
-      x-show="active === 2"
-      x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 transform scale-90"
-      x-transition:enter-end="opacity-100 transform scale-100"
-    >
-      <div class="image-wrapper  rounded shadow-xl border-blue-200 h-full flex items-center">
-        <img
-          src="/assets/images/solutions/hubs/rdhub.png"
-          class="object-fit object-cover"
-          alt=""
-        />
+    <div class="" x-show="active === 2" x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100">
+      <div
+        class="image-wrapper  rounded shadow-agBlue overflow-hidden  border-ag-primary-blue-500 lg:h-full flex items-center">
+        <img src="/assets/images/solutions/hubs/rdhub.png" class="object-cover w-full" alt=""/>
       </div>
     </div>
   </div>

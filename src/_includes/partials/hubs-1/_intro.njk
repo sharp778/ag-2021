@@ -1,29 +1,22 @@
-<div class="intro-wrapper pt-16 border-red-400 pb-16 xl:container mx-auto px-8 md:px-16">
-  <div class="intro-inner-wrapper grid lg:grid-cols-2">
-    <div class="left-side flex items-center justify-center">
+<div class="intro-wrapper py-8 sm:py-10  sm:pt-12 md:py-16 ag-container-padding border-red-400  max-w-screen-xl mx-auto ">
+  <div class="intro-inner-wrapper grid gap-8 lg:grid-cols-2">
+    <div class="left-side md:m-4 flex items-center justify-center">
       <img
         src="/assets/images/solutions/hubs/hubs.jpeg"
-        class="rounded-lg mb-6  sm:w-1/2 md:w-2/3 lg:w-5/6"
+        class="rounded-lg  sm:w-3/4 lg:w-full"
         alt=""
-      />
+/>
     </div>
-    <div class="right-side lg:px-4 xl:px-16 py-4">
-      {# <h3 class="text-4xl text-gray-800 font-semibold my-8 w-4/5" id="content">
-        Introduction
-      </h3> #}
+    <div class="right-side lg:px-4 flex items-center justify-center ">
 
-      <h4 class="text-lg text-gray-600 leading-8 mb-4">
-        Traditional intelligence gathering utilizes manual search engine based methods to gather vast amounts of information that is crucial in facilitating decision making in all areas of biopharma: discovery, R&D, clinical trial design, and more.
-      </h4>
+      <div class="intro-content-wrapper">
+        {% for item in solutions.hubs.intro %}
+          <h4 class="ag-h4 text-justify sm:text-left  mb-4">
+            {{item}}
+          </h4>
+        {%endfor %}
+      </div>
 
-       <h4 class="text-lg text-gray-600 leading-8 mb-4">
-        Often, the manual effort required to collate, structure and synthesize such vast information in a consumable format suited for deriving key insights that impact decisions is time consuming. On the other hand, curated market research reports are limited in scope and contain little to no real-time information.
-      </h4>
-
-      {# <h4 class="text-lg text-gray-600 leading-8 mb-4">
-        On the other extreme are the curated market research reports which are rich in focus and context to enable an easy assimilation of information. However, their scope is limited and does not contain real-time information.
-
-      </h4> #}
     </div>
   </div>
 </div>

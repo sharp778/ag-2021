@@ -1,4 +1,5 @@
-<div
+{% import "macros/cards.njk" as cards %}
+{# <div
   class="
     hubs-benefits-wrapper
     container
@@ -15,7 +16,7 @@
         class="text-5xl mx-auto text-gray-600 font-medium text-center w-4/5"
         id="content"
       >
-        Benefits
+        Outcomes
       </h3>
 
       <div
@@ -63,5 +64,19 @@
         </ul>
       </div>
     </div>
+  </div>
+</div> #}
+
+<div class="max-w-screen-xl  mx-auto py-10 sm:py-12 lg:py-16 ag-container-padding">
+  <h1 class="ag-h3 text-gray-50 font-semibold text-left sm:text-center lg:text-left mb-4">Outcomes</h1>
+  <h1 class="ag-h4 text-gray-200 mb-10 sm:mb-20 w-full text-left sm:text-center sm:px-16 md:px-24 lg:px-0 lg:text-left lg:w-4/5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio ad
+    aperiam? Ad nisi eaque blanditiis dolor voluptatem vel natus!
+  </h1>
+
+  <div class="grid gap-10 md:gap-16 xl:gap-10 sm:grid-cols-2 xl:grid-cols-3">
+    {% for item in solutions.hubs.benefitsAlt %}
+      {{ cards.benefitCard(item.icon, item.title, item.description) }}
+    {% endfor %}
   </div>
 </div>

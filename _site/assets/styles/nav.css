@@ -2,6 +2,7 @@
 
 header {
   line-height: 1.5;
+  z-index: 1000;
   /* border: 1px solid green; */
   font-weight: 400;
 }
@@ -17,7 +18,7 @@ header {
 
 :root {
   /* --primary-color: #e91e63; */
-  --primary-color: #3b82f6;
+  --primary-color: #045c8c;
   --secondary-color: yellow;
 }
 .nav-container {
@@ -34,7 +35,7 @@ header {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   /* padding: 15px; */
 }
 .header-main {
@@ -57,9 +58,7 @@ header {
   color: var(--primary-color);
   font-weight: 600;
 }
-.header .nav-menu {
-  /* padding: 0 15px; */
-}
+
 .header .menu > .menu-item {
   display: inline-block;
   margin-left: 30px;
@@ -76,7 +75,7 @@ header {
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 .header .menu > .menu-item > a .plus {
@@ -112,16 +111,16 @@ header {
   color: var(--primary-color);
 }
 
-.menu-item-solo:hover > {
+/* .menu-item-solo:hover > {
   color: var(--primary-color);
 }
 
 .menu-item-solo {
   transition: 0.3s ease all;
-}
-.menu-item-solo:hover {
+} */
+/* .menu-item-solo:hover {
   border-bottom: 4px solid var(--primary-color);
-}
+} */
 
 .header .menu > .menu-item > .sub-menu {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -155,7 +154,7 @@ header {
   display: block;
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   transition: all 0.3s ease;
   text-transform: capitalize;

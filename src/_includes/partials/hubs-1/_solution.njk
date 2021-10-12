@@ -1,36 +1,36 @@
-<div class="solution-wrapper py-12 mx-auto container px-16">
-  <div class="solution-inner-wrapper grid grid-cols-2">
-    <div class="left-side px-16 py-4">
-      <h3 class="text-4xl text-gray-800 font-semibold my-8 w-4/5" id="content">
+<div class="solution-wrapper py-8 sm:py-10 sm:pt-12 md:py-16  mx-auto max-w-screen-xl  ag-container-padding">
+  <div class="solution-inner-wrapper grid gap-8 lg:grid-cols-2">
+    <div class="left-side lg:px-4">
+      <h3 class="ag-h3 text-ag-primary-blue-500  mb-4 sm:mb-8 " id="content">
         Our Solution
       </h3>
-
-      <h4 class="text-lg text-gray-600 leading-8 mb-4">
-       As the process of gathering intel for such use cases has repetitive elements, there is scope for unlocking efficiencies in putting together this intel by leveraging the latest technologies in web mining, data pipelining and artificial intelligence.
-      </h4>
-
-      <div class="text-lg text-gray-600 leading-8">
+      {% for item in solutions.hubs.solution.intro %}
+        <h4 class="ag-h4 mb-4">
+          {{ item }}
+        </h4>
+      {% endfor %}
+      <div class="ag-h4">
         <ul>
-          {% for item in solutions.hubs.solutionPoints %}
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
+          {% for item in solutions.hubs.solution.solutionPoints %}
+            <li class="flex items-center my-2">
+              <span class="">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
+                class="w-6 mr-4  text-ag-secondary-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+                  <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="3"
                   d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">{{ item }}</span>
-          </li>
+/>
+                </svg>
+              </span>
+              <span class="">{{ item }}</span>
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -38,9 +38,9 @@
 
     <div class="right-side flex items-center justify-center">
       <img
-        class=" rounded-xl"
+        class="sm:w-3/4 lg:w-full"
         src="/assets/images/solutions/hubs/solution.png"
-      />
+/>
     </div>
   </div>
 </div>
