@@ -1,6 +1,6 @@
 <div class="py-12">
     <section class="text-gray-700  ">
-        <div class="max-w-screen-xl  ag-container-padding  flex flex-col   py-10 mx-auto lg:items-center">
+        <div class="max-w-screen-xl  ag-container-padding  flex flex-col  py-4 sm:py-10 mx-auto lg:items-center">
             <div class="flex flex-col w-full text-left">
                 <h1 class="mb-8 text-left ag-h3 sm:text-left font-semibold  text-ag-primary-blue   ">Transforming
                     biopharma
@@ -47,11 +47,12 @@
         </div> #}
 
 
-        <div class="grid gap-6 grid-cols-3 pt-6 pb-4 ">
+        <div class="grid xl:gap-6 gap-4 sm:grid-cols-2  xl:grid-cols-3 pt-6 pb-4 ">
+
             {% for item in contextPoints %}
 
             <div
-                class="context-card-wrapper px-4 py-6  mb-4 max-w-md hover:shadow-lg transition duration-300 rounded-lg">
+                class="context-card-wrapper z-30 shadow-lg md:shadow-none  px-6 py-6 mx-auto  mb-4 max-w-lg hover:shadow-lg transition duration-300 rounded-lg">
                 <div class="context-icon-wrapper my-2">
                     <img src={{ item.icon }} class="w-16" alt="">
                 </div>
@@ -59,7 +60,7 @@
                     <h1 class="context-header my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
                         {{ item.title | safe}}
                     </h1>
-                    <p class="context-description text-base text-gray-600">
+                    <p class="context-description sm:text-base text-gray-600">
                         {{ item.description | safe }}
                     </p>
                 </div>
