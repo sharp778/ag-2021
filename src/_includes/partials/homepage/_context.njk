@@ -1,29 +1,37 @@
-{% import "macros/accordion.njk" as accordion %}
+<div class="py-12">
+    <section class="text-gray-700  ">
+        <div class="max-w-screen-xl  ag-container-padding  flex flex-col   py-10 mx-auto lg:items-center">
+            <div class="flex flex-col w-full text-left">
+                <h1 class="mb-8 text-left ag-h3 sm:text-left font-semibold  text-ag-primary-blue   ">Transforming
+                    biopharma
+                    R&D using computational sciences and AI</h1>
+                <p class="text-left  sm:text-lg md:text-xl leading-relaxed text-gray-700 ">Our solutions enable
+                    biopharma
+                    R&D and IT to efficiently tackle the complexity, scale, and richness of modern R&D and clinical
+                    domains.
+                    They are built on the following enablers that deliver valuable outcomes and significantly enhance
+                    the
+                    pace of innovation.</p>
 
-<section class="text-gray-700  ">
-    <div class="lg:container  flex flex-col  md:px-5 pt-12 md:mt-8 lg:mt-12 mx-auto lg:items-center">
-        <div class="flex flex-col w-full  sm:px-3  mb-6 md:mb-12 text-left lg:text-center">
-            <h1 class="mb-8 md:mb-12  text-2xl sm:text-3xl md:text-4xl sm:text-center px-6 font-medium leading-snug md:leading-snug lg:w-2/3 mx-auto  text-blue-800  ">Transforming biopharma R&D using computational sciences and AI</h1>
-
-            <p class="mx-auto mb-8 px-6  text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-600 lg:w-2/3">Our solutions enable biopharma R&D and IT to efficiently tackle the complexity, scale, and richness of modern R&D and clinical domains. They are built on the following enablers that deliver valuable outcomes and significantly enhance the pace of innovation.</p>
-
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="text-gray-700 ">
-    <div class="lg:container items-center px-5 md:py-8  mx-auto lg:px-16">
-        <div class="flex flex-wrap mb-12 text-left">
+    <section class="text-gray-700 max-w-screen-xl mx-auto ag-container-padding ">
+        {# <div class="max-w-screen-xl border-4 items-center px-5 md:py-8  mx-auto lg:px-16">
+            <div class="flex flex-wrap mb-12 text-left">
 
-            {% for item in contextPoints %}
+                {% for item in contextPoints %}
 
                 <div class="w-full group mx-auto sm:w-1/2 lg:w-1/3 px-4 mb-8">
-                    <div class="p-6 shadow-lg sm:shadow-md sm:group-hover:shadow-xl rounded-lg  transform transition duration-300 colorful-card border-yellow-300">
+                    <div
+                        class="p-6 shadow-lg sm:shadow-md sm:group-hover:shadow-xl rounded-lg  transform transition duration-300 colorful-card border-yellow-300">
                         <div class="  items-center justify-center sm:w-16 w-12  mx-auto mb-2 text-black  rounded-full">
-                            <img src= {{  item.icon }}   alt="">
+                            <img src={{ item.icon }} alt="">
                             {{item.link }}
                         </div>
-                        <h1 class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
+                        <h1
+                            class="mx-auto  text-lg md:text-xl group-hover:text-blue-900 transition duration-300 font-medium leading-none text-center text-gray-600 xl:text-2xl ">
                             {{ item.title | safe }}
                         </h1>
                         <p class="mx-auto text-sm sm:text-base  text-center  leading-3 text-gray-700 ">
@@ -33,8 +41,33 @@
                     </div>
                 </div>
 
+                {% endfor %}
+
+            </div>
+        </div> #}
+
+
+        <div class="grid gap-6 grid-cols-3 pt-6 pb-4 ">
+            {% for item in contextPoints %}
+
+            <div
+                class="context-card-wrapper px-4 py-6  mb-4 max-w-md hover:shadow-lg transition duration-300 rounded-lg">
+                <div class="context-icon-wrapper my-2">
+                    <img src={{ item.icon }} class="w-16" alt="">
+                </div>
+                <div class="context-text-wrapper">
+                    <h1 class="context-header my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
+                        {{ item.title | safe}}
+                    </h1>
+                    <p class="context-description text-base text-gray-600">
+                        {{ item.description | safe }}
+                    </p>
+                </div>
+            </div>
+
             {% endfor %}
 
         </div>
-    </div>
-</section>
+    </section>
+
+</div>
