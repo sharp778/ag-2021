@@ -1,53 +1,47 @@
 {% import "macros/cards.njk" as cards %}
 
-<div class="why-aganitha ">
-  <div class="lg:container mx-auto pt-12 md:pt-24 px-6">
+<div class="why-aganitha bg-gray-50">
+  <div class=" mx-auto max-w-screen-xl ag-container-padding  pt-12 md:pt-20 ">
     <div class="md:px-16">
-      <h1
-        class="text-3xl sm:text-4xl md:text-5xl font-medium text-center mb-6 md:mb-8 text-blue-700 "
-      >
+      <h1 class="ag-h2 font-semibold text-center mb-6 md:mb-8 text-ag-primary-blue-500 ">
         Why Aganitha?
       </h1>
 
-      <h4
-        class="
-          md:text-xl text-gray-600
+      <h4 class="
+          md:text-xl text-gray-700
           leading-relaxed
-          text-base
+          
           text-center
           md:w-4/5
           mx-auto
-          
-          md:mb-8
-        "
-      >
+          md:mb-4
+        ">
         Leverage our experience and strengths to build transformational
         solutions in Biopharma
       </h4>
     </div>
 
     <div class="cards-container ">
-     
-        <section class="text-gray-600 body-font">
-          <div class="lg:container md:py-12 py-8 mx-auto">
-            <div class="grid md:grid-cols-2">
-              {% for item in reasons %}
-              <div class="p-2  group w-full">
-                <div
-                  class="
+
+      <section class="text-gray-600 ">
+        <div class="lg:container md:py-12 py-8 mx-auto">
+          <div class="grid gap-4 lg:gap-0 md:grid-cols-2">
+            {% for item in reasons %}
+              <div class="p-2 rounded-lg  md:max-w-lg  mx-auto  group w-full">
+                <div class="
+              
+              
                     flex
                     rounded-lg
-                    group-hover:shadow-lg
-                    group-hover:bg-white
                     transition
-                    duration-300
-                    p-6
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
                     sm:flex-row
                     flex-col
-                  "
-                >
-                  <div
-                    class="
+                  ">
+                  <div class="
                       lg:w-16
                       lg:h-16
                       h-12
@@ -59,29 +53,30 @@
                       items-center
                       justify-center
                       rounded-full
-                      bg-blue-500
+                      bg-ag-primary-blue-500
                     
                       flex-shrink-0
-                    "
-                  >
-                    <img src={{ item.icon }} class="w-3/4" />
+                    ">
+                    <img src={{ item.icon }} class="w-3/4"/>
                   </div>
                   <div class="flex-grow">
-                    <h2 class="text-gray-700 text-xl group-hover:text-blue-700 transition duration-300 font-medium mb-3">
+                    <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
                       {{ item.name }}
                     </h2>
-                    <p class="leading-relaxed group-hover:text-gray-500 transition duration-300 text-gray-500">
+                    <p
+                    class="leading-relaxed text-base lg:text-lg group-hover:text-gray-600 transition duration-300 text-gray-500">
                       {{ item.description }}
                     </p>
                   </div>
                 </div>
               </div>
 
-              {% endfor %}
-            </div>
+            {% endfor %}
           </div>
-        </section>
-    
+        </div>
+      </section>
+
     </div>
   </div>
 </div>

@@ -78,6 +78,7 @@ module.exports = {
       fontFamily: {
         barlow: ["Barlow", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       transitionProperty: {
         height: "height",
@@ -99,6 +100,7 @@ module.exports = {
       height: ["responsive", "hover", "focus"],
       scale: ["group-hover"],
       padding: ["hover"],
+      filter: ["hover", "group-hover"],
     },
   },
   plugins: [],

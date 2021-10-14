@@ -18,5 +18,8 @@
     "autoprefixer": "^10.3.1",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
   }
 }

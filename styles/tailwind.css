@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 @layer utilities {
   .change {
@@ -34,7 +35,7 @@
   }
 
   .ag-h2 {
-    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium;
+    @apply text-3xl lg:text-4xl xl:text-5xl font-medium;
   }
 
   .ag-container-padding {

@@ -1,73 +1,42 @@
-
 <div class="">
-<div class="  mx-auto py-12">
-  <h3 class="font-medium mb-12 text-5xl px-24 text-center text-blue-800">Hear it for yourself</h1>
-  <div class="swiper lg:container  mx-auto ">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
+  <div class="py-20 ag-container-padding max-w-screen-xl  mx-auto">
+    <h2 class="ag-h2 text-ag-primary-blue text-center mb-4">Our Voices</h2>
+    <p class="ag-h4 mb-20 text-center">Hear what some of our employees have to say.</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-      {% for person in testimonials %}
-      <div class="swiper-slide  ">
-        <div class="top-row bg-blue-50 py-10 text-center">
-          <h1 class="text-4xl mb-4 text-blue-800 font-medium "> {{ person.name }} </h1>
-          <p class="text-xl  text-gray-600"> {{ person.title }}</p>
-        </div>
+        {% for person in testimonials %}
 
-        <div class="bottom-row px-24 bg-gray-50 grid grid-cols-2">
-          <div class="employee-image-wrapper flex items-center justify-center ">
-            <img src={{ person.image }} class="object-cover h-full person-image" alt="">
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src={{ person.image}} class="rounded-xl  person-image overflow-hidden" alt="">
           </div>
-          <div class="employee-details flex flex-col py-12  px-12">
-            <h1 class=" font-medium mt-8 mb-4 ml-3 text-gray-600 text-xl ">What I like at Aganitha:</h1>
-            
-            
-        <ul class="text-lg text-gray-600 leading-8 ml-4 mb-8">
-          {% for item in person.aspects %}
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">{{ item }}</span>
-          </li>
-          {% endfor %}
-        </ul>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                {{ person.quote }}
+              </p>
 
-        <p class="text-lg italic text-gray-600 leading-relaxed px-4"> 
-         {{ person.quote }}
-        </p>
-      
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">{{
+                  person.name }}</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">{{ person.title }}
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        {% endfor %}
+
+
       </div>
-
-      {% endfor %}
-      {# <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div> #}
-      ...
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
- 
- 
+
   </div>
-</div>
-</div>

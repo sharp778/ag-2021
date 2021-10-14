@@ -6,14 +6,14 @@ module.exports = [
     image: "/assets/images/solutions/hubs/hubs.jpeg",
   },
   {
-    title: "GWAS Pipeline",
-    link: `/biopharma/gwas/`,
+    title: "GWAS Platform",
+    link: `/biopharma/genome-wide-association-studies/`,
     description: `Scalable genomic data analysis platform to interrogate biobank-scale genomic datasets Technical pipeline for genome wide association studies (GWAS).`,
     image: "/assets/images/gwas.jpeg",
   },
   {
-    title: `Omics Pipeline`,
-    link: `/biopharma/omics`,
+    title: `Omics Pipelining`,
+    link: `/biopharma/omics-pipelining`,
     description: `Rapid, scalable, affordable, managed enterprise-class Omics pipelining on HPC/Cloud as a managed service.`,
     image: "/assets/images/solutions/omics/omics.jpeg",
   },

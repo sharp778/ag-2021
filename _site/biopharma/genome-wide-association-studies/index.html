@@ -1,26 +1,28 @@
 <html lang="en">
 
-<head>
-  <title>
-     Aganitha 
-  </title>
-  <meta charset="UTF-8" />
-  
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-  <link rel="stylesheet" href="/style.css?v=1634138374252" />
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <head>
+    <title>
+       Aganitha 
+    </title>
+    <meta charset="UTF-8"/>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 
-  <link rel="stylesheet" href="/assets/styles/styles.css">
-  <link rel="stylesheet" href="/assets/styles/nav.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-  
-  <header class="header">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+    <link rel="stylesheet" href="/assets/styles/nav.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/style.css?v=1634171902680"/>
+
+    
+      <header class="header">
    <div class="nav-container">
-      <div class="header-main">
+      <div class="header-main max-w-screen-xl ag-container-padding">
          <div class="logo">
             <a href="/" class="flex items-center justify-center">
                <img src="/assets/images/logo-crop.svg" class="w-14  mr-2" alt="">
@@ -83,17 +85,17 @@
       </div>
    </div>
 </header>
-  
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  
+    
 
-  <div class="mt-16">
-     <div class="omics-inner-wrapper border-yellow-500 bg-black">
+    <div class="mt-16">
+       <div class="omics-inner-wrapper border-yellow-500 bg-black">
   <div class="font-lexend container px-24 flex pt-16 mx-auto border-black">
     <!-- left side of hero section-->
     <div class="py-24 w-1/2">
@@ -754,11 +756,11 @@ Technical pipeline for genome wide association studies (GWAS)
 </section></div>
 
 
-  </div>
+    </div>
 
-  
-  <footer class="text-gray-50 bg-ag-primary-blue-600 body-font">
-  <div class="max-w-screen-lg  px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    
+      <footer class="text-gray-50 bg-ag-primary-blue-600 body-font">
+  <div class="max-w-screen-lg px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font mb-3 font-medium items-center md:justify-start justify-center text-gray-900" href="/">
         <img src="/assets/images/ag-white.png" class="w-12" alt="">
@@ -850,9 +852,24 @@ Technical pipeline for genome wide association studies (GWAS)
   </div>
 </div>
 </footer>
-  
+    
 
-  <script src="/assets/scripts/acc.js"></script>
-</body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/assets/scripts/acc.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        mousewheel: true,
+        keyboard: true
+      });
+    </script>
+  </body>
 
 </html>

@@ -1,26 +1,28 @@
 <html lang="en">
 
-<head>
-  <title>
-     Aganitha 
-  </title>
-  <meta charset="UTF-8" />
-  
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-  <link rel="stylesheet" href="/style.css?v=1634138374252" />
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <head>
+    <title>
+       Aganitha 
+    </title>
+    <meta charset="UTF-8"/>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 
-  <link rel="stylesheet" href="/assets/styles/styles.css">
-  <link rel="stylesheet" href="/assets/styles/nav.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-  
-  <header class="header">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+    <link rel="stylesheet" href="/assets/styles/nav.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/style.css?v=1634171902680"/>
+
+    
+      <header class="header">
    <div class="nav-container">
-      <div class="header-main">
+      <div class="header-main max-w-screen-xl ag-container-padding">
          <div class="logo">
             <a href="/" class="flex items-center justify-center">
                <img src="/assets/images/logo-crop.svg" class="w-14  mr-2" alt="">
@@ -83,64 +85,64 @@
       </div>
    </div>
 </header>
-  
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  
-
-  <div class="mt-16">
     
 
-   
-
-<div class="border-gray-300 about-banner bg-black">
-  <div
-    class="
-      section-inner-wrapper
-      font-lexend
-      container
-      px-16
-      mx-auto
-      border-black
-    "
-  >
-    <!-- left side of hero section-->
-    <div class="py-24 w-full px-16">
-      <h1 class="text-6xl leading-tight text-center mx-auto text-gray-50 mb-8">
-        Careers at Aganitha
-      </h1>
+    <div class="mt-16">
       
 
-      <div class=" flex items-center justify-center">
-        <button class="btn-blue ">OPEN POSITIONS</button>
-      </div>
+   
+   <section class="careers-banner bg-ag-primary-blue-600">
+    <div class="max-w-screen-xl  py-20 mx-auto ag-container-padding">
+        <div class="banner-text mb-8">
+            <h1 class="text-5xl font-semibold leading-snug text-white">
+                <span class="text-ag-secondary-red">Join us
+                </span> on our mission to help
+                improve and
+                impact
+                the lives of
+                millions by
+                <span class="text-ag-secondary-red">
+                    acclerating
+                </span>
+                drug discovery.
+            </h1>
+        </div>
+
+        <a href="#positions-section">
+            <div class="button-wrapper py-2 group max-w-xs flex">
+                <div
+                    class="career-icon-wrapper rounded-full p-2 transition duration-300 group-hover:bg-white bg-ag-secondary-red flex items-center justify-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-8 text-white group-hover:text-black transition duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={10} d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <p class="text-gray-50 flex items-center text-xl ml-4">See open positions</p>
+            </div>
+        </a>
     </div>
 
-    <!--right side of hero section -->
-    <div></div>
-  </div>
-</div>
-
-
-
-
-
+</section>
    
-   <div class="border-yellow-500 py-12  mt-12">
-  <div class="container mx-auto px-16 grid gap-8 grid-cols-2">
+   <div class="border-yellow-500 py-12 ">
+  <div class="max-w-screen-xl mx-auto ag-container-padding grid gap-8 grid-cols-2">
     <div class="careers__image-wrapper flex items-center overflow-hidden">
       <img
         src="/assets/images/careers/careers.jpg"
-        class="rounded-lg shadow-2xl"
+        class="rounded-lg shadow-lg"
         alt=""
-      />
+/>
     </div>
     <div class="careers__intro py-8   px-4">
-      <p class="text-4xl text-blue-800 font-medium leading-relaxed mb-4">
+      <p class="ag-h3 text-ag-primary-blue leading-relaxed mb-4">
         Who are we?
       </p>
       <p class="text-lg leading-relaxed  text-gray-600 mb-4">
@@ -153,568 +155,483 @@
     </div>
   </div>
 </div>
-
-   <div class=" text-gray-600 py-12">
+   <!-- <div class=" text-gray-600 py-12">
   <div class="container px-24  flex mx-auto">
-   <div class=" py-8 border-t-2 flex">
-       <div class="w-1/3 px-6">
-           <h3 class="font-medium text-4xl text-blue-800">Why Aganitha?</h1>
-       </div>
-       <div class="w-2/3">
-           <ul
+    <div class=" py-8 border-t-2 flex">
+      <div class="w-1/3 px-6">
+        <h3 class="font-medium text-4xl text-blue-800">Why Aganitha?</h1>
+      </div>
+      <div class="w-2/3">
+        <ul
         class="careers-list list-inside list-disc text-left text-lg text-gray-600 leading-relaxed ">
-        <li class="mb-2">
+          <li class="mb-2">
          A challenging and stimulating environment and an opportunity to work on some of the cutting edge technologies while making significant contributions to the field of biopharma 
         </li>
-        <li class="mb-2">
+          <li class="mb-2">
          Complete ownership of the problem to help understand the big picture and prepare for bigger roles
         </li>
-        <li class="mb-2">Emphasis on learning on the job with frequent knowledge sharing sessions</li>
-        <li class="mb-2">
+          <li class="mb-2">Emphasis on learning on the job with frequent knowledge sharing sessions</li>
+          <li class="mb-2">
           A chance for our members to learn basics of all technologies and specialize in a few.
         </li>
-        <li class="mb-2">
+          <li class="mb-2">
           We understand how to support employees and help them grow. We place a lot of emphasis on training and nurturing our employees. 
         </li>
-        <li class="mb-2">
+          <li class="mb-2">
           A chance to work with colleagues from top institutions like IITs and IIITs.
         </li>
-      </ul>
-       </div>
-   </div>
+        </ul>
+      </div>
+    </div>
 
-
-
-   
-
-    
   </div>
 
   <div class="container px-24  flex mx-auto">
     <div class=" py-8 border-t-2 flex">
-        <div class="w-1/3 px-6">
-            <h3 class="font-medium text-4xl text-blue-800 pr-4">What are we looking for?</h1>
-        </div>
-        <div class="w-2/3">
-          <p class="text-lg text-gray-600 leading-relaxed text-left mb-8"> 
+      <div class="w-1/3 px-6">
+        <h3 class="font-medium text-4xl text-blue-800 pr-4">What are we looking for?</h1>
+      </div>
+      <div class="w-2/3">
+        <p class="text-lg text-gray-600 leading-relaxed text-left mb-8"> 
             We understand that the combination of skills that we look for is not commonly available, and we are comfortable investing in helping our team members build those skills. The founding team and the management team understands the value of investing in our employees and are comfortable with on the job learning and growing to be superstars. We look for the following traits:  
 
           </p>
-            <ul
+        <ul
          class="careers-list  list-inside list-disc text-left text-lg text-gray-600 leading-relaxed ">
-         <li class="mb-2">
+          <li class="mb-2">
            Ability and curiosity to learn new topics- In the ever evolving world of biopharma and disruptive technology we expect you to proactively keep abreast of new developments in the relevant fields.
 
          </li>
-         <li class="mb-2">
+          <li class="mb-2">
             Ability to communicate well- All our work is fast moving and built collaboratively requiring clear and constant communication
          </li>
-         <li class="mb-2">Quality Conscious- Conscious approach towards quality output and development of systems that are easy to use and understand for other colleagues and end users</li>
-         <li class="mb-2">
+          <li class="mb-2">Quality Conscious- Conscious approach towards quality output and development of systems that are easy to use and understand for other colleagues and end users</li>
+          <li class="mb-2">
             Ability to deliver and close- Approach to bring clarity and proper planning to meet the deadlines is a highly appreciated quality
          </li>
-         
-       </ul>
-        </div>
+
+        </ul>
+      </div>
     </div>
-   </div>
+  </div>
 
+</div> 
+
+ -->
+
+<section class="bg-gray-50 py-20">
+  <div class="ag-container-padding  max-w-screen-xl mx-auto">
+    <div class="why-aganitha mb-12 text-center">
+      <h1 class="ag-h3 mb-4 text-ag-primary-blue">Why work for Aganitha?</h1>
+      <!-- <p class="ag-h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, obcaecati.</p> -->
+    </div>
+
+    <div class="reasons grid grid-cols-3 gap-8">
+      
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            A challenging and stimulating environment and an opportunity to work on some of the cutting edge technologies while making significant contributions to the field of biopharma.</p>
+
+        </div>
+
+      
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            We understand how to support employees and help them grow. We place a lot of emphasis on training and nurturing our employees.</p>
+
+        </div>
+
+      
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            Complete ownership of the problem to help understand the big picture and prepare for bigger roles.</p>
+
+        </div>
+
+      
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            A chance for our members to learn basics of all technologies and specialize in a few.</p>
+
+        </div>
+
+      
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            A chance to work with colleagues from top institutions like IITs and IIITs.</p>
+
+        </div>
+
+      
+
+    </div>
+  </div>
+</section>
    
-</div>
 
 
-   <div class="  bg-gray-50 px-6 py-16 pb-20">
-   <h3 class="font-medium mb-12 text-5xl px-24 text-center text-blue-800">Our Values</h1>
-  <div class="aganitha-values container px-16 mx-auto">
+
+
+<section class="py-16 bg-ag-primary-blue-600">
+  <div class="max-w-screen-xl  mx-auto ag-container-padding">
+    <h1 class="ag-h3  text-gray-50  text-center mb-4">Our Values</h1>
+    <p class="ag-h4 text-gray-200 mb-12 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero in
+      sed
+      perspiciatis
+      illum voluptate nemo?</p>
+    <div class="grid gap-10 md:gap-16 xl:gap-10 sm:grid-cols-2 xl:grid-cols-3">
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/innovation.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Innovation and Research</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        We embrace the joy of tackling new challenges in multiple disciplines to bring innovative and transformative solutions
+      </h1>
+    </div>
+  </div>
+
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/excellence.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Excellence</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Producing world class quality pursuing the highest standards across the board
+      </h1>
+    </div>
+  </div>
+
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/ownership.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Ownership</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Ownership culture encouraging professional growth through mentoring; tolerating failure while learning and taking risks
+      </h1>
+    </div>
+  </div>
+
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/team.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Inclusiveness</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        An inclusive, empowering environment open to diverse perspectives
+      </h1>
+    </div>
+  </div>
+
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/transparency.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Transparency</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Transparency as a foundation of trusted partnership
+      </h1>
+    </div>
+  </div>
+
+      
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-primary-blue-500
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/values/handshake.svg
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Partnership Approach</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Listening to customers and taking initiative to also address latent needs; not just being order takers.
+      </h1>
+    </div>
+  </div>
+
+      
+    </div>
+  </div>
+</section>
+   <div class="">
+  <div class="py-20 ag-container-padding max-w-screen-xl  mx-auto">
+    <h2 class="ag-h2 text-ag-primary-blue text-center mb-4">Our Voices</h2>
+    <p class="ag-h4 mb-20 text-center">Hear what some of our employees have to say.</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        
+
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src=/assets/images/careers/chanukya.jpg class="rounded-xl  person-image overflow-hidden" alt="">
+          </div>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                &quot;What attracted me and continues to excite me is the way we combine concepts in Computer Science, AI, Biology, and Chemistry to solve tough problems in the biopharma industry. The strong guidance and hands-on collaboration by the seasoned professionals working along with the young millennials to build the solutions helps all of us in our professional growth tremendously.&quot;
+              </p>
+
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">Chanukya Nanduru</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">Tech Project Manager and Solutions Specialist
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src=/assets/images/careers/manasvi.jpg class="rounded-xl  person-image overflow-hidden" alt="">
+          </div>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                “On the very first day of my work, I participated in a day-long discussion on the solutions we were building in the biopharma space  (eg: Ensembl variant effect predictor), and this gave me a preview of the journey I was in for. The passion and the desire for excellence amongst the team members and the leadership team is contagious. Senior members themselves are passionate and they instill the same passion by listening to the team members, valuing their inputs, and importantly letting the team member take full ownership.”
+              </p>
+
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">Manasvi Sinha</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">Biopharma Solutions Specialist
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src=/assets/images/careers/abhishek.jpg class="rounded-xl  person-image overflow-hidden" alt="">
+          </div>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                “I always wanted an environment that had a strong research orientation with deeper focus in a domain instead of providing generic IT solutions &amp; services. I got this at Aganitha. It is exciting to see how we are solving some complex problems in the biopharma domain with Computer Science fundamentals and AI. The culture at Aganitha of being passionate and the focus on quality inspires me to be my best.”
+              </p>
+
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">Abhishek Shakya</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">Data Scientist
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src=/assets/images/careers/siva.jpg class="rounded-xl  person-image overflow-hidden" alt="">
+          </div>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                “I always believed that the culture of a company is not formed by defining a set of values and practices, but that it naturally evolves when employees understand and appreciate that their time &amp; energy is worth investing in those two or three things that the company is targeting/doing. This is very evident and that’s what excites me to be part of the Aganitha team.”
+              </p>
+
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">Siva Kanishka</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">Data Scientist
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+
+        <div class="swiper-slide group overflow-hidden  ">
+          <div class="image-side px-6 lg:px-12  flex items-center justify-center">
+            <img src=/assets/images/careers/keerthi.jpg class="rounded-xl  person-image overflow-hidden" alt="">
+          </div>
+          <div class="text-side  sm:flex items-center">
+            <div
+              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col pr-6 sm:pr-12 ag-h4">
+              <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
+                “This is my first job, and I love working in the core data science area solving complex problems in the biopharma domain and the opportunity to learn, experiment, and go deeper in various areas – AI, Computing, Bioinformatics, ChemInformatics etc. in a research-oriented environment, and building complete solutions. The excellent multi-disciplinary induction course and guidance from senior team members, and clear-cut work definition makes it easy to become productive quickly.”
     
+              </p>
 
-    <div class="grid gap-8 px-8 grid-cols-3">
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          my-4
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img src="/assets/images/values/user.png" class="w-12" alt="" />
-          </span>
-          <span class="text-lg font-semibold uppercase text-blue-700">
-            Innovation, Research
-          </span>
-        </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          We embrace the joy of tackling new challenges in multiple disciplines
-          to bring innovative and transformative solutions
-        </p>
-      </div>
+              <div class="bottom-0 w-full">
+                <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">Keerthi Priya Borra</p>
+                <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">Jr Data Scientist
+                </p>
+              </div>
+            </div>
 
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          my-4
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img src="/assets/images/values/growth.png" class="w-12" alt="" />
-          </span>
-          <span
-            class="text-lg font-semibold uppercase tracking-wider text-blue-700"
-          >
-            Excellence
-          </span>
+          </div>
         </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          Producing world class quality pursuing the highest standards across
-          the board
-        </p>
-      </div>
 
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          my-4
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img src="/assets/images/values/heart.png" class="w-12" alt="" />
-          </span>
-          <span
-            class="text-lg font-semibold uppercase tracking-wider text-blue-700"
-          >
-            Ownership
-          </span>
-        </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          Ownership culture encouraging professional growth through mentoring;
-          tolerating failure while learning and taking risks
-        </p>
-      </div>
+        
 
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img src="/assets/images/values/target.png" class="w-12" alt="" />
-          </span>
-          <span
-            class="text-lg font-semibold uppercase tracking-wider text-blue-700"
-          >
-            Inclusiveness
-          </span>
-        </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          An inclusive, empowering environment open to diverse perspectives
-        </p>
-      </div>
 
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img
-              src="/assets/images/values/quality-assurance.png"
-              class="w-12"
-              alt=""
-            />
-          </span>
-          <span
-            class="text-lg font-semibold uppercase tracking-wider text-blue-700"
-          >
-            Transparency
-          </span>
-        </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          Transparency as a foundation of trusted partnership
-        </p>
       </div>
-
-      <div
-        class="
-          arch-card
-          overflow-hidden
-          shadow-lg
-          group
-          transition
-          duration-300
-          rounded-lg
-          hover:shadow-2xl 
-          transform
-          border-yellow-300
-        "
-      >
-        <div
-          class="icon bg-blue-50 py-2 flex flex-row items-center justify-center"
-        >
-          <span class="w-12 mr-4">
-            <img src="/assets/images/values/trust.png" class="w-12" alt="" />
-          </span>
-          <span
-            class="text-lg font-semibold uppercase tracking-wider text-blue-700"
-          >
-            Partnership approach
-          </span>
-        </div>
-        <p class="text-base text-center p-12 leading-relaxed text-gray-500">
-          Listening to customers and taking initiative to also address latent
-          needs; not just being order takers.
-        </p>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
+
   </div>
-</div>
-
-   
-<div class="">
-<div class="  mx-auto py-12">
-  <h3 class="font-medium mb-12 text-5xl px-24 text-center text-blue-800">Hear it for yourself</h1>
-  <div class="swiper lg:container  mx-auto ">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-
-      
-      <div class="swiper-slide  ">
-        <div class="top-row bg-blue-50 py-10 text-center">
-          <h1 class="text-4xl mb-4 text-blue-800 font-medium "> Chanukya Nanduru </h1>
-          <p class="text-xl  text-gray-600"> Tech Project Manager and Solutions Specialist</p>
-        </div>
-
-        <div class="bottom-row px-24 bg-gray-50 grid grid-cols-2">
-          <div class="employee-image-wrapper flex items-center justify-center ">
-            <img src=/assets/images/careers/chanukya.jpg class="object-cover h-full person-image" alt="">
-          </div>
-          <div class="employee-details flex flex-col py-12  px-12">
-            <h1 class=" font-medium mt-8 mb-4 ml-3 text-gray-600 text-xl ">What I like at Aganitha:</h1>
-            
-            
-        <ul class="text-lg text-gray-600 leading-8 ml-4 mb-8">
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Techno-Scientific: Biology + Chemistry + AI</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Capable Millenials + Seasoned professionals</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Meaningful + transformational solutions</span>
-          </li>
-          
-        </ul>
-
-        <p class="text-lg italic text-gray-600 leading-relaxed px-4"> 
-         &quot;What attracted me and continues to excite me is the way we combine concepts in Computer Science, AI, Biology, and Chemistry to solve tough problems in the biopharma industry. The strong guidance and hands-on collaboration by the seasoned professionals working along with the young millennials to build the solutions helps all of us in our professional growth tremendously.&quot;
-        </p>
-      
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="swiper-slide  ">
-        <div class="top-row bg-blue-50 py-10 text-center">
-          <h1 class="text-4xl mb-4 text-blue-800 font-medium "> Abhishek Shakya </h1>
-          <p class="text-xl  text-gray-600"> Data Scientist</p>
-        </div>
-
-        <div class="bottom-row px-24 bg-gray-50 grid grid-cols-2">
-          <div class="employee-image-wrapper flex items-center justify-center ">
-            <img src=/assets/images/careers/abhishek.jpg class="object-cover h-full person-image" alt="">
-          </div>
-          <div class="employee-details flex flex-col py-12  px-12">
-            <h1 class=" font-medium mt-8 mb-4 ml-3 text-gray-600 text-xl ">What I like at Aganitha:</h1>
-            
-            
-        <ul class="text-lg text-gray-600 leading-8 ml-4 mb-8">
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Deep focus in a domain – Biopharma + AI</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Academia + research oriented environment</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Culture of leadership team being hands-on + passionate</span>
-          </li>
-          
-        </ul>
-
-        <p class="text-lg italic text-gray-600 leading-relaxed px-4"> 
-         “I always wanted an environment that had a strong research orientation with deeper focus in a domain instead of providing generic IT solutions &amp; services. I got this at Aganitha. It is exciting to see how we are solving some complex problems in the biopharma domain with Computer Science fundamentals and AI. The culture at Aganitha of being passionate and the focus on quality inspires me to be my best.”
-        </p>
-      
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="swiper-slide  ">
-        <div class="top-row bg-blue-50 py-10 text-center">
-          <h1 class="text-4xl mb-4 text-blue-800 font-medium "> Manasvi Sinha </h1>
-          <p class="text-xl  text-gray-600"> Biopharma Solutions Specialist</p>
-        </div>
-
-        <div class="bottom-row px-24 bg-gray-50 grid grid-cols-2">
-          <div class="employee-image-wrapper flex items-center justify-center ">
-            <img src=/assets/images/careers/manasvi.jpg class="object-cover h-full person-image" alt="">
-          </div>
-          <div class="employee-details flex flex-col py-12  px-12">
-            <h1 class=" font-medium mt-8 mb-4 ml-3 text-gray-600 text-xl ">What I like at Aganitha:</h1>
-            
-            
-        <ul class="text-lg text-gray-600 leading-8 ml-4 mb-8">
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Building complex solutions in biopharma domain and hearing customer appreciation</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">UnBoss Culture; every team member is listened to and valued</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Bringing knowledge from multiple domains to solve a problem</span>
-          </li>
-          
-        </ul>
-
-        <p class="text-lg italic text-gray-600 leading-relaxed px-4"> 
-         “On the very first day of my work, I participated in a day-long discussion on the solutions we were building in the biopharma space  (eg: Ensembl variant effect predictor), and this gave me a preview of the journey I was in for. The passion and the desire for excellence amongst the team members and the leadership team is contagious. Senior members themselves are passionate and they instill the same passion by listening to the team members, valuing their inputs, and importantly letting the team member take full ownership.”
-        </p>
-      
-          </div>
-        </div>
-      </div>
-
-      
-      
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
- 
- 
-  </div>
-</div>
-</div>
-   <div class="text-gray-600 mt-8 py-12">
-  <div class="container px-16 mx-auto">
+   <div class="text-gray-600 mt-8 py-12" id="positions-section">
+  <div class="container px-16 mx-auto" >
     <div
       class="mx-auto max-w-5xl text-center mb-4 items-center border-gray-600"
     >
@@ -833,52 +750,14 @@
   </div>
 </div>
 
-   <div class="bg-gray-100"><section class="text-gray-600 body-font  relative">
-    <div class="xl:container bg-transparent px-5  py-10 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-blue-800">Contact Us</h1>
-            
-        </div>
-        <div class="w-full lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <div class="relative">
-                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <button class="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-md">SUBMIT</button>
-                </div>
-                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                    <a class="text-blue-700">info@aganitha.ai</a>
-                    
-                    
-                </div>
-            </div>
-        </div>
+   
+
+
     </div>
-</section></div>
 
-
-
-  </div>
-
-  
-  <footer class="text-gray-50 bg-ag-primary-blue-600 body-font">
-  <div class="max-w-screen-lg  px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    
+      <footer class="text-gray-50 bg-ag-primary-blue-600 body-font">
+  <div class="max-w-screen-lg px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font mb-3 font-medium items-center md:justify-start justify-center text-gray-900" href="/">
         <img src="/assets/images/ag-white.png" class="w-12" alt="">
@@ -970,9 +849,24 @@
   </div>
 </div>
 </footer>
-  
+    
 
-  <script src="/assets/scripts/acc.js"></script>
-</body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/assets/scripts/acc.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        mousewheel: true,
+        keyboard: true
+      });
+    </script>
+  </body>
 
 </html>

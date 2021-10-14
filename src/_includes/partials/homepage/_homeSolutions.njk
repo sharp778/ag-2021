@@ -15,32 +15,31 @@
 
     <div class="border-red-500  gap-4  grid md:grid-cols-2 xl:grid-cols-3">
 
-
       {% for item in homepagesolutions %}
-      <div
+        <div
         class=" rounded-lg  solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md xl:max-w-sm">
-        <a href={{item.link}}>
-          <div class="solution-image-wrapper">
-            <img src={{ item.image }} class="object-cover h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
-          </div>
-          <div class="solution-text-wrapper">
-            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
-              {{ item.title }}
-            </h1>
-            <h4 class="text-base lg:text-lg text-gray-600 ">
-              {{ item.description }}
-            </h4>
-            <a href={{ item.link }} class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+          <a href={{item.link}}>
+            <div class="solution-image-wrapper">
+              <img src={{ item.image }} class="object-cover h-60 md:h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+            </div>
+            <div class="solution-text-wrapper">
+              <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+                {{ item.title }}
+              </h1>
+              <h4 class="text-base lg:text-lg text-gray-600 ">
+                {{ item.description }}
+              </h4>
+              <a href={{ item.link }} class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
               Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </a>
-      </div>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </a>
+        </div>
 
       {% endfor %}
     </div>
