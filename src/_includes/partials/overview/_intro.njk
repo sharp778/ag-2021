@@ -1,25 +1,29 @@
-<div class="lg:w-2/3 mx-auto py-12 md:px-16 px-8 text-gray-700  ">
-  {# <h2 class="mx-auto mb-6 text-3xl text-blue-800 font-medium">
-            What is powering this transformation?
-          </h2> #}
+<div class="max-w-screen-xl  mx-auto py-12 ag-container-padding text-gray-700  ">
+
+  <h2 class="mx-auto mb-6 ag-h4 title-font">
+    The biopharma industry is in the <span class="">early stages of a dramatic
+      transformation </span> in how it operates, from the discovery of drugs to clinical trials to clinical operations.
+    This creates an opportunity to develop a framework for rapidly identifying and bringing to market new treatments for
+    diseases. The transformation is happening in three key areas: research and development, clinical trials, and
+    clinical operations.
+  </h2>
+
+  <h2 class="mx-auto mb-6 ag-h4 title-font">
+    We refer to this as the <span class="font-bold text-ag-secondary-red"> computational transformation of biopharma
+      processes </span>. This digital transformation of the core business is important for the next generation of
+    biopharma companies to succeed. The core drivers and capabilities that are key to this transformation include the
+    ability to process large amounts of information (eg:genomic data), automation of the information flows, and <span
+      class="italic">in silico</span> modeling bringing together AI/ML, chemistry and biology domains.
+  </h2>
 
   <h2 class="mx-auto mb-6 md:text-lg title-font">
-           The biopharma industry is in the early stages of a dramatic transformation in how it operates, from the discovery of drugs to clinical trials to clinical operations. This creates an opportunity to develop a framework for rapidly identifying and bringing to market new treatments for diseases. The transformation is happening in three key areas: research and development, clinical trials, and clinical operations.
-          </h2>
-
-  <h2 class="mx-auto mb-6 md:text-lg title-font">
-          We refer to this as the computational transformation of biopharma processes. This digital transformation of the core business is important for the next generation of biopharma companies to succeed. The core drivers and capabilities that are key to this transformation include the ability to process large amounts of information (eg:genomic data), automation of the information flows, and <span class="italic">in silico</span> modeling bringing together AI/ML, chemistry and biology domains. 
-          </h2>
-
-  <h2 class="mx-auto mb-6 md:text-lg title-font">
-           A few examples include: 
-          </h2>
+    A few examples include:
+  </h2>
 
   {% for item in examples %}
 
-    <p class="flex items-center md:text-lg mb-2 text-gray-700">
-      <span
-              class="
+  <p class="flex items-center ag-h4 mb-2 text-gray-700">
+    <span class="
                 inline-flex
                 items-center
                 justify-center
@@ -28,23 +32,14 @@
                 h-6
                 mr-2
                 rounded-full
-              "
-            >
-        <svg
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="text-blue-700"
-              >
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path
-                  d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
-                ></path>
-        </svg>
-      </span>
-      {{ item.point | safe }}
-    </p>
+              ">
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+        class="text-blue-700">
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+      </svg>
+    </span>
+    {{ item.point | safe }}
+  </p>
   {% endfor %}
 </div>

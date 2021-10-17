@@ -1,43 +1,28 @@
-<div class="lg:w-2/3 mx-auto py-12 md:px-16 px-8 text-gray-700">
-  <h2 class="mx-auto mb-6 text-2xl text-center md:text-left md:text-3xl text-blue-800 font-medium">
-            Aganitha's Solutions
-          </h2>
+<section class="bg-gray-50 lg:py-12">
+  <div class="ag-container-padding  max-w-screen-xl mx-auto">
+    <div class="why-aganitha mb-6 sm:mb-12 text-center">
+      <h1 class="ag-h3 mb-4 text-ag-primary-blue">Aganitha's Solutions</h1>
+      <p class="ag-h4 text-left"> We have built strong core capabilities and solutions to help biopharma companies embrace the transformation rapidly. These are in the areas below, and are  built on a cohesive reference architecture. </p>
+    </div>
 
-  <h2 class="mx-auto mb-6 md:text-lg title-font">
-            We have built strong core capabilities and solutions to help biopharma companies embrace the transformation rapidly. These are in the areas below, and are  built on a cohesive reference architecture. 
-          </h2>
+    <div class="reasons grid sm:grid-cols-2 gap-8">
+      {% for item in agSolutionsOverview %}
+        <div class="reason-card mx-auto sm:mx-0  max-w-lg  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-700 ag-h4 ml-3">
+            {{ item | safe }}</p>
 
-  {% for item in howWeHelp %}
+        </div>
 
-    <p class="flex items-center md:text-lg mb-2 text-gray-700">
-      <span
-              class="
-                inline-flex
-                items-center
-                justify-center
-                flex-shrink-0
-                w-6
-                h-6
-                mr-2
-                rounded-full
-              "
-            >
-        <svg
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="text-blue-700"
-              >
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path
-                  d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
-                ></path>
-        </svg>
-      </span>
-      {{ item.point | safe}}
-    </p>
-  {% endfor %}
+      {% endfor %}
 
-</div>
+    </div>
+  </div>
+</section>

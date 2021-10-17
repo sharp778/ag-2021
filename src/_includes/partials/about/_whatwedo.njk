@@ -33,7 +33,7 @@
   </div>
 </div> -->
 
-<section class="bg-gray-50 py-10 md:py-14 lg:py-20">
+<section class="py-10 md:py-14 lg:py-20">
   <div class="ag-container-padding  max-w-screen-xl mx-auto">
     <div class="why-aganitha mb-6 sm:mb-12 text-center">
       <h1 class="ag-h3 mb-4 text-ag-primary-blue">What do we do?</h1>
@@ -42,19 +42,19 @@
 
     <div class="reasons grid sm:grid-cols-2 gap-8">
       {% for item in whatWeDo %}
-      <div class="reason-card mx-auto sm:mx-0  max-w-lg  flex">
-        <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+        <div class="reason-card mx-auto sm:mx-0  max-w-lg  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
-            <path fill-rule="evenodd"
+              <path fill-rule="evenodd"
               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-        </div>
-        <p class="text-gray-700 ag-h4 ml-3">
-          {{ item | safe }}</p>
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-700 ag-h4 ml-3">
+            {{ item | safe }}</p>
 
-      </div>
+        </div>
 
       {% endfor %}
 
