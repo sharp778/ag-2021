@@ -1,6 +1,5 @@
 {% import "macros/cards.njk" as cards %}
 
-
 {# <div class="  px-6 py-16 pb-20">
   <h3 class="font-medium mb-12 text-5xl px-24 text-center text-blue-800">Our Values</h1>
     <div class="aganitha-values container px-16 mx-auto">
@@ -169,13 +168,11 @@
 <section class="py-16 bg-ag-primary-blue-600">
   <div class="max-w-screen-xl  mx-auto ag-container-padding">
     <h1 class="ag-h3  text-gray-50  text-center mb-4">Our Values</h1>
-    <p class="ag-h4 text-gray-200 mb-12 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero in
-      sed
-      perspiciatis
-      illum voluptate nemo?</p>
+    <p class="ag-h4 text-gray-200 mb-12 text-center">The following values are core to us. You should consider joining us only if many of these are important to you. 
+</p>
     <div class="grid gap-10 md:gap-16 xl:gap-10 sm:grid-cols-2 xl:grid-cols-3">
       {% for item in values %}
-      {{ cards.benefitCardBlue(item.icon, item.title, item.description) }}
+        {{ cards.benefitCardBlue(item.icon, item.title, item.description) }}
       {% endfor %}
     </div>
   </div>

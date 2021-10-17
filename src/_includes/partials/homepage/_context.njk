@@ -5,11 +5,12 @@
                 <h1 class="mb-8 text-left ag-h3 sm:text-left font-semibold  text-ag-primary-blue   ">Transforming
                     biopharma
                     R&D using computational sciences and AI</h1>
+                <p class="text-left mb-4  sm:text-lg md:text-xl leading-relaxed text-gray-700 ">The biopharma industry is in the early stages of a dramatic transformation in how it  operates, from drug discovery to clinical trials to clinical operations. We partner with biopharma companies to drive this transformation.</p>
                 <p class="text-left  sm:text-lg md:text-xl leading-relaxed text-gray-700 ">Our solutions enable
                     biopharma
                     R&D and IT to efficiently tackle the complexity, scale, and richness of modern R&D and clinical
                     domains.
-                    They are built on the following enablers that deliver valuable outcomes and significantly enhance
+                    They are built on the following enablers that deliver great outcomes and significantly enhance
                     the
                     pace of innovation.</p>
 
@@ -46,25 +47,24 @@
             </div>
         </div> #}
 
-
         <div class="grid xl:gap-6 gap-4 sm:grid-cols-2  xl:grid-cols-3 pt-6 pb-4 ">
 
             {% for item in contextPoints %}
 
-            <div
+                <div
                 class="context-card-wrapper z-30 shadow-lg md:shadow-none  px-6 py-6 mx-auto  mb-4 max-w-lg hover:shadow-lg transition duration-300 rounded-lg">
-                <div class="context-icon-wrapper my-2">
-                    <img src={{ item.icon }} class="w-16" alt="">
+                    <div class="context-icon-wrapper my-2">
+                        <img src={{ item.icon }} class="w-16" alt="">
+                    </div>
+                    <div class="context-text-wrapper">
+                        <h1 class="context-header h-16 my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
+                            {{ item.title | safe}}
+                        </h1>
+                        <p class="context-description sm:text-base text-gray-600">
+                            {{ item.description | safe }}
+                        </p>
+                    </div>
                 </div>
-                <div class="context-text-wrapper">
-                    <h1 class="context-header my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
-                        {{ item.title | safe}}
-                    </h1>
-                    <p class="context-description sm:text-base text-gray-600">
-                        {{ item.description | safe }}
-                    </p>
-                </div>
-            </div>
 
             {% endfor %}
 

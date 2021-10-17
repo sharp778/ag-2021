@@ -1,23 +1,21 @@
 <div class="lg:w-4/5 mx-auto py-12 md:px-16 px-8 text-gray-700">
   <h2 class="mx-auto mb-6 text-center  text-2xl md:text-3xl text-blue-800 font-medium">
-    Reference solution architecture and solution
+    Reference Architecture and Platform
   </h2>
 
   <h2 class="mx-auto  md:text-lg title-font mb-16">
-    Aganitha’s reference architecture and its building blocks: from
-    computational infrastructure to pipelining to functional solution components
-    for building Omics models, pipelines, and platforms.
+    The following is Aganitha’s reference architecture and its building blocks: from computational infrastructure to pipelining to functional solution components for building Omics models, pipelines, and platforms. 
   </h2>
 
   <div class="ref-image-wrapper">
-    <img src="/assets/images/ref3.png" alt="" />
+    <img src="/assets/images/ref3.png" alt=""/>
   </div>
 
   <div class="ref-card-wrapper grid md:grid-cols-2 gap-8  p-4 mt-32">
     {% for item in reference %}
 
-    <div class="card-1__outer-wrapper w-full mb-10">
-      <div
+      <div class="card-1__outer-wrapper w-full mb-10">
+        <div
         class="
           card-2__inner-wrapper
           transition
@@ -28,7 +26,7 @@
           bg-blue-50
         "
       >
-        <div
+          <div
           class="
             card-2__image-wrapper
             absolute
@@ -38,11 +36,11 @@
             bg-blue-600
           "
         >
-          <img src={{item.icon}} class="p-2" alt="" />
-        </div>
+            <img src={{item.icon}} class="p-2" alt=""/>
+          </div>
 
-        <div class="card-2__text">
-          <div
+          <div class="card-2__text">
+            <div
             class="
               card-1__heading
               flex
@@ -51,18 +49,18 @@
               text-gray-700 text-xl
             "
           >
-            <h1 class="px-8 text-center mt-10">
-              {{ item.title }}
-            </h1>
-          </div>
-          <div class="card-1__desc px-5 text-center text-gray-400">
-            <p class="my-6 leading-relaxed">
-              {{ item.description }}
-            </p>
+              <h1 class="px-8 text-center mt-10">
+                {{ item.title }}
+              </h1>
+            </div>
+            <div class="card-1__desc px-5 text-center text-gray-400">
+              <p class="my-6 leading-relaxed">
+                {{ item.description }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     {% endfor %}
   </div>

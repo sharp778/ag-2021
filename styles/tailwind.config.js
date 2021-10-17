@@ -89,6 +89,9 @@ module.exports = {
         agBlue:
           "rgba(4, 92, 142, 0.19) 0px 12px 22px, rgba(4, 92, 142, 0.23) 0px 9px 10px",
       },
+      maxWidth: {
+        xlg: "34rem",
+      },
     },
   },
   variants: {

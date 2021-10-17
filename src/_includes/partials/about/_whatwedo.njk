@@ -1,29 +1,63 @@
-<div class=" text-gray-600 py-4 ">
+<!-- <div class=" text-gray-600 py-4 ">
   <div class="xl:container  px-8 sm:px-16  flex mx-auto">
-   <div class="pt-10 lg:pt-12 px-3 border-t-2 lg:flex">
-       <div class="lg:w-1/3 px-4">
-           <h3 class="sm:font-medium font-bold lg:text-left text-center mb-8 lg:mb-0 text-2xl sm:text-3xl md:text-4xl text-blue-800">What do we do?</h1>
-       </div>
-       <div class="lg:w-2/3">
-           <ul
-        class="careers-list  list-disc  text-left lg:text-lg text-gray-600 lg:leading-relaxed ">
-        <li class="mb-2">
-          Accelerate the drug discovery and development process by applying the power of Data, Cloud, Analytics and AI/ML for in silico based solutions.
-        </li>
-        <li class="mb-2">
-          Partner with global biopharma companies to complement the traditional lab based approaches with in silico approaches and solutions for research and development.
-        </li>
-        <li class="mb-2">Develop and deploy AI, data and cloud powered solutions that efficiently tackle the complexity, scale and richness of modern biopharma R&D domains.</li>
-        <li class="mb-2">
-          Adopt multi-disciplinary approaches blending and translating the latest knowledge in Biology, Chemistry, BioPharma and Computing areas.
-        </li>
-        <li class="mb-2">
-          Several of our employees from earlier start-ups are now industry
-          stalwarts: a CVP at Microsoft, early employees of companies like
-          Google, and Amazon.
-        </li>
-      </ul>
-       </div>
-   </div>
-   </div>
-   </div>
+    <div class="pt-10 lg:pt-12 px-3 border-t-2 lg:flex">
+      <div class="lg:w-1/3 px-4">
+        <h3
+          class="sm:font-medium font-bold lg:text-left text-center mb-8 lg:mb-0 text-2xl sm:text-3xl md:text-4xl text-blue-800">
+          What do we do?</h1>
+      </div>
+      <div class="lg:w-2/3">
+        <ul class="careers-list  list-disc  text-left lg:text-lg text-gray-600 lg:leading-relaxed ">
+          <li class="mb-2">
+            Accelerate the drug discovery and development process by applying the power of Data, Cloud, Analytics and
+            AI/ML for in silico based solutions.
+          </li>
+          <li class="mb-2">
+            Partner with global biopharma companies to complement the traditional lab based approaches with in silico
+            approaches and solutions for research and development.
+          </li>
+          <li class="mb-2">Develop and deploy AI, data and cloud powered solutions that efficiently tackle the
+            complexity, scale and richness of modern biopharma R&D domains.</li>
+          <li class="mb-2">
+            Adopt multi-disciplinary approaches blending and translating the latest knowledge in Biology, Chemistry,
+            BioPharma and Computing areas.
+          </li>
+          <li class="mb-2">
+            Several of our employees from earlier start-ups are now industry
+            stalwarts: a CVP at Microsoft, early employees of companies like
+            Google, and Amazon.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<section class="bg-gray-50 py-10 md:py-14 lg:py-20">
+  <div class="ag-container-padding  max-w-screen-xl mx-auto">
+    <div class="why-aganitha mb-6 sm:mb-12 text-center">
+      <h1 class="ag-h3 mb-4 text-ag-primary-blue">What do we do?</h1>
+      <!-- <p class="ag-h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, obcaecati.</p> -->
+    </div>
+
+    <div class="reasons grid sm:grid-cols-2 gap-8">
+      {% for item in whatWeDo %}
+      <div class="reason-card mx-auto sm:mx-0  max-w-lg  flex">
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+        <p class="text-gray-700 ag-h4 ml-3">
+          {{ item | safe }}</p>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

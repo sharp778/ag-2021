@@ -1,17 +1,16 @@
 <div class="lg:w-2/3 mx-auto py-12 md:px-16 px-8 text-gray-700">
-          <h2 class="mx-auto mb-6 text-2xl text-center md:text-left md:text-3xl text-blue-800 font-medium">
-            How can Aganitha's solutions help?
+  <h2 class="mx-auto mb-6 text-2xl text-center md:text-left md:text-3xl text-blue-800 font-medium">
+            Aganitha's Solutions
           </h2>
 
-          <h2 class="mx-auto mb-6 md:text-lg title-font">
-            We have built strong core capabilities and solutions in the
-            following areas, built on reference architecture and platform:
+  <h2 class="mx-auto mb-6 md:text-lg title-font">
+            We have built strong core capabilities and solutions to help biopharma companies embrace the transformation rapidly. These are in the areas below, and are  built on a cohesive reference architecture. 
           </h2>
 
-           {% for item in howWeHelp %}
+  {% for item in howWeHelp %}
 
-          <p class="flex items-center md:text-lg mb-2 text-gray-700">
-            <span
+    <p class="flex items-center md:text-lg mb-2 text-gray-700">
+      <span
               class="
                 inline-flex
                 items-center
@@ -23,7 +22,7 @@
                 rounded-full
               "
             >
-              <svg
+        <svg
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -31,15 +30,14 @@
                 height="24"
                 class="text-blue-700"
               >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
                   d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
                 ></path>
-              </svg>
-            </span>
-            {{ item.point }}
-          </p>
-          {% endfor %}
+        </svg>
+      </span>
+      {{ item.point | safe}}
+    </p>
+  {% endfor %}
 
-
-        </div>
+</div>
