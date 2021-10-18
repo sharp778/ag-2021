@@ -22,6 +22,10 @@
     @apply md:py-2 md:px-4 px-2 py-1 border-ag-secondary-red-300 text-sm bg-white text-black transition duration-300   rounded shadow-md hover:bg-ag-secondary-red hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 
+  .sub-item {
+    @apply hover:bg-gray-100 transition duration-300;
+  }
+
   .footer-link {
     @apply text-gray-100 hover:text-ag-tertiary-yellow-300 hover:underline transition duration-300;
   }

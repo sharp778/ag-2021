@@ -92,6 +92,9 @@ module.exports = {
       maxWidth: {
         xlg: "34rem",
       },
+      height: {
+        100: "29rem",
+      },
     },
   },
   variants: {

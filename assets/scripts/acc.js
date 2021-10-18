@@ -103,7 +103,7 @@ const sectionOneObserver = new IntersectionObserver(
 );
 
 // sectionOneObserver.observe(homepageBanner);
-new Glide(".glide").mount();
+// new Glide(".glide").mount();
 // for navigation bar
 
 (() => {
