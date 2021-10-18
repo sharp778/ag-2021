@@ -1,40 +1,56 @@
 <div class="">
   <div class="py-20 ag-container-padding max-w-screen-xl  mx-auto">
     <h2 class="ag-h2 text-ag-primary-blue text-center mb-4">Our Voices</h2>
-    <p class="ag-h4 mb-20 text-center">Hear what our employees are saying.</p>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+    <p class="ag-h4 mb-12 text-center">Hear what our employees are saying.</p>
 
-        {% for person in testimonials %}
+    <!-- carousel container start -->
+    <div class="own-carousel__container">
+      <div class="own-carousel__outer">
+        <div class="own-carousel">
 
-          <div class="swiper-slide group overflow-hidden  ">
-            <div class="image-side px-6 lg:px-12  flex items-center justify-center">
-              <img src={{ person.image}} class="rounded-xl  person-image overflow-hidden" alt="">
-            </div>
-            <div class="text-side  sm:flex items-center">
-              <div
-              class="testimonial-text-wrapper relative  sm:flex items-center justify-center flex-col p-6 sm:pr-12 ag-h4">
-                <p class="text-gray-600 leading-6 lg:leading-7 mb-8">
-                  {{ person.quote }}
-                </p>
+          {% for item in testimonials %}
+            <div class="own-carousel__item">
+              <!--testimonial card start -->
+              <div class="testimonial-card mx-auto  max-w-xl p-4">
+                <div class="shadow-lg rounded-lg p-4">
+                  <div class="top-section p-2">
+                    <img src="/assets/images/careers/left-quote.svg" class="w-8 mb-6" alt="">
+                    <p class="my-3 text-base text-gray-600">
 
-                <div class="bottom-0 w-full">
-                  <p class="font-semibold text-xl lg:text-2xl mb-2 text-center sm:text-left text-ag-secondary-red-500">{{
-                  person.name }}</p>
-                  <p class="text-gray-700 font-medium text-sm sm:text-base text-center sm:text-left">{{ person.title }}
-                  </p>
+                      {{ item.quote }}
+                    </p>
+                  </div>
+                  <div class="bottom-section p-2  border-gray-100 flex">
+                    <div class="test-image-wrapper p-1 w-1/5">
+                      <img src={{ item.image }} class="xl:h-20 xl:w-20 h-16 w-16 object-cover rounded-full " alt="">
+                    </div>
+                    <div class="test-position flex ml-3 items-center w-4/5">
+                      <div class="">
+                        <h1 class="text-xl font-bold  text-ag-secondary-red">{{ item.name }}</h1>
+                        <h1 class="text-sm text-gray-600">{{ item.title }}</h1>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
+              <!-- testimonial card ending  -->
             </div>
-          </div>
 
-        {% endfor %}
+          {% endfor %}
 
+        </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
 
+      <!--carousel controls start -->
+      <div class="own-carousel__control">
+        <div class="flex items-center justify-center">
+          <button class="control__prev text-5xl text-ag-primary-blue-500 mr-6">«</button>
+          <button class="control__next text-5xl text-ag-primary-blue ml-6">»</button>
+        </div>
+      </div>
+
+      <!-- carousel controls end-->
+    </div>
+    <!-- carousel container ends -->
   </div>
+</div>

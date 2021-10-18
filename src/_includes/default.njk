@@ -1,64 +1,65 @@
 <html lang="en">
 
-  <head>
-    <title>
-      {% block title %}Does it work?{% endblock %}
-    </title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<head>
+  <title>
+    {% block title %}Does it work?{% endblock %}
+  </title>
+  <meta charset="UTF-8" />
+  {% if description %}
+  <meta name="description" content="{{description}}" />
+  {% endif %}
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
 
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+  <link rel="stylesheet" href="/assets/styles/own-carousel.min.css">
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <link rel="stylesheet" href="/assets/styles/nav.css">
+  <link rel="stylesheet" href="/assets/styles/styles.css">
+  <link rel="stylesheet" href="/style.css?v={% version %}" />
 
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-    <link rel="stylesheet" href="/assets/styles/nav.css">
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+  {% block head %}
+  {% include "header.njk"%}
+  {% endblock %}
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    {% block head %}
-      {% include "header.njk"%}
-    {% endblock %}
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-  </head>
+<body>
 
-  <body>
-
-    {# {% block header %}
+  {# {% block header %}
   {% include "header.njk" %}
   {% endblock %} #}
 
-    <div class="mt-16">
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
-    </div>
-
-    {% block footer%}
-      {% include "footer.njk" %}
+  <div class="mt-16">
+    {% block content %}
+    {{ content | safe }}
     {% endblock %}
+  </div>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="/assets/scripts/acc.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-          el: ".swiper-pagination"
-        },
-        mousewheel: true,
-        keyboard: true
-      });
-    </script>
-  </body>
+  {% block footer%}
+  {% include "footer.njk" %}
+  {% endblock %}
+
+  <script src="/assets/scripts/own-carousel.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+  <script src="/assets/scripts/acc.js"></script>
+  <script>
+    // var swiper = new Swiper(".mySwiper", {
+    //   cssMode: true,
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev"
+    //   },
+    //   pagination: {
+    //     el: ".swiper-pagination"
+    //   },
+    //   mousewheel: true,
+    //   keyboard: true
+    // });
+  </script>
+</body>
 
 </html>

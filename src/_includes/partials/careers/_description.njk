@@ -65,12 +65,41 @@
 <section class="bg-gray-50 py-20">
   <div class="ag-container-padding  max-w-screen-xl mx-auto">
     <div class="why-aganitha mb-12 text-center">
-      <h1 class="ag-h3 mb-4 text-ag-primary-blue">Why work for Aganitha?</h1>
+      <h1 class="ag-h3 mb-8 text-ag-primary-blue">Why work for Aganitha?</h1>
       <!-- <p class="ag-h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, obcaecati.</p> -->
     </div>
 
     <div class="reasons grid grid-cols-3 gap-8">
       {% for item in reasonsCareer %}
+        <div class="reason-card  max-w-sm  flex">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
+            fill="currentColor">
+              <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-gray-600 text-lg ml-3">
+            {{ item }}</p>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="ag-container-padding  max-w-screen-xl mx-auto">
+    <div class="why-aganitha mb-12 text-center">
+      <h1 class="ag-h3 mb-8 text-ag-primary-blue">What are we looking for?</h1>
+      <p class="ag-h4 text-left">We understand that the combination of skills that we look for is not commonly available, and we are comfortable investing in helping our team members build those skills. The founding team and the management team understands the value of investing in our employees and are comfortable with on the job learning and growing to be superstars. We look for the following traits in our future employees:</p>
+    </div>
+
+    <div class="reasons grid grid-cols-3 gap-8">
+      {% for item in weLookFor %}
         <div class="reason-card  max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"

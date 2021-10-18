@@ -1,120 +1,185 @@
-<div class="text-gray-600 mt-8 py-12" id="positions-section">
-  <div class="container px-16 mx-auto" >
-    <div
-      class="mx-auto max-w-5xl text-center mb-4 items-center border-gray-600"
-    >
-      <p
-        class="
-          text-5xl text-left
-          border-yellow-200
-          text-blue-800
-          leading-relaxed
-          font-medium
-          mb-8
-        "
-      >
-        Open Positions
-      </p>
-      <p class="text-xl leading-8 text-gray-600 text-left mb-8">
-       We are always looking for good people to join us. If you specialize in AI/ML, DevOps, Data Engineering, Biology, Chemistry, Biopharma, and feel that you can make a difference, please reach out to us. We are actively hiring for the following open positions.  
+<div class="text-gray-600 pb-10 " id="positions-section">
 
-      </p>
+  <div class="max-w-screen-xl ag-container-padding mx-auto border-gray-200" x-data="{selected:null}">
 
-      <div
-        class="
-          card
-          my-5
-          bg-blue-50
-          flex
-          text-base
-          leading-relaxed
-          font-medium
-          border-yellow-500
-          max-w-6xl
-          mx-auto
-          px-6
-          py-5
-          rounded-xl
-        "
-      >
-        <span class="w-3/4 text-left">Software Engineer</span>
-        <div class="w-1/4 text-right">
-          <span class="text-right"> Hyderabad</span>
-          <span class="ml-4">+</span>
+    <h1 class="ag-h3  text-center text-ag-primary-blue-500 mb-12"> Open Positions</h1>
+    <h1 class="ag-h4 mb-6"> We are always looking for good people to join us. If you specialize in AI/ML, DevOps, Data
+      Engineering, Biology, Chemistry, Biopharma, and feel that you can make a difference, please reach out to us.
+      We are actively hiring for the following open positions.
+    </h1>
+
+    <!--list of open positions start -->
+    <ul class="">
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 1 ? selected = 1 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              DevOps Specialist </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
         </div>
-      </div>
 
-      <div
-        class="
-          card
-          my-5
-          bg-blue-50
-          flex
-          text-base
-          leading-relaxed
-          font-medium
-          border-yellow-500
-          max-w-6xl
-          mx-auto
-          px-6
-          py-5
-          rounded-xl
-        "
-      >
-        <span class="w-3/4 text-left">Full Stack Developer</span>
-        <div class="w-1/4 text-right">
-          <span class="text-right"> Hyderabad</span>
-          <span class="ml-4">+</span>
-        </div>
-      </div>
+      </li>
 
-      <div
-        class="
-          card
-          my-5
-          bg-blue-50
-          flex
-          text-base
-          leading-relaxed
-          font-medium
-          border-yellow-500
-          max-w-6xl
-          mx-auto
-          px-6
-          py-5
-          rounded-xl
-        "
-      >
-        <span class="w-3/4 text-left">Dev Ops Engineer</span>
-        <div class="w-1/4 text-right">
-          <span class="text-right"> Hyderabad</span>
-          <span class="ml-4">+</span>
-        </div>
-      </div>
+      <li class="relative  border-gray-200 mb-4">
 
-      <div
-        class="
-          card
-          my-5
-          bg-blue-50
-          flex
-          text-base
-          leading-relaxed
-          font-medium
-          border-yellow-500
-          max-w-6xl
-          mx-auto
-          px-6
-          py-5
-          rounded-xl
-        "
-      >
-        <span class="w-3/4 text-left">Bioinformatics Engineer</span>
-        <div class="w-1/4 text-right">
-          <span class="text-right"> Hyderabad</span>
-          <span class="ml-4">+</span>
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 2 ? selected = 2 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              Jr Full Stack Developer </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 2 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
         </div>
-      </div>
-    </div>
+
+      </li>
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 3 ? selected = 3 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              Web Developer </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
+        </div>
+
+      </li>
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 4 ? selected = 4 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              Jr Scientist (Bioinformatics) </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 4 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
+        </div>
+
+      </li>
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 5 ? selected = 5 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              Jr Scientist (Chemistry and Computational Chemistry) </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
+        </div>
+
+      </li>
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 6 ? selected = 6 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              SecOps / System Administrator </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
+        </div>
+
+      </li>
+
+      <li class="relative  border-gray-200 mb-4">
+
+        <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
+          @click="selected !== 7 ? selected = 7 : selected = null">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">
+              Lead Solutions Architect </span>
+            <span class="ico-plus text-xl font-bold">+</span>
+          </div>
+        </button>
+
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
+          x-bind:style="selected == 7 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+          <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
+            <p class="mb-4">
+              A one line job description would come here.
+            </p>
+
+            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+    <!-- list of open positions ends-->
   </div>
 </div>

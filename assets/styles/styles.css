@@ -296,8 +296,12 @@ background-size: cover; */
   background-image: url("/assets/images/banners/simple-bg.svg");
 }
 
+.careers-banner {
+  background-image: url("/assets/images/banners/simple-bg-large.svg");
+}
+
 .overview-banner {
-  background-image: url("/assets/images/banners/simple-bg.svg");
+  background-image: url("/assets/images/banners/simple-bg-large.svg");
 }
 
 @media screen and (min-width: 640px) {
@@ -305,6 +309,15 @@ background-size: cover; */
     background-attachment: fixed;
     background-size: cover;
   }
+}
+
+.leader-image {
+  filter: grayscale(90%);
+  transition: 0.5s ease all;
+}
+
+.leader-section:hover .leader-image {
+  filter: grayscale(0%);
 }
 
 .background-light {
