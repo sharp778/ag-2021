@@ -1,10 +1,10 @@
 {% macro ctaWide(text, button) %}
 
-<div class="border-red-500 bg-ag-primary-blue-30">
+  <div class="border-red-500 bg-ag-primary-blue-30">
     <div class="section-inner-wrapper max-w-screen-xl ag-container-padding py-4 mx-auto ">
-        <!-- left side of hero section-->
-        <div class=" py-4 sm:py-5 w-full">
-            <h1 class="
+      <!-- left side of hero section-->
+      <div class=" py-4 sm:py-5 w-full">
+        <h1 class="
           ag-h3
          
           text-center
@@ -12,32 +12,20 @@
           text-ag-primary-blue-400
           w-full
         ">
-                {{ text }}
+          {{ text }}
 
-                <!--button container-->
+          <!--button container-->
         </div>
 
-        <div class="py-2    w-full text-center flex items-center justify-center">
+        <div class="py-2  w-full text-center flex items-center justify-center">
 
-            <a class="
-          text-base
-          bg-ag-tertiary-yellow-400
-          md:text-lg
-          transform
-          text-ag-primary-blue-600
-          transition-all
-          duration-300
-          hover:scale-110
-          px-4
-          py-3
-          sm:px-6
-          sm:py-4
-          rounded-lg
+          <a class="
+         cta-button
         " href="mailto:info@aganitha.ai">
-                {{ button }}
-            </a>
+            {{ button }}
+          </a>
         </div>
+      </div>
     </div>
-</div>
 
-{% endmacro %}
+  {% endmacro %}

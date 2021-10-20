@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: "Vikram Duvvori",
+    name: "Vikram Duvvoori",
     photo: "/assets/images/team/vikram-new-photo.jpg",
     link: "/",
     background: "bg-white",
