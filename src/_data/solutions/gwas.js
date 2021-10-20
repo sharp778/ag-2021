@@ -1,41 +1,59 @@
 module.exports = {
-  solutionPoints: [
-    "Enhanced open source tools to provide outputs in a myriad of formats (HTML, jupyter, web viewers and more)",
-    "A high performance computing platform, open source tools such as Hail and Luigi to enable a distributed, scalable computing system",
-    "Integration with databases like VEP (variant effect predictor), gnomad",
-    "VCF files obtained as outputs make it easier for bioinformaticians to conduct preliminary analysis",
+  intro: [
+    {
+      main: "Genome wide association studies (GWAS) are both a science and an art - no two studies are the same and cohorts need to be carefully designed. However, streamlining GWAS with a platform based approach can improve efficiencies and avoid recurring challenges. These include:",
+      subPoints: [
+        "Standing up the infra and tech stacks needed: IT teams still take months to get the setup right even in this age of cloud computing as the expertise required cuts across many disciplines",
+        "Scaling tech stack to handle ever-expanding datasets: UK Biobank WES dataset currently provides 300k sequences and is growing further",
+        "Consistently applying best-practice checks for Sample and Variant QC, and screening for relatedness and other sampling biases",
+        "Joining with a number of reference databases such as GNOMAD for allele frequencies and ClinVar for known consequences and impact",
+        "Interactive visualization of sequence data, phenotype data and study results: This is a challenge given the size of sequence data and variety of phenotypic data",
+      ],
+    },
   ],
+  solution: {
+    intro: ["Aganitha provides a proven platform for GWAS, that is:"],
+    solutionPoints: [
+      `Available on-demand, powered by Infrastructure as code approach, supporting both in-house HPC as well as all Cloud based clusters`,
+      `Cost-effective, without dependence on expensive proprietary big data stacks and services`,
+      `Vertically integrated to provide industry leading performance`,
+      `Comprehensive, spanning all activities from data ingestion to QC, cohort selection, regression and visualization`,
+      `Interactive, enabling scientists to inspect and apply Sample and Variant QCs, and carefully design study cohorts`,
+      `Pre-integrated with commonly needed reference datasets, annotation and visualization tools`,
+      `Complemented by a complete portfolio of service offerings from Aganitha which seamlessly integrate all the genomics and technology expertise needed`,
+    ],
+  },
   solutionHighlights: [
     {
-      title: "Scalable processing power",
+      title: "Kubernetes",
       description:
-        "Proven to scale well for processing vast data sets such as UK BioBank 500k WES dataset",
+        "Easily deployable in any cloud that supports Kubernetes, including AWS/GCP/Azure",
       background: "bg-red-100",
     },
     {
-      title: "Cross-function compatible",
+      title: "HPC deployment with SLURM/SGE/equivalent scheduler",
       description:
-        "Vertical integration and optimization, providing best-in-class performance",
+        "Deployable in internal HPC clusters using any of the leading schedulers such as SLURM, SGE",
     },
     {
-      title: "Modifiable-off-the-shelf (MOTS) platform",
+      title: "Hail on Spark",
       description:
-        "Pre-packaged service offering (PSO) for platform rollout along-side a full catalog of service offerings",
+        "Leverages leading GWAS library, Hail (from Broad Institute), which in turn, leverages distributed data processing capabilities of Apache Spark",
     },
     {
-      title: "Open-source tech & API integration",
+      title: "Jupyter notebooks",
       description:
-        "Based on best-in-class open-source technologies and has APIs for integration with ELNs",
+        "Supports interactive use by scientists, via Jupyter notebooks",
     },
     {
-      title: "Cloud & Scheduler compatible",
+      title: "Pre-Integrated",
       description:
-        "Compatible with cloud providers supporting Kubernetes, and classic HPC schedulers",
+        "Comes pre-integrated with leading open source libraries and tools such as VEP",
     },
     {
-      title: "Integrated with sequencing solutions",
+      title: "Services",
       description:
-        "Integrated with Illumina BaseSpace, PacBio SMRT Link, 10x Genomics Cell Ranger, Trans-Proteomic Pipeline from Institute for Systems Biology (Seattle)",
+        "Complemented by a complete portfolio of service offerings which seamlessly integrate all the genomics and technology expertise needed",
     },
   ],
   benefits: [
@@ -45,10 +63,41 @@ module.exports = {
     "Ability to use scalable cloud computing without learning about nitty gritty details",
     "Caching of runs saving computational cost",
   ],
-  contents: [
-    "Introduction",
-    "Our Solution",
-    "Solution Highlights",
-    "Benefits / Outcomes",
+  benefitsAlt: [
+    {
+      title: "High Performance",
+      icon: "/assets/images/solutions/hubs/mine.png",
+      description:
+        "Robust high-performance solution for your GWAS needs, that puts you firmly in control with minimal expense",
+    },
+    {
+      title: "Setup Quickly",
+      icon: "/assets/images/solutions/hubs/derive.png",
+      description: "Reduction in setup time from months to days",
+    },
+    {
+      title: "Scale Elastically",
+      icon: "/assets/images/solutions/hubs/scale.png",
+      description:
+        "Elastically scale your deployment as your WES datasets grow in size",
+    },
+    {
+      title: "Integrate with other services",
+      icon: "/assets/images/solutions/hubs/scale.png",
+      description:
+        "Augment the capacity available for setup and analysis with services from Aganitha",
+    },
+    {
+      title: "Understand mendelian violations",
+      icon: "/assets/images/solutions/hubs/scale.png",
+      description:
+        "Understand mendelian violations in trios; prune variants in linkage disequilibrium; analyze genetic similarity between samples and compute sample scores and variant loadings using PCA",
+    },
+    {
+      title: "Leverage all types of regression models",
+      icon: "/assets/images/solutions/hubs/scale.png",
+      description:
+        "Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression; estimate heritability",
+    },
   ],
 };

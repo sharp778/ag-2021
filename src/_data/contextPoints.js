@@ -1,33 +1,39 @@
 module.exports = [
   {
     title: `Contextualized <span class="italic">in silico</span> models`,
-    description: `Enable virtuous round-tripping between <span class="italic">in silico</span> and <span class="italic">in vitro</span> experiments by developing customer specific models blending advances in biology, chemistry, and computing.`,
+    description: `Accelerate discovery of solutions to specific high value problem statements by augmenting <span class="italic">in vitro</span> experiments with  <span class="italic">in silico</span> models blending advances in computational biology, chemistry, AI, and cloud computing.`,
     icon: "/assets/images/homepage/silico-1.svg",
   },
   {
-    title: "High throughput automation",
-    description: `Provide quick insights by combining analytics,  and AI with high throughput automation  to reduce cycle times and drive efficiencies.`,
+    title: "High throughput automation + AI",
+    description: `Leverage the data delivered by high-throughput automation to build AI/ML models which
+    can dramatically accelerate decision making, reduce cycle times and drive efficiencies.`,
     icon: "/assets/images/homepage/hp.svg",
   },
   {
     title: "Data as an R&D Asset",
-    description: `Organize and enrich enterprise data in an easy to consume format helping scientists increase research productivity and achieve quicker strategic decision making.`,
+    description: `Systematically collect,
+    organize, combine and mine exploding public datasets along-side your hard-earned
+    proprietary research findings to intelligently direct your design of experiments, cohorts, and
+    endpoints.`,
     icon: "/assets/images/homepage/data.svg",
   },
 
   {
-    title: `High concentration biological design`,
-    description: `Using <span class="italic">in silico</span> models to characterize high concentration samples to maximize the efficiency of screening, while minimizing the total amount of samples required for analysis. `,
+    title: `High-concentration biological design`,
+    description: `Accelerate design of high-concentration biological formulations by establishing models to
+    predict and optimize physical, chemical and biological properties <span class="italic">in silico</span>.`,
     icon: "/assets/images/homepage/bio.svg",
   },
   {
     title: `Quantum chemical descriptors`,
-    description: `Predict low yielding reactions and enable accurate predictions of activation energy with quantum chemical descriptors with machine learning while decreasing avoidable experiment expenditure.`,
+    description: `Combine the rigor of quantum chemistry with AI/ML to establish more reliable prediction
+    models for physico-chemical properties and reaction yields.`,
     icon: "/assets/images/homepage/chemical.svg",
   },
   {
     title: `R&D platform tools in a box`,
-    description: `Setting up the <span class="italic">in silico</span> computing platform and artificial intelligence building blocks that complement the traditional lab-based approaches across drug research and development.`,
+    description: `Jumpstart adoption of of AI powered <span class="italic">in silico</span> models with pre packaged platforms and solutions for your area.`,
     icon: "/assets/images/homepage/tools.svg",
   },
 ];

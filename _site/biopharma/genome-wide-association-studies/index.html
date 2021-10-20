@@ -16,7 +16,7 @@
   <!-- <script src="https://unpkg.com/@barba/core"></script> -->
   <link rel="stylesheet" href="/assets/styles/nav.css">
   <link rel="stylesheet" href="/assets/styles/styles.css">
-  <link rel="stylesheet" href="/style.css?v=1634551018482" />
+  <link rel="stylesheet" href="/style.css?v=1634711561090" />
 
   
   <header class="header">
@@ -54,7 +54,7 @@
                         <a href="/biopharma/knowledge-hubs">Knowledge Hubs</a>
                      </li>
                      <li class="menu-item sub-item">
-                        <a href="/biopharma/omics-pipelines">Omics Pipeline</a>
+                        <a href="/biopharma/omics-pipelining">Omics Pipeline</a>
                      </li>
                      <li class="menu-item sub-item">
                         <a href="/biopharma/genome-wide-association-studies">GWAS Pipeline</a>
@@ -97,19 +97,29 @@
   
 
   <div class="mt-16">
-     <div class="omics-inner-wrapper border-yellow-500 bg-black">
-  <div class="font-lexend container px-24 flex pt-16 mx-auto border-black">
+    
+  <div class="hubs-banner border-yellow-500 bg-black ">
+  <div class="
+      section-inner-wrapper
+      px-8
+      sm:px-16
+      lg:px-24
+    
+      pt-16
+      mx-auto
+      border-black
+    ">
     <!-- left side of hero section-->
-    <div class="py-24 w-1/2">
-      
-      <h4 class="text-6xl text-left font-medium text-gray-200 mb-8">
-        GWAS Pipeline<sup> &reg; </sup>
+    <div class="py-24  ">
+
+      <h4 class="text-3xl sm:text-4xl  md:text-6xl text-center font-medium text-gray-200  mb-8">
+        GWAS Platform
       </h4>
       
-      <h4 class="text-2xl text-left text-gray-200 font-light mb-8">
-        Scalable genomic data analysis platform to interrogate biobank-scale genomic datasets
-Technical pipeline for genome wide association studies (GWAS)
+      <h4 class="md:text-2xl text-center w-full mx-auto text-gray-200 font-light mb-8">
+        Interrogate biobank-scale WES datasets with a proven genome wide association (GWAS) platform.
       </h4>
+
     </div>
 
     <!--right side of hero section -->
@@ -117,472 +127,743 @@ Technical pipeline for genome wide association studies (GWAS)
   <!-- </div> -->
 </div>
 
+  <div class="border-green-200 relative mx-auto content-wrapper">
+    <div class="main-content" id="content">
 
-<div class="border-green-200 relative mx-auto content-wrapper">
-  <div class="main-content" id="content">
-    
-    <div class="intro-wrapper pt-16 border-red-400 pb-16 container mx-auto px-16">
-  <div class="intro-inner-wrapper grid grid-cols-2 gap-12">
-    <div class="left-side flex  items-center justify-center">
-      <img
-        src="/assets/images/gwas.jpeg"
-        class="rounded-lg "
-        alt=""
-      />
+      <div
+  class="intro-wrapper py-8 sm:py-10  sm:pt-12 md:py-16 ag-container-padding border-red-400  max-w-screen-xl mx-auto ">
+  <div class="intro-inner-wrapper grid gap-8 lg:grid-cols-2">
+    <div class="left-side md:m-4 flex items-center justify-center">
+      <img src="/assets/images/banners/omics-intro.jpeg" class="rounded-lg  sm:w-3/4 lg:w-full" alt=""/>
     </div>
-    <div class="right-side py-4">
-      <h4 class="text-lg text-gray-600 leading-relaxed mb-2 ml-2">
-        Genome wide association study (GWAS) is used to identify commonly occurring genetic variants that contribute to disease risk by searching the genome for small variations, called single nucleotide polymorphisms (SNPs). On successful identification, SNPs can be used to develop effective prevention and treatment strategies for the disease. Researchers and scientists are faced with challenges such as:
-      </h4>
+    <div class="right-side lg:px-4 flex items-center justify-center ">
 
-      <ul
-        class="text-lg mb-4 text-gray-600 leading-relaxed list-inside list-disc"
-      >
-        <li class="mb-1">
-         Large amount of data hosted on several portals making it difficult to organize and accessible to all
-        </li>
-        <li class="mb-1">
-          Lack of UI tools to visualize custom data and make preliminary data analysis due to memory issues
-
-        </li>
-        <li class="mb-1">
-         Limited understanding and exposure to operate cloud computing infrastructure leading to  cumbersome debugging routines
-        </li>
-        <li class="mb-1">
-          Lack of understanding of open-source tools for extracting sequenced reads to find overexpressed genes; difficulty in chaining inputs and outputs in a cohesive manner
-        </li>
-        <li class="mb-1">
-          Eliminating confounding variables for decreasing uncertainty
-        </li>
+      <div class="intro-content-wrapper">
         
-      </ul>
+          <h4 class="ag-h4 leading-6 text-justify sm:text-left  mb-4">
+            Genome wide association studies (GWAS) are both a science and an art - no two studies are the same and cohorts need to be carefully designed. However, streamlining GWAS with a platform based approach can improve efficiencies and avoid recurring challenges. These include:
+          </h4>
+
+          
+            <ul class="ag-h4 leading-6 list-inside list-disc mb-2">
+              <li>
+                Standing up the infra and tech stacks needed: IT teams still take months to get the setup right even in this age of cloud computing as the expertise required cuts across many disciplines
+              </li>
+            </ul>
+
+          
+            <ul class="ag-h4 leading-6 list-inside list-disc mb-2">
+              <li>
+                Scaling tech stack to handle ever-expanding datasets: UK Biobank WES dataset currently provides 300k sequences and is growing further
+              </li>
+            </ul>
+
+          
+            <ul class="ag-h4 leading-6 list-inside list-disc mb-2">
+              <li>
+                Consistently applying best-practice checks for Sample and Variant QC, and screening for relatedness and other sampling biases
+              </li>
+            </ul>
+
+          
+            <ul class="ag-h4 leading-6 list-inside list-disc mb-2">
+              <li>
+                Joining with a number of reference databases such as GNOMAD for allele frequencies and ClinVar for known consequences and impact
+              </li>
+            </ul>
+
+          
+            <ul class="ag-h4 leading-6 list-inside list-disc mb-2">
+              <li>
+                Interactive visualization of sequence data, phenotype data and study results: This is a challenge given the size of sequence data and variety of phenotypic data
+              </li>
+            </ul>
+
+          
+        
+      </div>
+
     </div>
   </div>
 </div>
-
-    <div class="background-light">
-      <div class="solution-wrapper py-12 mx-auto container px-16">
-  <div class="solution-inner-wrapper grid grid-cols-2">
-    <div class="left-side px-16 py-4">
-      <h3 class="text-4xl text-gray-800 font-semibold my-8 w-4/5" id="content">
+      <div class="background-light">
+        <div class="solution-wrapper py-8 sm:py-10 sm:pt-12 md:py-16  mx-auto max-w-screen-xl  ag-container-padding">
+  <div class="solution-inner-wrapper grid gap-8 lg:grid-cols-2">
+    <div class="left-side lg:px-4">
+      <h3 class="ag-h3 text-ag-primary-blue-500  mb-4 sm:mb-8 " id="content">
         Our Solution
       </h3>
 
-      <h4 class="text-lg text-gray-600 leading-8 mb-4">
-       Aganitha acts as accelerators for bioinformaticians. We provide a robust, scalable domain specific language (DSL) for scientists to develop genomic pipelines without in-depth knowledge of underlying  technology used. It is powered by:
-      </h4>
-
       
-
-       <div class="text-lg text-gray-600 leading-8">
+        <h4 class="ag-h4 leading-normal mb-4">
+          Aganitha provides a proven platform for GWAS, that is:
+        </h4>
+      
+      <div class="ag-h4">
         <ul>
           
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
+                class="w-6 mr-4  text-ag-secondary-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+                  <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="3"
                   d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Enhanced open source tools to provide outputs in a myriad of formats (HTML, jupyter, web viewers and more)</span>
-          </li>
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Available on-demand, powered by Infrastructure as code approach, supporting both in-house HPC as well as all Cloud based clusters</span>
+            </li>
+
           
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
+                class="w-6 mr-4  text-ag-secondary-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+                  <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="3"
                   d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">A high performance computing platform, open source tools such as Hail and Luigi to enable a distributed, scalable computing system</span>
-          </li>
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Cost-effective, without dependence on expensive proprietary big data stacks and services</span>
+            </li>
+
           
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
+                class="w-6 mr-4  text-ag-secondary-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+                  <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="3"
                   d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Integration with databases like VEP (variant effect predictor), gnomad</span>
-          </li>
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Vertically integrated to provide industry leading performance</span>
+            </li>
+
           
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
+                class="w-6 mr-4  text-ag-secondary-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+                  <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="3"
                   d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">VCF files obtained as outputs make it easier for bioinformaticians to conduct preliminary analysis</span>
-          </li>
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Comprehensive, spanning all activities from data ingestion to QC, cohort selection, regression and visualization</span>
+            </li>
+
+          
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 mr-4  text-ag-secondary-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                  <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Interactive, enabling scientists to inspect and apply Sample and Variant QCs, and carefully design study cohorts</span>
+            </li>
+
+          
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 mr-4  text-ag-secondary-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                  <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Pre-integrated with commonly needed reference datasets, annotation and visualization tools</span>
+            </li>
+
+          
+
+            <li class="flex  my-2">
+              <span class="">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 mr-4  text-ag-secondary-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                  <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+/>
+                </svg>
+              </span>
+              <span class="leading-normal">Complemented by a complete portfolio of service offerings from Aganitha which seamlessly integrate all the genomics and technology expertise needed</span>
+            </li>
+
           
         </ul>
       </div>
-
-     
     </div>
 
     <div class="right-side flex items-center justify-center">
-      <img class="rounded-xl" src="/assets/images/solutions/omics/solution.png" />
+      <img
+        class="sm:w-3/4 lg:w-full"
+        src="/assets/images/solutions/hubs/solution.png"
+/>
     </div>
   </div>
 </div>
+      </div>
 
-    </div>
+      <div class="">
+        
 
-    <div class="">
-      <div
+<div
   class="
-    omics-highlights-wrapper
-    container
-    font-lexend
+    hubs-highlights-wrapper
+    
+    max-w-screen-xl
      border-yellow-400
     mx-auto
     py-10
-    px-16
+    ag-container-padding
   "
 >
 
-  
-      <h4 class=" leading-8 text-4xl  text-center py-8 text-gray-800 font-medium mb-16">
+  <h4 class="   text-center py-4 sm:py-8 text-ag-primary-blue-500 ag-h3">
        Highlights
       </h4>
-  <div class="grid grid-cols-3 gap-4">
-     
+  
 
+  <div class="cards-container ">
 
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src=/assets/images/solutions/hubs/nlp.svg class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        In built functions
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        Several cohort builder classes for filtering variants based on different parameters
-      
-          </p>
-          </div>
+    <section class="text-gray-600 ">
+      <div class=" py-8 mx-auto">
+        <div class="grid gap-4 lg:gap-0 md:grid-cols-2">
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    Kubernetes
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Easily deployable in any cloud that supports Kubernetes, including AWS/GCP/Azure
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    HPC deployment with SLURM/SGE/equivalent scheduler
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Deployable in internal HPC clusters using any of the leading schedulers such as SLURM, SGE
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    Hail on Spark
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Leverages leading GWAS library, Hail (from Broad Institute), which in turn, leverages distributed data processing capabilities of Apache Spark
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    Jupyter notebooks
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Supports interactive use by scientists, via Jupyter notebooks
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    Pre-Integrated
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Comes pre-integrated with leading open source libraries and tools such as VEP
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src= class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    Services
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    Complemented by a complete portfolio of service offerings which seamlessly integrate all the genomics and technology expertise needed
+                  </p>
+                </div>
+              </div>
+            </div>
+
           
         </div>
       </div>
-    </div>
+    </section>
 
-    
-
-
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src=/assets/images/solutions/hubs/internet.png class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        Data manipulation
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        Filter, group, aggregate and visualize genomic data, control for confounding caused by population stratification using Hail
-          </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    
-
-
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src=/assets/images/solutions/hubs/internet.png class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        Unified genomic data representation
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        A single interface for working with all kinds of genomic data powered by Hail’s matrix table  
-          </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    
-
-
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src=/assets/images/solutions/hubs/internet.png class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        Scalable
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        Easy to use with small and biobank-scale genomic data; scale from laptop to large compute cluster or cloud with the same code base
-          </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    
-
-
-      <div class="card-1__outer-wrapper w-full mb-10">
-      <div class="card-1__inner-wrapper transition hover:shadow-lg duration-300  relative rounded-lg  bg-gray-50">
-        <div class="card-1__image-wrapper absolute rounded-lg shadow w-14 bg-blue-600">
-          <img src=/assets/images/solutions/hubs/internet.png class="p-2" alt="" />
-        </div>
-        
-        <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-gray-700 text-xl">
-        <h1 class="px-5 mt-10">
-        Integration
-        </h1>
-        </div>
-        <div class="card-1__desc px-5  text-center  text-gray-400">
-        
-        <p class="my-4 leading-relaxed">
-        Contains python wrapper classes for defining concepts like cohorts, analysis results, variant effect predictor (VEP) and more
-          </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-     
+  </div>
 
   
-  </div>
 </div>
-
-    </div>
-    
-
-    
-
-    
-      <div class="bg-blue-50 hubs-benefits">
-      <div
-  class="
-    hubs-benefits-wrapper
-    container
-    border-blue-400
-    mx-auto
-    px-16
-    font-lexend
-    py-16
-  "
->
-  <div class="grid grid-cols-2">
-    <div class="hubs-benefits-left-side-content">
-      <h3
-        class="text-5xl mx-auto text-gray-600 font-medium text-center w-4/5"
-        id="content"
-      >
-        Benefits
-      </h3>
-
-      <div
-        class="
-          overflow-hidden
-          mx-auto
-          my-14
-          flex
-          items-center
-          justify-center
-          w-4/5
-        "
-      >
-        <img
-          src="/assets/images/solutions/hubs/benefits.png"
-          class="w-1/2"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="hubgs-benefits-right-side-content">
-      <div class="text-lg text-gray-600 mx-auto leading-8">
-        <ul class="">
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Understand Mendelian violations in trios, prune variants in linkage disequilibrium, analyze genetic similarity between samples, and compute sample scores and variant loadings using PCA</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression, and estimate heritability</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Reusability of tools saving time to rewrite from scratch and regeneratable results for future</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Ability to use scalable cloud computing without learning about nitty gritty details</span>
-          </li>
-          
-          <li class="flex items-center my-2">
-            <span class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 mr-4 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </span>
-            <span class="">Caching of runs saving computational cost</span>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
       </div>
       
+
+      <div class="bg-ag-secondary-red-800">
+        
+
+<div class="max-w-screen-xl  mx-auto py-10 sm:py-12 lg:py-16 ag-container-padding">
+  <h1 class="ag-h3 text-gray-50 font-semibold text-left sm:text-center lg:text-center mb-12">Outcomes</h1>
+  
+
+  <div class="grid gap-10 md:gap-16 xl:gap-10 sm:grid-cols-2 xl:grid-cols-3">
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/mine.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">High Performance</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Robust high-performance solution for your GWAS needs, that puts you firmly in control with minimal expense
+      </h1>
+    </div>
+  </div>
+
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/derive.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Setup Quickly</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Reduction in setup time from months to days
+      </h1>
+    </div>
+  </div>
+
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/scale.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Scale Elastically</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Elastically scale your deployment as your WES datasets grow in size
+      </h1>
+    </div>
+  </div>
+
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/scale.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Integrate with other services</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Augment the capacity available for setup and analysis with services from Aganitha
+      </h1>
+    </div>
+  </div>
+
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/scale.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Understand mendelian violations</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Understand mendelian violations in trios; prune variants in linkage disequilibrium; analyze genetic similarity between samples and compute sample scores and variant loadings using PCA
+      </h1>
+    </div>
+  </div>
+
+    
+      
+  <div class="mb-4">
+    <div
+        class="
+          benefit-icon-wrapper
+          w-12
+          h-12
+          p-3
+          bg-ag-secondary-red-600
+          rounded-lg
+          mb-5
+        "
+      >
+      <img
+          src=/assets/images/solutions/hubs/scale.png
+          class="w-full"
+          alt=""
+/>
+    </div>
+    <div class="benefit-text">
+      <h1 class="text-xl lg:text-2xl text-gray-50 mb-2 font-medium">Leverage all types of regression models</h1>
+      <h1 class="text-sm lg:text-base  text-gray-300">
+        Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression; estimate heritability
+      </h1>
+    </div>
+  </div>
+
+    
+  </div>
+</div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -630,124 +911,82 @@ Technical pipeline for genome wide association studies (GWAS)
     </div>
 </div>
 
- <div class="outer-wrapper bg-gray-50 font-lexend px-16 py-12">
 
-    <section class="text-gray-700">
+<div class="py-16">
+    <div class="max-w-screen-xl relative  solutions-drawer ag-container-padding mx-auto">
 
-        <div class="container  items-center px-5 py-8 mx-auto lg:px-16">
-            <h1 class="text-4xl text-ag-primary-blue font-medium mb-16 w-4/5">
-                Related Solutions
-            </h1>
-            <div class="grid grid-cols-3 gap-10  mb-12 text-left">
-                <div class="w-full pb-8 group hover:shadow-xl rounded-xl shadow-lg  bg-white mx-auto ">
-                    <div class="rounded-xl   border-pink-400 overflow-hidden">
-                        <a href="">
-                            <div class=" border-red-500 h-64 overflow-hidden">
-                                <img class="object-cover  group-hover:scale-110 transform transition w-full mb-8" src="/assets/images/gwas.jpeg" alt="blog">
-                            </div>
-
-                            <div class="px-4">
-                                <span class="flex text-sm my-4 w-1/2 items-center justify-between text-gray-500">
-                                    <p class=""> </p>
-                                    
-                                </span>
-                                <h1 class="mx-aut mb-6 text-2xl font-semibold leading-none  text-gray-700 title-font group-hover:text-blue-800 transition" > GWAS Pipeline </h1>
-                                <p class="mx-auto mb-8 text-base font-medium leading-relaxed text-gray-500 ">Scalable genomic data analysis platform to interrogate biobank-scale genomic datasets Technical pipeline for genome wide association studies (GWAS)</p>
-
-                                
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="w-full pb-8 group hover:shadow-xl rounded-xl shadow-lg  bg-white  mx-auto ">
-                    <div class="rounded-xl   border-pink-400 overflow-hidden">
-                        <a href="">
-                            <div class=" border-red-500 h-64 overflow-hidden">
-                                <img class="object-contain  group-hover:scale-110 transform transition w-full mb-8" src="/assets/images/solutions/omics/omics.jpeg" alt="blog">
-                            </div>
-
-                            <div class="px-4">
-                                <span class="flex text-sm my-4 w-1/2 items-center justify-between text-gray-500">
-                                    <p class=""> </p>
-                                 
-                                </span>
-                                <h1 class="mx-aut mb-6 text-2xl font-semibold leading-none  text-gray-700 title-font group-hover:text-blue-800 transition" >Omics Pipeline </h1>
-                                <p class="mx-auto mb-8 text-base font-medium leading-relaxed text-gray-500 ">Rapid, scalable, affordable, managed enterprise-class Omics pipelining on HPC/Cloud as a managed service. </p>
-
-                                
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="w-full pb-8 group hover:shadow-xl rounded-xl shadow-lg  bg-white  mx-auto ">
-                    <div class="rounded-xl   border-pink-400 overflow-hidden">
-                        <a href="">
-                            <div class=" border-red-500 h-64 overflow-hidden">
-                                <img class="object-cover  group-hover:scale-110 transform transition w-full mb-8" src="/assets/images/solutions/omics/data.jpeg" alt="blog">
-                            </div>
-
-                            <div class="px-4">
-                                <span class="flex text-sm my-4  w-2/3 items-center justify-between text-gray-500">
-                                    <p class=""> </p>
-                                    
-                                </span>
-                                <h1 class="mx-aut mb-6 text-2xl font-semibold leading-none  text-gray-700 title-font group-hover:text-blue-800 transition" > Scientific Data Management</h1>
-                                <p class="mx-auto mb-8 text-base font-medium leading-relaxed text-gray-500 ">An enterprise-class science data and file management  platform on premise/Cloud, with Pre-packaged service offering for rollout and managed services for continuous use.  </p>
-
-                                
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
+        <div class="mb-8">
+            <h1 class="ag-h2 z-40 text-center   text-ag-primary-blue font-medium mb-4  w-full">
+        Related Solutions
+      </h1>
+            <p class="text-gray-600 z-40 ag-h4 text-center leading-relaxed">
+        Discover more solutions across the biopharma value chain.
+      </p>
+            <!-- <div class="dot-container z-0 absolute top-0 left-0">
+        <img src="/assets/images/dot-grid.png" alt="">
+      </div> -->
         </div>
-    </section>
 
-</div>
-<div class="bg-gray-100"><section class="text-gray-600 body-font  relative">
-    <div class="xl:container bg-transparent px-5  py-10 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-4xl text-2xl font-medium title-font mb-4 text-blue-800">Contact Us</h1>
+        <div class="border-red-500  lg:w-5/6 mx-auto  gap-4  grid md:grid-cols-2 ">
+
+            
+                <div
+        class=" rounded-lg   mx-auto solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md ">
+                    <a href=/biopharma/knowledge-hubs/>
+                        <div class="solution-image-wrapper">
+                            <img src=/assets/images/solutions/hubs/hubs.jpeg class="object-cover h-60 md:h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+                        </div>
+                        <div class="solution-text-wrapper">
+                            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+                                Knowledge Hubs
+                            </h1>
+                            <h4 class="text-base lg:text-lg text-gray-600 ">
+                                AI-powered curation of fast-evolving R&amp;D insights and Competitive landscape.
+                            </h4>
+                            <a href=/biopharma/knowledge-hubs/ class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+              Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+            
+                <div
+        class=" rounded-lg   mx-auto solution-link-card group transition duration-300 lg:shadow-none shadow-2xl lg:hover:shadow-agSm z-50 px-6 py-6 md:max-w-md ">
+                    <a href=/biopharma/omics-pipelining>
+                        <div class="solution-image-wrapper">
+                            <img src=/assets/images/solutions/omics/omics.jpeg class="object-cover h-60 md:h-72 lg:h-48 w-full  border border-gray-200 rounded " alt="">
+                        </div>
+                        <div class="solution-text-wrapper">
+                            <h1 class=" text-xl lg:text-2xl font-medium my-6 text-ag-secondary-red-600">
+                                Omics Pipelining
+                            </h1>
+                            <h4 class="text-base lg:text-lg text-gray-600 ">
+                                Rapid, scalable, affordable, managed enterprise-class 
+      Omics pipelining on HPC/Cloud as a managed service.
+                            </h4>
+                            <a href=/biopharma/omics-pipelining class="flex my-4  text-base text-ag-primary-blue-500 font-semibold">
+              Read More <span class="flex items-center justify-center group-hover:translate-x-3 transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
             
         </div>
-        <div class="w-full lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full sm:w-1/2">
-                    <div class="relative">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <div class="relative">
-                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                    </div>
-                </div>
-                <div class="p-2 w-full">
-                    <button class="flex mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-md">SUBMIT</button>
-                </div>
-                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                    <a class="text-blue-700">info@aganitha.ai</a>
-                    
-                    
-                </div>
-            </div>
-        </div>
+
     </div>
-</section></div>
+</div>
 
 
   </div>

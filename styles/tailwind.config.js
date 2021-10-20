@@ -94,6 +94,10 @@ module.exports = {
       },
       height: {
         100: "29rem",
+        110: "31rem",
+      },
+      screens: {
+        "885px": "885px",
       },
     },
   },

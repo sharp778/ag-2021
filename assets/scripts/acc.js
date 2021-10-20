@@ -172,18 +172,3 @@ const sectionOneObserver = new IntersectionObserver(
     }
   });
 })();
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".own-carousel__container").ownCarousel({
-    itemPerRow: 2,
-    nav: true,
-    loop: false,
-    itemWidth: 50,
-    responsive: {
-      1024: [1, 100],
-      // 600: [2, 49],
-      // 400: [1, 100],
-    },
-  });
-  responsive();
-});

@@ -14,5 +14,24 @@
    {% include "partials/careers/_positions.njk" %}
 
    {# <div class="bg-gray-100">{% include "contact.njk" %}</div> #}
-
+   <script>
+      document.addEventListener("DOMContentLoaded", () => {
+         document
+            .querySelector(".own-carousel__container")
+            .ownCarousel({
+               itemPerRow: 2,
+               nav: true,
+               loop: false,
+               itemWidth: 50,
+               responsive: {
+                  1024: [
+                     1, 100
+                  ],
+                  // 600: [2, 49],
+                  // 400: [1, 100],
+               }
+            });
+         responsive();
+      });
+   </script>
 {% endblock %}

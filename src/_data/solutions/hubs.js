@@ -2,53 +2,58 @@ module.exports = {
   banner: {
     title: "Knowledge Hubs",
     subtitle:
-      "Build a digital encyclopedia on the go: fully automated, competitive intelligence hubs as a managed service.",
+      "AI-powered curation of fast-evolving R&D insights and Competitive landscape.",
   },
   intro: [
-    `Traditional intelligence gathering utilizes manual search engine based methods to gather vast amounts of information that is crucial in facilitating decision making in all areas of biopharma: discovery, R&D, clinical trial design, and more.`,
-    `Often, the manual effort required to collate, structure and synthesize such vast information in a consumable format suited for deriving key insights that impact decisions is time consuming. On the other hand, curated market research reports are limited in scope and contain little to no real-time information.`,
+    ` Are Google searches yielding poor results for your scientific queries?`,
+    "Are Pubmed searches and alerts producing too many results you don’t have time to dig through?",
+    ` Do you find it difficult to keep track of and mine insights from clinical trial designs and readouts of competitors and partners?`,
+    `If yes, you are not alone.`,
+
+    `High-throughput science (HTS) is producing knowledge and insights at a pace that is not easy to keep up with, even for specialists. COVID has also resulted in a big spike of investments into biopharma ventures, resulting in a very competitive marketplace. Winners of this era will be those who learn how to systematically tackle these challenges.`,
   ],
   solution: {
     intro: [
-      `As the process of gathering intel for such use cases has repetitive elements, there is scope for unlocking efficiencies in putting together this intel by leveraging the latest technologies in web mining, data pipelining and artificial intelligence.`,
+      `Aganitha Knowledge Hubs leverage AI to tackle the challenges of information and data overload, providing automatically and continuously curated solutions for the following subject areas.`,
     ],
     solutionPoints: [
-      `Aganitha’s solution utilizes an army of bots to feed off data sources`,
-      `The information is then processed and ingested by a knowledge graph with relevant nodes and edges that capture key entities and their relationships`,
-      `Automation ensures long term robustness and replicability without sacrificing flexibility`,
+      "Competitive intelligence covering: Investments, Financials, Product and tech announcements, pre-clinical and clinial trial designs, progress and readouts, regulatory applicatoins and actions, IP filings and grants, partnerships, and supply chain intelligence.",
+      "Research and Clinical data specific to disease areas (such as Oncology and rare diseases) and  therapeutic categories (such as cell and gene therapies, RNA therapies, mAbs, vaccines and adjuvants) covering: Published research and preprints, conference presentations and transcripts, public datasets, patent applications and grants, news releases, tweets, other social media posts announcing trials, results, applications, approvals and other regulatory actions.",
+      "Master data services to disambiguate, resolve and integrate: interventions, indications, studies and organizations",
     ],
     diagram: "/assets/images/solutions/hubs/solution.png",
   },
 
   solutionHighlights: [
     {
-      title: "NLP",
-      description: `Utilize NLP to understand the text, domain (bio & chemical) ontology to consolidate information from diverse sources`,
+      title: "Aganitha Knowledge Machine",
+      description: `Continuously crawling, mining, identifying, resolving, and linking biopharma entities into integrated knowledge graphs (KG)`,
       icon: "/assets/images/solutions/hubs/nlp.svg",
     },
     {
-      title: "Web crawlers",
-      description: `Web crawlers powered by  NLP to search the internet for relevant publicly available data`,
+      title: "Public data augmenting Proprietary data",
+      description: `Combining public data with private data, with clear data provenance and data quality checks`,
       icon: "/assets/images/solutions/hubs/internet.png",
     },
     {
-      title: `Alerts for relevant information`,
-      description: `Enable alerts that mine global, local news as well as tweets for relevant insights`,
+      title: `Trial design analysis`,
+      description: `Comparative analysis of endpoints, arm designs, inclusion/exclusion criteria, site selections and readouts to generate usable insights`,
       icon: "/assets/images/solutions/hubs/danger.svg",
     },
     {
-      title: `Near real-time updates`,
-      description: `In-built pull-based systems such as APIs for data sources where subscriptions are available, for near real-time updates`,
+      title: `Real-time alerts and personalization`,
+      description: `Topic specific real-time alerts to call attention to developments that require attention and follow-up`,
       icon: "/assets/images/solutions/hubs/time.svg",
     },
     {
-      title: `Structured information`,
-      description: `Structuring of  information in graph database enables flexibility to continuously expand data ingestion sources`,
+      title: `State of art technology and data architecture
+      `,
+      description: `Built with Knowledge Graph (KG), NLP, API, Visualization, and UI platforms deployable using Infra-as-code approach on any cloud supporting Kubernetes`,
       icon: "/assets/images/solutions/hubs/diagram.svg",
     },
     {
-      title: `Structured information`,
-      description: `Structuring of  information in graph database enables flexibility to continuously expand data ingestion sources`,
+      title: `Specialization on demand`,
+      description: `Easily customizable to focus on an area of specialty, meeting specific needs of a team/audience`,
       icon: "/assets/images/solutions/hubs/diagram.svg",
     },
   ],
@@ -61,34 +66,22 @@ module.exports = {
   ],
   benefitsAlt: [
     {
-      title: "Build",
-      icon: "/assets/images/solutions/hubs/build.png",
-      description:
-        "Build multiple disease hubs focusing on Covid-19, Oncology, Alzheimer’s, Immunology, Hepatitis, Rare diseases, and more.",
-    },
-    {
       title: "Mine Information",
       icon: "/assets/images/solutions/hubs/mine.png",
       description:
-        "Mine and organize public information in an easily consumable format.",
+        "Discover, mine, integrate and leverage fast-growing public data sources without significant additional expense on IT.",
     },
     {
       title: "Derive Insights",
       icon: "/assets/images/solutions/hubs/derive.png",
       description:
-        "Derive valuable insights on competitive intelligence for informed decision making across functions.",
+        "Derive valuable insights from emerging research and trial data to improve your  trial designs.",
     },
     {
       title: "Scale",
       icon: "/assets/images/solutions/hubs/scale.png",
       description:
-        "Scalable, reusable, and repeatable solution for large scale information consumption and collation.",
-    },
-    {
-      title: "Stay Ahead",
-      icon: "/assets/images/solutions/hubs/update.png",
-      description:
-        "Latest updates from research and market landscape with zero incremental resource deployment cost.",
+        "Scale your competitive intelligence gathering without adding headcount.",
     },
   ],
 };

@@ -1,32 +1,30 @@
-{% extends "default.njk" %} {% block title%} Aganitha {% endblock %} {% block
-content %} {% include "partials/omics/_banner.njk" %}
+{% extends "default.njk" %}
+{% block title%} Aganitha {% endblock %}
+{% block
+content %}
+  {% include "partials/omics/_banner.njk" %}
 
-<div class="border-green-200 relative mx-auto content-wrapper">
-  <div class="main-content" id="content">
-    
-    {% include "partials/omics/_intro.njk" %}
-    <div class="background-light">
-      {% include "partials/omics/_solution.njk" %}
-    </div>
+  <div class="border-green-200 relative mx-auto content-wrapper">
+    <div class="main-content" id="content">
 
-    <div class="">
-      {% include "partials/omics/_highlights.njk" %}
-    </div>
-    {# {% include "partials/omics/_tabs.njk"%} #}
-
-    
-
-    
-      <div class="bg-blue-50 hubs-benefits">
-      {% include "partials/omics/_benefits.njk" %}
+      {% include "partials/omics/_intro.njk" %}
+      <div class="background-light">
+        {% include "partials/omics/_solution.njk" %}
       </div>
-      
+
+      <div class="">
+        {% include "partials/omics/_highlights.njk" %}
+      </div>
+      {# {% include "partials/omics/_tabs.njk"%} #}
+
+      <div class="bg-ag-secondary-red-800">
+        {% include "partials/omics/_benefits.njk" %}
+      </div>
+
     </div>
   </div>
 </div>
-{% include "partials/_demo.njk" %} {% include "partials/_related.njk" %}
-<div class="bg-gray-100">{% include "contact.njk" %}</div>
+{% include "partials/_demo.njk" %}
+{% include "partials/omics/_relatedSolutions.njk" %}
 
 {% endblock %}
-
-

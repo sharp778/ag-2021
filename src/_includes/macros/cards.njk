@@ -68,21 +68,21 @@
 {% macro highlightCard(icon, header, description) %}
   <div class="card-1__outer-wrapper mx-auto group hover:shadow-xl  transition duration-300  max-w-sm mb-6 sm:mb-10">
 
-    <div class="card-1__inner-wrapper h-52 sm:h-56 transition  shadow-md duration-300  relative rounded-lg  bg-red-50">
+    <div class="card-1__inner-wrapper h-52 sm:h-56 transition  shadow-md duration-300  relative rounded-lg  bg-ag-primary-blue-30">
 
-      <div class="card-1__image-wrapper group-hover:shadow-xl transition duration-300 absolute rounded-lg shadow w-12 lg:w-14 bg-ag-secondary-red-400">
+      <div class="card-1__image-wrapper group-hover:shadow-xl transition duration-300 absolute rounded-lg shadow w-12 lg:w-14 bg-ag-primary-blue-400">
         <img src={{icon}} class="p-3" alt=""/>
       </div>
 
       <div class="card-1__text">
-        <div class="card-1__heading flex items-center justify-center text-ag-secondary-red-700 text-lg xl:text-xl font-semibold lg:font-normal">
+        <div class="card-1__heading flex items-center justify-center text-ag-primary-blue-500 text-lg xl:text-xl font-semibold lg:font-normal">
           <h1 class="lg:px-2 text-center px-1 font-medium mt-12">
             {{header}}
           </h1>
         </div>
         <div class="card-1__desc   px-3 lg:px-5  text-center  text-gray-500">
 
-          <p class="my-4 text-sm sm:text-base px-2 leading-relaxed">
+          <p class="my-4 text-sm  px-2 leading-relaxed">
             {{description}}
           </p>
         </div>

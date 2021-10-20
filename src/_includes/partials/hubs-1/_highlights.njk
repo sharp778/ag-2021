@@ -12,15 +12,73 @@
   "
 >
 
-  <h4 class="   text-center py-4 sm:py-8 text-ag-primary-blue-500 ag-h3 mb-16">
+  <h4 class="   text-center py-4 sm:py-8 text-ag-primary-blue-500 ag-h3">
        Highlights
       </h4>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl ">
+  {# <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl ">
     {% for item in solutions.hubs.solutionHighlights %}
 
       {{cards.highlightCard(item.icon, item.title, item.description)}}
 
     {% endfor %}
+
+  </div> #}
+
+  <div class="cards-container ">
+
+    <section class="text-gray-600 ">
+      <div class=" py-8 mx-auto">
+        <div class="grid gap-4 lg:gap-0 md:grid-cols-2">
+          {% for item in solutions.hubs.solutionHighlights %}
+            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+              <div class="
+              
+              
+                    flex
+                    rounded-lg
+                    transition
+            duration-300
+                    group-hover:shadow-xl
+                    p-3
+                    lg:p-6
+                    sm:flex-row
+                    flex-col
+                  ">
+                <div class="
+                      lg:w-16
+                      lg:h-16
+                      h-12
+                      w-12
+                      sm:mr-8 sm:mb-0
+                      mb-4
+                      p-2
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-ag-primary-blue-400
+                    
+                      flex-shrink-0
+                    ">
+                  <img src={{ item.icon }} class="w-3/4"/>
+                </div>
+                <div class="flex-grow">
+                  <h2
+                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                    {{ item.title }}
+                  </h2>
+                  <p
+                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                    {{ item.description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          {% endfor %}
+        </div>
+      </div>
+    </section>
 
   </div>
 

@@ -4,15 +4,17 @@
       <h3 class="ag-h3 text-ag-primary-blue-500  mb-4 sm:mb-8 " id="content">
         Our Solution
       </h3>
+
       {% for item in solutions.hubs.solution.intro %}
-        <h4 class="ag-h4 mb-4">
+        <h4 class="ag-h4 leading-normal mb-4">
           {{ item }}
         </h4>
       {% endfor %}
       <div class="ag-h4">
         <ul>
           {% for item in solutions.hubs.solution.solutionPoints %}
-            <li class="flex items-center my-2">
+
+            <li class="flex  my-2">
               <span class="">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +31,9 @@
 />
                 </svg>
               </span>
-              <span class="">{{ item }}</span>
+              <span class="leading-normal">{{ item }}</span>
             </li>
+
           {% endfor %}
         </ul>
       </div>

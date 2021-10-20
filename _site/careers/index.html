@@ -16,7 +16,7 @@
   <!-- <script src="https://unpkg.com/@barba/core"></script> -->
   <link rel="stylesheet" href="/assets/styles/nav.css">
   <link rel="stylesheet" href="/assets/styles/styles.css">
-  <link rel="stylesheet" href="/style.css?v=1634551018482" />
+  <link rel="stylesheet" href="/style.css?v=1634711561090" />
 
   
   <header class="header">
@@ -54,7 +54,7 @@
                         <a href="/biopharma/knowledge-hubs">Knowledge Hubs</a>
                      </li>
                      <li class="menu-item sub-item">
-                        <a href="/biopharma/omics-pipelines">Omics Pipeline</a>
+                        <a href="/biopharma/omics-pipelining">Omics Pipeline</a>
                      </li>
                      <li class="menu-item sub-item">
                         <a href="/biopharma/genome-wide-association-studies">GWAS Pipeline</a>
@@ -104,13 +104,11 @@
     <div class="max-w-screen-xl  py-20 mx-auto ag-container-padding">
         <div class="banner-text mb-8">
             <h1 class="text-5xl font-semibold leading-snug text-white">
-                <span class="text-ag-secondary-red">Join us
-                </span> and help discover medicines that will impact 
+                Join us
+                 and help discover medicines that will <span class="text-ag-secondary-red"> impact </span>
 
                 
-                    millions
-              
-               of lives.
+                 lives.
             </h1>
         </div>
 
@@ -948,7 +946,26 @@
 </div>
 
    
-
+   <script>
+      document.addEventListener("DOMContentLoaded", () => {
+         document
+            .querySelector(".own-carousel__container")
+            .ownCarousel({
+               itemPerRow: 2,
+               nav: true,
+               loop: false,
+               itemWidth: 50,
+               responsive: {
+                  1024: [
+                     1, 100
+                  ],
+                  // 600: [2, 49],
+                  // 400: [1, 100],
+               }
+            });
+         responsive();
+      });
+   </script>
 
   </div>
 

@@ -9,95 +9,33 @@
     </h1>
   </div>
 
-  <div class="contact-cards grid grid-cols-3 gap-4 py-12">
+  <div class="contact-cards grid sm:grid-cols-2   xl:grid-cols-3 gap-4 lg:gap-8 xl:gap-x-12 py-12">
 
-    <div class="contact-card-wrapper rounded shadow-lg relative h-100 max-w-sm overflow-hidden">
-      <div class="location-image-wrapper">
-        <img src="/assets/images/contact/cali.jpg" class="object-cover w-full h-60" alt="">
-      </div>
-      <div class="location-text-wrapper px-6 ">
-        <h1 class="text-xl font-bold mt-4 mb-2">
-          San Fransisco
-        </h1>
-
-        <div class="text-gray-600">
-          <h1>Aganitha AI</h1>
-          <h1>777 1st Street 519</h1>
-          <h1>Gilroy, CA, United States</h1>
-          <h1>95020</h1>
+    {% for place in contact %}
+      <div class="contact-card-wrapper rounded  mx-auto min-w-full shadow-lg xl:w-96 relative h-110 sm:h-100  ">
+        <div class="location-image-wrapper">
+          <img src={{ place.image }} class="object-cover w-full h-60" alt="">
         </div>
+        <div class="location-text-wrapper px-6 ">
+          <h1 class="text-xl sm:text-lg lg:text-xl text-ag-primary-blue-700 font-bold mt-4 mb-2">
+            {{ place.name }}
+          </h1>
 
-        <h1 class="absolute bottom-2 text-ag-secondary-red">
-          +1 408-898-2432
-        </h1>
-      </div>
-    </div>
+          <div class="text-gray-600">
+            {% for line in place.address %}
+              <h1 class="text-base sm:text-sm lg:text-base">{{ line }}
+              </h1>
+            {% endfor %}
 
-    <div class="contact-card-wrapper rounded shadow-lg relative h-100 max-w-sm overflow-hidden">
-      <div class="location-image-wrapper">
-        <img src="/assets/images/contact/detroit.jpg" class="object-cover w-full h-60" alt="">
-      </div>
-      <div class="location-text-wrapper px-6 ">
-        <h1 class="text-xl font-bold mt-4 mb-2">
-          Warren
-        </h1>
+          </div>
 
-        <div class="text-gray-600">
-          <h1>11664 Martin Road</h1>
-          <h1>Warren, MI, United States</h1>
-          <h1>48093</h1>
+          <h1 class="text-base sm:text-sm lg:text-base absolute bottom-2 text-ag-secondary-red">
+            {{ place.telephone }}
+          </h1>
         </div>
-
-        <h1 class="absolute bottom-2 text-ag-secondary-red">
-          +1 408-898-2432
-        </h1>
       </div>
-    </div>
 
-    <div class="contact-card-wrapper rounded shadow-lg relative h-100 max-w-sm overflow-hidden">
-      <div class="location-image-wrapper">
-        <img src="/assets/images/contact/hyd2.jpg" class="object-cover w-full h-60" alt="">
-      </div>
-      <div class="location-text-wrapper px-6 ">
-        <h1 class="text-xl font-bold mt-4 mb-2">
-          Hyderabad
-        </h1>
-
-        <div class="text-gray-600">
-          <h1>512T, 1st Floor</h1>
-          <h1>Road number 29, Jubilee Hills</h1>
-          <h1>Hyderabad, TS, India</h1>
-          <h1>500033</h1>
-        </div>
-
-        <h1 class="absolute bottom-2 text-ag-secondary-red">
-          +91 40-4853-6628
-        </h1>
-      </div>
-    </div>
-
-    <div class="contact-card-wrapper rounded shadow-lg relative h-100 max-w-sm overflow-hidden">
-      <div class="location-image-wrapper">
-        <img src="/assets/images/contact/hyd2.jpg" class="object-cover w-full h-60" alt="">
-      </div>
-      <div class="location-text-wrapper px-6 ">
-        <h1 class="text-xl font-bold mt-4 mb-2">
-          Hyderabad
-        </h1>
-
-        <div class="text-gray-600">
-          <h1>iSprout Business Center</h1>
-          <h1>Office No.201, Second Floor</h1>
-          <h1>Modern Profound Tech Park, Kondapur</h1>
-          <h1>Hyderabad, TS, India</h1>
-          <h1>500032</h1>
-        </div>
-
-        <h1 class=" absolute bottom-2 text-ag-secondary-red">
-          +91 40-4853-6628
-        </h1>
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
 </section>

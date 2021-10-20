@@ -1,39 +1,28 @@
-<div class="intro-wrapper pt-16 border-red-400 pb-16 container mx-auto px-16">
-  <div class="intro-inner-wrapper grid grid-cols-2 gap-12">
-    <div class="left-side flex  items-center justify-center">
-      <img
-        src="/assets/images/solutions/omics/omics.jpeg"
-        class="rounded-lg"
-        alt=""
-      />
+<div
+  class="intro-wrapper py-8 sm:py-10  sm:pt-12 md:py-16 ag-container-padding border-red-400  max-w-screen-xl mx-auto ">
+  <div class="intro-inner-wrapper grid gap-8 lg:grid-cols-2">
+    <div class="left-side md:m-4 flex items-center justify-center">
+      <img src="/assets/images/banners/omics-intro.jpeg" class="rounded-lg  sm:w-3/4 lg:w-full" alt="" />
     </div>
-    <div class="right-side ml-4 py-4">
-      <h4 class="text-lg text-gray-600 leading-relaxed mb-2">
-        R&D Teams in biopharma have a critical dependency on timely availability of high-quality data. Satisfying this need is posing a challenge as the volume of data to process is increasing exponentially. 
-      </h4>
+    <div class="right-side lg:px-4 flex items-center justify-center ">
 
-      <ul
-        class="text-lg mb-4 text-gray-600 leading-relaxed list-inside list-disc"
-      >
-        <li class="mb-1">
-         Several public and private data providers are making datasets available in open and restricted ways 
-        </li>
-        <li class="mb-1">
-          Sequencing innovations are driving telomere-to-telomere sequencing 
-        </li>
-        <li class="mb-1">
-          Transition from single reference to pan genome reference  
+      <div class="intro-content-wrapper">
+        {% for item in solutions.omics.intro %}
+        <h4 class="ag-h4 leading-normal text-justify sm:text-left  mb-4">
+          {{item.main}}
+        </h4>
 
-        </li>
-        <li class="mb-1">
-         Innovations in single cell and spatial transcriptomics
+        {% for point in item.subPoints %}
+        <ul class="ag-h4 leading-normal list-inside list-disc mb-2">
+          <li>
+            {{ point }}
+          </li>
+        </ul>
 
-        </li>
-      </ul>
+        {% endfor %}
+        {% endfor %}
+      </div>
 
-      <h4 class="text-lg text-gray-600 leading-relaxed mb-4">
-        While several platforms exist to address the needs of omics data analysis, proprietary platforms are expensive for every-day R&D use, and open-source platforms require extensive expertise to be deployed for industrial use. 
-      </h4>
     </div>
   </div>
 </div>
