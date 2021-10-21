@@ -28,17 +28,17 @@ module.exports = {
     {
       title: "Aganitha Knowledge Machine",
       description: `Continuously crawling, mining, identifying, resolving, and linking biopharma entities into integrated knowledge graphs (KG)`,
-      icon: "/assets/images/solutions/hubs/nlp.svg",
+      icon: "/assets/images/solutions/hubs/akm.svg",
     },
     {
-      title: "Public data augmenting Proprietary data",
+      title: "Public data augmenting proprietary data",
       description: `Combining public data with private data, with clear data provenance and data quality checks`,
-      icon: "/assets/images/solutions/hubs/internet.png",
+      icon: "/assets/images/solutions/hubs/big-data.svg",
     },
     {
       title: `Trial design analysis`,
       description: `Comparative analysis of endpoints, arm designs, inclusion/exclusion criteria, site selections and readouts to generate usable insights`,
-      icon: "/assets/images/solutions/hubs/danger.svg",
+      icon: "/assets/images/solutions/hubs/trial.svg",
     },
     {
       title: `Real-time alerts and personalization`,
@@ -54,7 +54,7 @@ module.exports = {
     {
       title: `Specialization on demand`,
       description: `Easily customizable to focus on an area of specialty, meeting specific needs of a team/audience`,
-      icon: "/assets/images/solutions/hubs/diagram.svg",
+      icon: "/assets/images/solutions/hubs/customize.svg",
     },
   ],
   benefits: [

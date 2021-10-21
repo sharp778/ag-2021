@@ -46,9 +46,26 @@
     @apply px-8 sm:px-12 md:px-16;
   }
 
+  .cta-button-light {
+    @apply text-base
+    bg-ag-secondary-red-50
+    md:text-lg
+    transform
+    text-ag-secondary-red
+    font-medium
+    transition-all
+    duration-300
+    hover:scale-110
+    px-4
+    py-3
+    sm:px-5
+    sm:py-3
+    rounded-lg;
+  }
+
   .cta-button {
     @apply text-base
-    bg-ag-secondary-red-400
+    bg-ag-primary-blue-400
     md:text-lg
     transform
     text-white

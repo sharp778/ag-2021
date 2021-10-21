@@ -29,22 +29,25 @@ module.exports = {
       title: "Proven performance",
       description:
         "Proven to scale well for processing vast data sets such as UK BioBank 500k WES dataset. Vertical integration and optimization help provide best in class performance when compared to other stacks we have tested with.",
-      background: "bg-red-100",
+      icon: "/assets/images/solutions/omics/performance.svg",
     },
     {
       title: "Cloud & HPC ready",
       description:
         "Compatible with any cloud provider supporting Kubernetes, including major vendors such as AWS, GCP and Azure.Compatible with classic HPC schedulers such as SLURM and SGE.",
+      icon: "/assets/images/solutions/omics/cloud.svg",
     },
     {
       title: "Start quickly with predictable costs",
       description:
         "Pre-packaged service offering (PSO) for platform rollout alongside a full catalog of service offerings",
+      icon: "/assets/images/solutions/omics/quick.svg",
     },
     {
       title: "Access to expertise",
       description:
         "Extensive domain and technical expertise brought by a cross-functional team to help you focus on science",
+      icon: "/assets/images/solutions/omics/expert.svg",
     },
   ],
   benefits: [
@@ -57,25 +60,25 @@ module.exports = {
   benefitsAlt: [
     {
       title: "Analyse Quickly",
-      icon: "/assets/images/solutions/hubs/mine.png",
+      icon: "/assets/images/solutions/omics/quick.svg",
       description:
         "Reduction in turnaround time from months to weeks and days for both internal and external analysis.",
     },
     {
       title: "Reduce your costs",
-      icon: "/assets/images/solutions/hubs/derive.png",
+      icon: "/assets/images/solutions/omics/reduce-cost.svg",
       description:
         "Reduction in cost per analysis and total cost of ownership.",
     },
     {
       title: "Increase productivity",
-      icon: "/assets/images/solutions/hubs/scale.png",
+      icon: "/assets/images/solutions/omics/increase.svg",
       description:
         "Higher productivity of R&D teams armed by the comprehensive and timely availability of data.",
     },
     {
       title: "One-stop Solution",
-      icon: "/assets/images/solutions/hubs/scale.png",
+      icon: "/assets/images/solutions/omics/one-stop-solution.svg",
       description:
         "One-stop solution for Omics analysis, e.g., GWAS, differential expression analysis, protein/metabolite identification and more.",
     },

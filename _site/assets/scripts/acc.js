@@ -57,14 +57,14 @@ for (i = 0; i < acc.length; i++) {
 
 var pageLocation = window.location.pathname;
 
-if (pageLocation.includes("solutions")) {
-  var navbar = document.getElementById("table-of-contents");
+// if (pageLocation.includes("solutions")) {
+//   var navbar = document.getElementById("table-of-contents");
 
-  var sticky = navbar.offsetTop;
-  window.onscroll = function () {
-    myFunction();
-  };
-}
+//   var sticky = navbar.offsetTop;
+//   window.onscroll = function () {
+//     myFunction();
+//   };
+// }
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {

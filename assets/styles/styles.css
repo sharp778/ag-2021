@@ -302,6 +302,12 @@ background-size: cover; */
   background-image: url("/assets/images/banners/simple-bg-large.svg");
 }
 
+@media screen and (max-width: 400px) {
+  .careers-banner {
+    background-image: url("/assets/images/banners/simple-blue-mobile.svg");
+  }
+}
+
 .overview-banner {
   background-image: url("/assets/images/banners/simple-bg-large.svg");
 }

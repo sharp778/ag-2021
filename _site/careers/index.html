@@ -16,25 +16,25 @@
   <!-- <script src="https://unpkg.com/@barba/core"></script> -->
   <link rel="stylesheet" href="/assets/styles/nav.css">
   <link rel="stylesheet" href="/assets/styles/styles.css">
-  <link rel="stylesheet" href="/style.css?v=1634720244686" />
+  <link rel="stylesheet" href="/style.css?v=1634799661854" />
 
   
   <header class="header">
    <div class="nav-container">
-      <div class="header-main max-w-screen-xl ag-container-padding">
+      <div class="header-main max-w-screen-xl  sm:ag-container-padding">
          <div class="logo">
             <a href="/" class="flex items-center justify-center">
                <img src="/assets/images/logo-crop.svg" class="w-14  mr-2" alt="">
                <span class="logo-text font-light  h-full text-3xl">aganitha</span>
             </a>
          </div>
-         <div class="open-nav-menu">
+         <div class="open-nav-menu ">
             <span></span>
          </div>
          <div class="menu-overlay"></div>
          <!-- navigation menu start -->
          <nav class="nav-menu">
-            <div class="close-nav-menu">
+            <div class="close-nav-menu rounded">
                <img src="/assets/images/navbar/close.svg" alt="close">
             </div>
             <ul class="menu">
@@ -54,10 +54,10 @@
                         <a href="/biopharma/knowledge-hubs">Knowledge Hubs</a>
                      </li>
                      <li class="menu-item sub-item">
-                        <a href="/biopharma/omics-pipelining">Omics Pipeline</a>
+                        <a href="/biopharma/omics-pipelining">Omics Pipelining</a>
                      </li>
                      <li class="menu-item sub-item">
-                        <a href="/biopharma/genome-wide-association-studies">GWAS Pipeline</a>
+                        <a href="/biopharma/genome-wide-association-studies">GWAS Platform</a>
                      </li>
                   </ul>
                </li>
@@ -103,7 +103,7 @@
    <section class="careers-banner bg-ag-primary-blue-600">
     <div class="max-w-screen-xl  py-20 mx-auto ag-container-padding">
         <div class="banner-text mb-8">
-            <h1 class="text-5xl font-semibold leading-snug text-white">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug text-white">
                 Join us
                  and help discover medicines that will <span class="text-ag-secondary-red"> impact </span>
 
@@ -122,111 +122,51 @@
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={10} d="M19 9l-7 7-7-7"/>
                     </svg>
                 </div>
-                <p class="text-gray-50 flex items-center text-xl ml-4">See open positions</p>
+                <p class="text-gray-50 flex items-center text-base sm:text-lg md:text-xl ml-4">See open positions</p>
             </div>
         </a>
     </div>
 
 </section>
    
-   <div class="border-yellow-500 py-12 ">
-  <div class="max-w-screen-xl mx-auto ag-container-padding grid gap-8 grid-cols-2">
-    <div class="careers__image-wrapper flex items-center overflow-hidden">
-      <img
+   
+
+<section class="bg-gray-50">
+  <div class="intro-wrapper py-8  lg:py-12 ag-container-padding   max-w-screen-xl  mx-auto ">
+    <div class="intro-inner-wrapper  grid gap-6 lg:gap-12 lg:grid-cols-2">
+      <div class="left-side flex items-center justify-center">
+        <img
         src="/assets/images/careers/careers.jpg"
-        class="rounded-lg shadow-lg"
+        class="rounded-lg w-full sm:w-3/4 lg:w-full shadow-xl"
         alt=""
 />
-    </div>
-    <div class="careers__intro py-8   px-4">
-      <p class="ag-h3 text-ag-primary-blue leading-relaxed mb-4">
+      </div>
+      <div class="right-side py-4">
+        <h3 class="ag-h3  text-center lg:text-left md:text-4xl text-ag-primary-blue font-semibold mb-4 " id="content">
         Our roots and our goals
-      </p>
-      <p class="text-lg leading-relaxed  text-gray-600 mb-4">
+      </h3>
+
+        <h4 class="ag-h4 text-gray-700 mb-4">
         We are a team of IIT alumni with published papers, books and patents. We have worked together for many years building both successful startups and scaling teams at large enterprises. We have managed over ten thousand employees, scaled and delivered billion dollar plus of annual revenue while working with Fortune 500 companies.
-      </p>
+      </h4>
 
-      <p class="text-lg leading-relaxed  text-gray-600">
-         We are a company and a team that combines modern technologies with enterprise IT best practices to build biopharma solutions and help biopharma companies through the entire drug life cycle.  We are on a mission to accelerate drug discovery.
-
-      </p>
-    </div>
-  </div>
-</div>
-   <!-- <div class=" text-gray-600 py-12">
-  <div class="container px-24  flex mx-auto">
-    <div class=" py-8 border-t-2 flex">
-      <div class="w-1/3 px-6">
-        <h3 class="font-medium text-4xl text-blue-800">Why Aganitha?</h1>
-      </div>
-      <div class="w-2/3">
-        <ul
-        class="careers-list list-inside list-disc text-left text-lg text-gray-600 leading-relaxed ">
-          <li class="mb-2">
-         A challenging and stimulating environment and an opportunity to work on some of the cutting edge technologies while making significant contributions to the field of biopharma 
-        </li>
-          <li class="mb-2">
-         Complete ownership of the problem to help understand the big picture and prepare for bigger roles
-        </li>
-          <li class="mb-2">Emphasis on learning on the job with frequent knowledge sharing sessions</li>
-          <li class="mb-2">
-          A chance for our members to learn basics of all technologies and specialize in a few.
-        </li>
-          <li class="mb-2">
-          We understand how to support employees and help them grow. We place a lot of emphasis on training and nurturing our employees. 
-        </li>
-          <li class="mb-2">
-          A chance to work with colleagues from top institutions like IITs and IIITs.
-        </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container px-24  flex mx-auto">
-    <div class=" py-8 border-t-2 flex">
-      <div class="w-1/3 px-6">
-        <h3 class="font-medium text-4xl text-blue-800 pr-4">What are we looking for?</h1>
-      </div>
-      <div class="w-2/3">
-        <p class="text-lg text-gray-600 leading-relaxed text-left mb-8"> 
-            We understand that the combination of skills that we look for is not commonly available, and we are comfortable investing in helping our team members build those skills. The founding team and the management team understands the value of investing in our employees and are comfortable with on the job learning and growing to be superstars. We look for the following traits:  
-
-          </p>
-        <ul
-         class="careers-list  list-inside list-disc text-left text-lg text-gray-600 leading-relaxed ">
-          <li class="mb-2">
-           Ability and curiosity to learn new topics- In the ever evolving world of biopharma and disruptive technology we expect you to proactively keep abreast of new developments in the relevant fields.
-
-         </li>
-          <li class="mb-2">
-            Ability to communicate well- All our work is fast moving and built collaboratively requiring clear and constant communication
-         </li>
-          <li class="mb-2">Quality Conscious- Conscious approach towards quality output and development of systems that are easy to use and understand for other colleagues and end users</li>
-          <li class="mb-2">
-            Ability to deliver and close- Approach to bring clarity and proper planning to meet the deadlines is a highly appreciated quality
-         </li>
-
-        </ul>
+        <h4 class="ag-h4 text-gray-700">
+          We are a company and a team that combines modern technologies with enterprise IT best practices to build biopharma solutions and help biopharma companies through the entire drug life cycle.  We are on a mission to accelerate drug discovery.
+      </h4>
       </div>
     </div>
   </div>
-
-</div> 
-
- -->
-
-<section class="bg-gray-50 py-20">
+</section>
+   <section class="bg-gray-50 py-20">
   <div class="ag-container-padding  max-w-screen-xl mx-auto">
     <div class="why-aganitha mb-12 text-center">
       <h1 class="ag-h3 mb-8 text-ag-primary-blue">Why work for Aganitha?</h1>
       <!-- <p class="ag-h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, obcaecati.</p> -->
     </div>
 
-    <div class="reasons grid grid-cols-3 gap-8">
+    <div class="reasons grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -235,13 +175,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             We provide a challenging and stimulating environment and an opportunity to work on cutting edge technologies while making significant contributions to the field of biopharma.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -250,13 +190,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             You will be able to actively build solutions stitching together concepts from multiple domains of AI/ML, Computer Science and Algorithms, Biology and Chemistry.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -265,13 +205,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             We give you complete ownership of the problem/solution to help understand the big picture and prepare for bigger roles.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -280,13 +220,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             We understand how to support employees and help them grow. We place a lot of emphasis on training and nurturing our employees.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -295,13 +235,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             We emphasise learning on the job with frequent knowledge sharing sessions.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -310,13 +250,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             We provide you an opportunity to learn the basics of all technologies and specialize in a few.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card mx-auto max-w-md sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -325,7 +265,7 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             A chance to work with colleagues from top institutions like IITs and IIITs.</p>
 
         </div>
@@ -343,9 +283,9 @@
       <p class="ag-h4 text-left">We understand that the combination of skills that we look for is not commonly available, and we are comfortable investing in helping our team members build those skills. The founding team and the management team understands the value of investing in our employees and are comfortable with on the job learning and growing to be superstars. We look for the following traits in our future employees:</p>
     </div>
 
-    <div class="reasons grid grid-cols-3 gap-8">
+    <div class="reasons grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card  max-w-md mx-auto sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -354,13 +294,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             Ability and curiosity to learn new topics- In the ever evolving world of biopharma and disruptive technologies we expect you to proactively keep abreast of new developments in the relevant fields.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card  max-w-md mx-auto sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -369,13 +309,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             Ability to communicate well- All our work is fast moving and built collaboratively requiring clear and constant communication.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card  max-w-md mx-auto sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -384,13 +324,13 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             Quality Conscious- Conscious focus on quality output and development of systems that are easy to use and understand for other colleagues and end users.</p>
 
         </div>
 
       
-        <div class="reason-card  max-w-sm  flex">
+        <div class="reason-card  max-w-md mx-auto sm:max-w-sm  flex">
           <div class="">
             <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 text-ag-secondary-red-500" viewBox="0 0 20 20"
             fill="currentColor">
@@ -399,7 +339,7 @@
               clip-rule="evenodd"/>
             </svg>
           </div>
-          <p class="text-gray-600 text-lg ml-3">
+          <p class="text-gray-600 ag-h4 ml-3">
             Ability to deliver and close- Approach to bring clarity and proper planning to meet the deadlines.</p>
 
         </div>
@@ -771,174 +711,612 @@
 
     <!--list of open positions start -->
     <ul class="">
+      
 
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 1 ? selected = 1 : selected = null">
+          @click="selected !== 1 ? selected = 1  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              DevOps Specialist </span>
+              Data Scientist
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container1"
+          x-bind:style="selected == 1  ? 'max-height:' + $refs.container1.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Deep learning and classical ML methods
+              </li>
+              
+              <li class="mb-1">
+                Model development and serving with PyTorch/TF
+              </li>
+              
+              <li class="mb-1">
+                NLP and Knowledge mining
+              </li>
+              
+              <li class="mb-1">
+                AI/ML Ops pipelining
+              </li>
+              
+              <li class="mb-1">
+                Modular, typed and object-oriented Python programming
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 2 ? selected = 2 : selected = null">
+          @click="selected !== 2 ? selected = 2  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              Jr Full Stack Developer </span>
+              Data Engineer
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 2 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container2"
+          x-bind:style="selected == 2  ? 'max-height:' + $refs.container2.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Data modelling, visualization and analysis using both relational and NoSQL database platforms
+              </li>
+              
+              <li class="mb-1">
+                Data pipelining with Apache Spark
+              </li>
+              
+              <li class="mb-1">
+                Pipeline development with modular, typed and object-oriented Python programming
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 3 ? selected = 3 : selected = null">
+          @click="selected !== 3 ? selected = 3  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              Web Developer </span>
+              Web Developer
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container3"
+          x-bind:style="selected == 3  ? 'max-height:' + $refs.container3.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Use case analysis, user analysis, user story development, web design, wire-framing
+              </li>
+              
+              <li class="mb-1">
+                Work on UX to UI design, asset development for web UIs, SCSS/CSS/JS development
+              </li>
+              
+              <li class="mb-1">
+                Work on React-based web application development, GraphQL, visualization with frameworks such as D3.js
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 4 ? selected = 4 : selected = null">
+          @click="selected !== 4 ? selected = 4  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              Jr Scientist (Bioinformatics) </span>
+              DevOps and Cloud Engineer
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 4 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container4"
+          x-bind:style="selected == 4  ? 'max-height:' + $refs.container4.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Containerisation and container orchestration with Kubernetes and Docker
+              </li>
+              
+              <li class="mb-1">
+                Automated provisioning of infrastructure with code using tools such as Terraform and AWS CloudFormation
+              </li>
+              
+              <li class="mb-1">
+                Work with AWS/GCP platforms and with HPC platforms such as SLURM/SGE
+              </li>
+              
+              <li class="mb-1">
+                Linux systems administration and configuration management
+              </li>
+              
+              <li class="mb-1">
+                Build management, CI/CD pipelining for Python, NodeJS, Java, Go and C applications
+              </li>
+              
+              <li class="mb-1">
+                Database administration and storage management
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 5 ? selected = 5 : selected = null">
+          @click="selected !== 5 ? selected = 5  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              Jr Scientist (Chemistry and Computational Chemistry) </span>
+              Scientist (Bioinformatics)
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container5"
+          x-bind:style="selected == 5  ? 'max-height:' + $refs.container5.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                 Understand and analyze disease studies, especially the ones associated with genomic disorders
+              </li>
+              
+              <li class="mb-1">
+                Understand and model biotech processes such as the ones used in production of gene and cell therapies
+              </li>
+              
+              <li class="mb-1">
+                Explore, profile, and visualize bioinformatics datasets
+              </li>
+              
+              <li class="mb-1">
+                Understand and implement genomic data pipelines
+              </li>
+              
+              <li class="mb-1">
+                Define appropriate data models and identify relevant features for AI/ML model development
+              </li>
+              
+              <li class="mb-1">
+                Conduct qualitative analysis of model performance by defining the right data points for testing
+              </li>
+              
+              <li class="mb-1">
+                Develop narratives of data-driven analysis in Omics
+              </li>
+              
+              <li class="mb-1">
+                Effectively articulate and communicate domain knowledge to a cross functional team. Participate in requirements gathering, design discussions, demos
+              </li>
+              
+              <li class="mb-1">
+                Learn and stay up-to-date on emerging technologies in the field. Research opportunities for application of AI in the development of emerging therapeutic techniques
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 6 ? selected = 6 : selected = null">
+          @click="selected !== 6 ? selected = 6  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              SecOps / System Administrator </span>
+              Scientist (Chemistry and Computational Chemistry)
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container6"
+          x-bind:style="selected == 6  ? 'max-height:' + $refs.container6.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Identify areas of application for AI in Chemistry &amp; related Lifesciences
+              </li>
+              
+              <li class="mb-1">
+                Contribute to the development of AI-based solutions that serve as useful alternates or additions to existing Cheminformatics/computational chemistry methods &amp; tools
+              </li>
+              
+              <li class="mb-1">
+                Leverage chemistry domain knowledge in formulating &amp; interpreting the problem statement, understanding the nuances related to the problem, building a comprehensive methodology for solution development
+              </li>
+              
+              <li class="mb-1">
+                Enrich self as well as the team&#39;s depth of understanding domain-related concepts through extensive reading, research, and communication
+              </li>
+              
+              <li class="mb-1">
+                Develop methods for data mining and performing analysis of large datasets (e.g., ZINC database)
+              </li>
+              
+              <li class="mb-1">
+                Apply the latest advances in AI to develop models (e.g., predicting reaction products, identifying novel reaction pathways, estimating reaction yields, etc)
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              To qualify, applying candidates must possess:
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Masters or Ph.D. in Chemistry with focus on computational methods
+              </li>
+              
+              <li class="mb-1">
+                Expertise in DFT, QM/MM and Cheminformatics
+              </li>
+              
+              <li class="mb-1">
+                Exposure to modelling of reaction paths, mechanisms, kinetics, catalysis, formulation and physical-chemical property predictions
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
 
+      
+
       <li class="relative  border-gray-200 mb-4">
 
         <button type="button" class="w-full  rounded-t-lg px-8 py-4 bg-ag-primary-blue-30 text-left"
-          @click="selected !== 7 ? selected = 7 : selected = null">
+          @click="selected !== 7 ? selected = 7  : selected = null">
           <div class="flex items-center justify-between">
             <span class="font-bold text-lg">
-              Lead Solutions Architect </span>
+              Lead Solutions Architect
+
+            </span>
             <span class="ico-plus text-xl font-bold">+</span>
           </div>
         </button>
 
-        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style="" x-ref="container1"
-          x-bind:style="selected == 7 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+        <div class="relative overflow-hidden transition-all max-h-0 duration-500" style=""
+          x-ref="container7"
+          x-bind:style="selected == 7  ? 'max-height:' + $refs.container7.scrollHeight + 'px' : ''">
           <div class="px-8 pb-6 rounded-b-lg bg-ag-primary-blue-30">
-            <p class="mb-4">
-              A one line job description would come here.
+
+            <p class="mb-4 font-medium">
+              We are look for the someone who is comfortable with:
             </p>
 
-            <a href="" class="bg-ag-primary-blue-300 px-3 py-2 rounded-lg text-gray-50">Learn More </a>
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                App dev with modern tech stacks of Python, ReactJS, and fit for purpose database technologies
+              </li>
+              
+              <li class="mb-1">
+                Big data engineering with distributed computing frameworks
+              </li>
+              
+              <li class="mb-1">
+                Data modeling in scientific domains, preferably in one or more of: Genomics, Proteomics, Antibody engineering, Biological/Chemical synthesis and formulation, Clinical trials management
+              </li>
+              
+              <li class="mb-1">
+                Cloud and DevOps automation
+              </li>
+              
+              <li class="mb-1">
+                Machine learning and AI (Deep learning)
+              </li>
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+            </ul>
+
+            <p class="mb-4 font-medium ">
+              As a Lead Solutions Architect at Aganitha, you will:
+            </p>
+
+            <ul class="mb-4 list-decimal list-inside">
+              
+              <li class="mb-1">
+                Engage and co-innovate with customers in BioPharma R&amp;D
+              </li>
+              
+              <li class="mb-1">
+                Design and oversee implementation of solutions for BioPharma R&amp;D
+              </li>
+              
+              <li class="mb-1">
+                Manage Engineering teams using Agile methodologies
+              </li>
+              
+              <li class="mb-1">
+                Enhance reuse with platforms, frameworks and libraries
+              </li>
+              
+            </ul>
+
+
+
+
+
+            <p class="mb-6">
+              If you are interested, please email us at at <span
+                class="text-ag-secondary-red-500 underline cursor-pointer font-bold">jobs@aganitha.ai</span>
+            </p>
+
+            <a href="mailto:jobs@aganitha.ai"
+              class="bg-ag-primary-blue-300 transition duration-300 px-3   py-2 rounded-lg text-gray-50">Apply
+              Here</a>
           </div>
         </div>
 
       </li>
+
+      
+
+
     </ul>
 
     <!-- list of open positions ends-->
