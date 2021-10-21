@@ -66,13 +66,13 @@ module.exports = {
   ],
   benefitsAlt: [
     {
-      title: "Mine Information",
+      title: "Mine information",
       icon: "/assets/images/solutions/hubs/mine.png",
       description:
         "Discover, mine, integrate and leverage fast-growing public data sources without significant additional expense on IT.",
     },
     {
-      title: "Derive Insights",
+      title: "Derive insights",
       icon: "/assets/images/solutions/hubs/derive.png",
       description:
         "Derive valuable insights from emerging research and trial data to improve your  trial designs.",

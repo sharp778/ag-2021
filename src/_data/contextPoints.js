@@ -11,7 +11,7 @@ module.exports = [
     icon: "/assets/images/homepage/hp.svg",
   },
   {
-    title: "Data as an R&D Asset",
+    title: "Data as an R&D asset",
     description: `Systematically collect,
     organize, combine and mine exploding public datasets along-side your hard-earned
     proprietary research findings to intelligently direct your design of experiments, cohorts, and

@@ -6,33 +6,23 @@
       </h3>
 
       {% for item in solutions.hubs.solution.intro %}
-        <h4 class="ag-h4 leading-normal mb-4">
-          {{ item }}
-        </h4>
+      <h4 class="ag-h4 leading-normal mb-4">
+        {{ item }}
+      </h4>
       {% endfor %}
       <div class="ag-h4">
         <ul>
           {% for item in solutions.hubs.solution.solutionPoints %}
 
-            <li class="flex  my-2">
-              <span class="">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 mr-4  text-ag-secondary-red-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                  <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
-                  d="M5 13l4 4L19 7"
-/>
-                </svg>
-              </span>
-              <span class="leading-normal">{{ item }}</span>
-            </li>
+          <li class="flex  my-2">
+            <span class="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 mr-4  text-ag-secondary-red-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </span>
+            <span class="leading-normal">{{ item }}</span>
+          </li>
 
           {% endfor %}
         </ul>
@@ -40,10 +30,9 @@
     </div>
 
     <div class="right-side flex items-center justify-center">
-      <img
-        class="sm:w-3/4 lg:w-full"
-        src="/assets/images/solutions/hubs/solution.png"
-/>
+      <a href="/assets/images/solutions/hubs/hubs-solution-diagram.png" target="_blank">
+        <img class="sm:w-3/4 lg:w-full" src="/assets/images/solutions/hubs/hubs-solution-diagram.png" />
+      </a>
     </div>
   </div>
 </div>

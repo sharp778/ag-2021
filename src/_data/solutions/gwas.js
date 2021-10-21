@@ -29,75 +29,75 @@ module.exports = {
       description:
         "Easily deployable in any cloud that supports Kubernetes, including AWS/GCP/Azure",
       background: "bg-red-100",
+      icon: "/assets/images/solutions/gwas/k8.svg",
     },
     {
       title: "HPC deployment with SLURM/SGE/equivalent scheduler",
       description:
         "Deployable in internal HPC clusters using any of the leading schedulers such as SLURM, SGE",
+      icon: "/assets/images/solutions/gwas/cluster.svg",
     },
     {
       title: "Hail on Spark",
       description:
         "Leverages leading GWAS library, Hail (from Broad Institute), which in turn, leverages distributed data processing capabilities of Apache Spark",
+      icon: "/assets/images/solutions/gwas/hail.png",
     },
     {
       title: "Jupyter notebooks",
       description:
         "Supports interactive use by scientists, via Jupyter notebooks",
+      icon: "/assets/images/solutions/gwas/jupyter.svg",
     },
     {
       title: "Pre-Integrated",
       description:
         "Comes pre-integrated with leading open source libraries and tools such as VEP",
+      icon: "/assets/images/solutions/gwas/integration.svg",
     },
     {
       title: "Services",
       description:
         "Complemented by a complete portfolio of service offerings which seamlessly integrate all the genomics and technology expertise needed",
+      icon: "/assets/images/solutions/gwas/services.svg",
     },
   ],
-  benefits: [
-    "Understand Mendelian violations in trios, prune variants in linkage disequilibrium, analyze genetic similarity between samples, and compute sample scores and variant loadings using PCA",
-    "Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression, and estimate heritability",
-    "Reusability of tools saving time to rewrite from scratch and regeneratable results for future",
-    "Ability to use scalable cloud computing without learning about nitty gritty details",
-    "Caching of runs saving computational cost",
-  ],
+
   benefitsAlt: [
     {
-      title: "High Performance",
-      icon: "/assets/images/solutions/hubs/mine.png",
-      description:
-        "Robust high-performance solution for your GWAS needs, that puts you firmly in control with minimal expense",
-    },
-    {
-      title: "Setup Quickly",
-      icon: "/assets/images/solutions/hubs/derive.png",
-      description: "Reduction in setup time from months to days",
-    },
-    {
-      title: "Scale Elastically",
-      icon: "/assets/images/solutions/hubs/scale.png",
-      description:
-        "Elastically scale your deployment as your WES datasets grow in size",
-    },
-    {
-      title: "Integrate with other services",
-      icon: "/assets/images/solutions/hubs/scale.png",
-      description:
-        "Augment the capacity available for setup and analysis with services from Aganitha",
-    },
-    {
-      title: "Understand mendelian violations",
+      title: "Careful cohort selections",
       icon: "/assets/images/solutions/hubs/scale.png",
       description:
         "Understand mendelian violations in trios; prune variants in linkage disequilibrium; analyze genetic similarity between samples and compute sample scores and variant loadings using PCA",
     },
     {
-      title: "Leverage all types of regression models",
+      title: "Rich association studies",
       icon: "/assets/images/solutions/hubs/scale.png",
       description:
         "Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression; estimate heritability",
+    },
+    {
+      title: "Industrial strength",
+      icon: "/assets/images/solutions/gwas/strength.svg",
+      description:
+        "Robust high-performance solution for your GWAS needs, that puts you firmly in control with minimal expense",
+    },
+    {
+      title: "Access to expertise",
+      icon: "/assets/images/solutions/gwas/expert.svg",
+      description:
+        "Augment the capacity available for setup and analysis with services from Aganitha",
+    },
+    {
+      title: "Instant ignition",
+      icon: "/assets/images/solutions/gwas/instant.svg",
+      description: "Reduction in setup time from months to days",
+    },
+    {
+      title: "Scalable",
+      icon: "/assets/images/solutions/hubs/scale.png",
+      description:
+        "Elastically scale your deployment as your WES datasets grow in size",
     },
   ],
 };

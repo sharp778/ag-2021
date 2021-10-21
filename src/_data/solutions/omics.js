@@ -1,16 +1,16 @@
 module.exports = {
   intro: [
     {
-      main: "R&D Teams in biopharma have a critical dependency on timely availability of high quality data. Satisfying this need poses a challenge as the volume of data to process is increasing exponentially.",
+      main: "R&D Teams in biopharma have a critical dependency on timely availability of high quality insights from data. Satisfying this need has become challenging as multiple trends are converging to produce exponentially larger volumes of Omics data. For example: ",
       subPoints: [
         "Several public and private data providers are making datasets available in open and restricted ways",
-        "Sequencing innovations are driving telomere-to-telomere sequencing",
-        "Transition from single reference to pan genome reference",
-        "Innovations in single cell and spatial transcriptomics",
+        "Sequencing innovations are enabling telomere-to-telomere sequencing",
+        "Human genome research is transitioning from a single reference to a pan genome reference",
+        "Innovations in single cell and spatial transcriptomics producing fine-grained datasets",
       ],
     },
     {
-      main: "While several platforms exist to address the needs of omics data analysis, proprietary platforms are expensive for everyday R&D use, and open source platforms require extensive expertise to be deployed for industrial use.",
+      main: "More data is good provided we can process it all in a reasonable time frame. While several platforms exist to analyse large omics datasets, proprietary platforms are expensive for everyday R&D use, and open source platforms require extensive expertise to be deployed for industrial use.",
     },
   ],
   solution: {
@@ -59,31 +59,31 @@ module.exports = {
   ],
   benefitsAlt: [
     {
-      title: "Analyse Quickly",
+      title: "Cycle time reduction",
       icon: "/assets/images/solutions/omics/quick.svg",
       description:
         "Reduction in turnaround time from months to weeks and days for both internal and external analysis.",
     },
     {
-      title: "Reduce your costs",
+      title: "Cost reduction",
       icon: "/assets/images/solutions/omics/reduce-cost.svg",
       description:
         "Reduction in cost per analysis and total cost of ownership.",
     },
     {
-      title: "Increase productivity",
+      title: "Higher R&D productivity",
       icon: "/assets/images/solutions/omics/increase.svg",
       description:
         "Higher productivity of R&D teams armed by the comprehensive and timely availability of data.",
     },
     {
-      title: "One-stop Solution",
+      title: "Unified platform",
       icon: "/assets/images/solutions/omics/one-stop-solution.svg",
       description:
         "One-stop solution for Omics analysis, e.g., GWAS, differential expression analysis, protein/metabolite identification and more.",
     },
     {
-      title: "Scale Quickly",
+      title: "Scale quickly",
       icon: "/assets/images/solutions/hubs/scale.png",
       description:
         "Inexpensive, scalable, and easy to use platform that ensures quick user adoption.",

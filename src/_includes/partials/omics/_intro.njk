@@ -2,24 +2,24 @@
   class="intro-wrapper py-8 sm:py-10  sm:pt-12 md:py-16 ag-container-padding border-red-400  max-w-screen-xl mx-auto ">
   <div class="intro-inner-wrapper grid gap-8 lg:grid-cols-2">
     <div class="left-side md:m-4 flex items-center justify-center">
-      <img src="/assets/images/banners/omics-intro.jpeg" class="rounded-lg  sm:w-3/4 lg:w-full" alt="" />
+      <img src="/assets/images/banners/omics-intro.jpeg" class="rounded-lg  sm:w-3/4 lg:w-full" alt=""/>
     </div>
     <div class="right-side lg:px-4 flex items-center justify-center ">
 
       <div class="intro-content-wrapper">
         {% for item in solutions.omics.intro %}
-        <h4 class="ag-h4 leading-normal text-justify sm:text-left  mb-4">
-          {{item.main}}
-        </h4>
+          <h4 class="ag-h4 leading-normal text-justify sm:text-left  mb-4">
+            {{item.main}}
+          </h4>
 
-        {% for point in item.subPoints %}
-        <ul class="ag-h4 leading-normal list-inside list-disc mb-2">
-          <li>
-            {{ point }}
-          </li>
-        </ul>
+          {% for point in item.subPoints %}
+            <ul class="ag-h4 leading-normal list-inside list-disc mb-2">
+              <li>
+                {{ point }}
+              </li>
+            </ul>
 
-        {% endfor %}
+          {% endfor %}
         {% endfor %}
       </div>
 
