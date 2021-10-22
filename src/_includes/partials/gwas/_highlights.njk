@@ -1,7 +1,6 @@
 {% import "macros/cards.njk" as cards %}
 
-<div
-  class="
+<div class="
     hubs-highlights-wrapper
     
     max-w-screen-xl
@@ -9,16 +8,15 @@
     mx-auto
     py-10
     ag-container-padding
-  "
->
+  ">
 
   <h4 class="   text-center py-4 sm:py-8 text-ag-primary-blue-500 ag-h3">
-       Highlights
-      </h4>
+    Highlights
+  </h4>
   {# <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-xl ">
     {% for item in solutions.hubs.solutionHighlights %}
 
-      {{cards.highlightCard(item.icon, item.title, item.description)}}
+    {{cards.highlightCard(item.icon, item.title, item.description)}}
 
     {% endfor %}
 
@@ -30,12 +28,10 @@
       <div class=" py-8 mx-auto">
         <div class="grid gap-4 lg:gap-0 md:grid-cols-2">
           {% for item in solutions.gwas.solutionHighlights %}
-            <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
-              <div class="
-              
-              
+          <div class="p-2 lg:p-0 rounded-lg  md:max-w-xlg  mx-auto  group w-full">
+            <div class="
                     flex
-                    rounded-lg
+                    rounded
                     transition
             duration-300
                     group-hover:shadow-xl
@@ -44,7 +40,7 @@
                     sm:flex-row
                     flex-col
                   ">
-                <div class="
+              <div class="
                       lg:w-16
                       lg:h-16
                       h-12
@@ -60,20 +56,19 @@
                     
                       flex-shrink-0
                     ">
-                  <img src={{ item.icon }} class="w-3/4"/>
-                </div>
-                <div class="flex-grow">
-                  <h2
-                    class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
-                    {{ item.title }}
-                  </h2>
-                  <p
-                    class="leading-relaxed text-base  transition duration-300 text-gray-700">
-                    {{ item.description }}
-                  </p>
-                </div>
+                <img src={{ item.icon }} class="w-3/4" />
+              </div>
+              <div class="flex-grow">
+                <h2
+                  class="text-gray-700 text-xl lg:text-2xl group-hover:text-ag-secondary-red-600 transition duration-300 font-medium mb-3">
+                  {{ item.title }}
+                </h2>
+                <p class="leading-relaxed text-base  transition duration-300 text-gray-700">
+                  {{ item.description }}
+                </p>
               </div>
             </div>
+          </div>
 
           {% endfor %}
         </div>
@@ -83,11 +78,11 @@
   </div>
 
   {# <div class="grid grid-cols-3 max-w-screen-xl gap-8">
-  {% for item in solutions.hubs.solutionHighlights.slice(3,6) %}
+    {% for item in solutions.hubs.solutionHighlights.slice(3,6) %}
 
 
-      {{cards.highlightCard(item.icon, item.title, item.description)}}
+    {{cards.highlightCard(item.icon, item.title, item.description)}}
 
-    {% endfor %} 
+    {% endfor %}
   </div> #}
 </div>

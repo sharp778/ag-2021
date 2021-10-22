@@ -53,8 +53,7 @@
               h-64
               w-64
               sm:h-80 sm:w-80
-              md:w-96 md:h-96
-            " alt="hero" src={{ person.photo }} />
+              md:w-96 md:h-96" alt={{ person.alt }} src={{ person.photo }} />
       </div>
 
       <div class="
@@ -81,6 +80,7 @@
               text-ag-secondary-red-500
             ">
           {{ person.name }}
+
           <span class="
                 bottom-0
                 ml-2
@@ -94,8 +94,11 @@
                 justify-center
                 items-baseline
               ">
-            <i class="bx bxl-linkedin-square"></i>
+            <a href={{ person.link }} target="_blank">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
           </span>
+
         </h1>
 
         {% for para in person.description %}

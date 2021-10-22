@@ -14,7 +14,7 @@ module.exports = {
   solution: {
     intro: ["Aganitha provides a proven platform for GWAS, that is:"],
     solutionPoints: [
-      `Available on-demand, powered by Infrastructure as code approach, supporting both in-house HPC as well as all Cloud based clusters`,
+      `Available on-demand, powered by Infrastructure as Code approach, supporting both in-house HPC as well as all Cloud based clusters`,
       `Cost-effective, without dependence on expensive proprietary big data stacks and services`,
       `Vertically integrated to provide industry leading performance`,
       `Comprehensive, spanning all activities from data ingestion to QC, cohort selection, regression and visualization`,
@@ -66,13 +66,13 @@ module.exports = {
   benefitsAlt: [
     {
       title: "Careful cohort selections",
-      icon: "/assets/images/solutions/hubs/scale.png",
+      icon: "/assets/images/solutions/gwas/selection.svg",
       description:
         "Understand mendelian violations in trios; prune variants in linkage disequilibrium; analyze genetic similarity between samples and compute sample scores and variant loadings using PCA",
     },
     {
       title: "Rich association studies",
-      icon: "/assets/images/solutions/hubs/scale.png",
+      icon: "/assets/images/solutions/gwas/association.svg",
       description:
         "Perform variant, gene-burden and eQTL association analyses using linear, logistic, and linear mixed regression; estimate heritability",
     },

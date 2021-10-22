@@ -46,7 +46,7 @@ module.exports = {
       icon: "/assets/images/solutions/hubs/time.svg",
     },
     {
-      title: `State of art technology and data architecture
+      title: `State of the art technology and data architecture
       `,
       description: `Built with Knowledge Graph (KG), NLP, API, Visualization, and UI platforms deployable using Infra-as-code approach on any cloud supporting Kubernetes`,
       icon: "/assets/images/solutions/hubs/diagram.svg",

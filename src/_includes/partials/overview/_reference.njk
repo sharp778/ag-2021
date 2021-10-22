@@ -7,25 +7,25 @@
     The following is Aganitha’s reference architecture and its building blocks: from computational infrastructure to pipelining to functional solution components for building Omics models, pipelines, and platforms. 
   </h2>
 
-  <div class="ref-image-wrapper  px-12">
+  <div class="ref-image-wrapper  sm:px-12">
     <a href="/assets/images/reference.png" target="_blank">
-      <img src="/assets/images/reference-hollow.png" class="" alt=""/>
+      <img src="/assets/images/reference-hollow.png" class=" mx-auto h-32 sm:h-auto" alt=""/>
     </a>
   </div>
 
-  <section class="text-gray-700 py-6 max-w-screen-xl mx-auto ag-container-padding ">
+  <section class="text-gray-700 py-6 max-w-screen-xl mx-auto  ">
 
     <div class="grid xl:gap-6 gap-4 sm:grid-cols-2  pt-6 pb-4 ">
 
       {% for item in reference %}
 
         <div
-                class="context-card-wrapper z-30 shadow-lg md:shadow-none  px-6 py-6 mx-auto  mb-4 max-w-lg hover:shadow-lg transition duration-300 rounded-lg">
+                class="context-card-wrapper z-30 shadow-lg md:shadow-none  px-6 py-6 mx-auto  mb-4 max-w-lg hover:shadow-lg transition duration-300 rounded">
           <div class="context-icon-wrapper my-2">
             <img src={{ item.icon }} class="w-16" alt="">
           </div>
           <div class="context-text-wrapper">
-            <h1 class="context-header h-16 my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
+            <h1 class="context-header  my-4 text-xl lg:text-2xl text-ag-primary-blue-800 font-medium">
               {{ item.title | safe}}
             </h1>
             <p class="context-description sm:text-base text-gray-600">
