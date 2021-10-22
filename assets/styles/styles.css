@@ -36,10 +36,27 @@ html {
   min-height: 600px;
   /* background-color: #000c18; */
   /* background-image: url("/assets/images/banners/wave-blue.svg"); */
-  background-image: url("/assets/images/banners/banner-option2.svg");
+  background-image: url("/assets/images/banners/hero-large.svg");
 
   /* background-attachment: fixed; */
   background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .homepage-banner {
+    background-image: url("/assets/images/banners/hero-small.svg");
+  }
+}
+@media screen and (max-width: 700px) {
+  .homepage-banner {
+    background-image: url("/assets/images/banners/hero-medium.svg");
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .homepage-banner {
+    background-image: url("/assets/images/banners/hero-extra-large.svg");
+  }
 }
 
 .hubs-banner {

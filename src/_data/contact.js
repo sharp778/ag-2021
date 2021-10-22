@@ -20,7 +20,7 @@ module.exports = [
 
   {
     name: "Hyderabad",
-    image: "/assets/images/contact/hyd2.jpg",
+    image: "/assets/images/contact/hyd1.jpg",
     address: [
       "512T, 1st Floor",
       "Road number 29, Jubilee Hills",

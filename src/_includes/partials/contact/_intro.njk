@@ -5,14 +5,14 @@
     </h1>
 
     <h1 class="text-xl">
-      Review our job opportunities <a href="/careers/" class="text-ag-primary-blue-500 font-bold">here.</a>
+      Review our job opportunities <a href="/careers/#positions-section" class="text-ag-primary-blue-500 font-bold">here.</a>
     </h1>
   </div>
 
   <div class="contact-cards grid sm:grid-cols-2   xl:grid-cols-3 gap-4 lg:gap-8 xl:gap-x-12 py-12">
 
     {% for place in contact %}
-      <div class="contact-card-wrapper rounded  mx-auto min-w-full shadow-lg xl:w-96 relative h-110 sm:h-100  ">
+      <div class="contact-card-wrapper rounded transition duration-300 hover:shadow-2xl  mx-auto min-w-full shadow-lg xl:w-96 relative h-110 sm:h-100  ">
         <div class="location-image-wrapper">
           <img src={{ place.image }} class="object-cover w-full h-60" alt="">
         </div>

@@ -3,6 +3,7 @@ module.exports = [
     name: "Chanukya Nanduru",
     title: "Tech Project Manager and Solutions Specialist",
     image: `/assets/images/careers/chanukya.jpg`,
+    pic: `{% image "./assets/images/careers/chanukya.jpg", "Aganitha AI Employee: Chanukya Nanduru ", "xl:h-24 filter grayscale xl:w-24 h-16 w-16 object-cover rounded-full" %}`,
     aspects: [
       `Techno-Scientific: Biology + Chemistry + AI`,
       `Capable Millenials + Seasoned professionals`,
@@ -15,6 +16,7 @@ module.exports = [
     name: "Abhishek Shakya",
     title: "Data Scientist",
     image: `/assets/images/careers/abhishek.jpg`,
+    pic: `{% image "./assets/images/careers/abhishek.jpg", "Aganitha AI Employee: Abhishek Shakya", "xl:h-24 filter grayscale xl:w-24 h-16 w-16 object-cover rounded-full" %}`,
     aspects: [
       `Deep focus in a domain – Biopharma + AI`,
       `Academia + research oriented environment`,
@@ -26,6 +28,7 @@ module.exports = [
     name: "Siva Kanishka",
     title: "Data Scientist",
     image: `/assets/images/careers/siva.jpg`,
+    pic: `{% image "./assets/images/careers/siva.jpg", "Aganitha AI Employee: Siva Kanishka", "xl:h-24 filter grayscale xl:w-24 h-16 w-16 object-cover rounded-full" %}`,
     aspects: [
       `Building complex solutions in biopharma domain and hearing customer appreciation`,
       `UnBoss Culture; every team member is listened to and valued`,
@@ -37,6 +40,7 @@ module.exports = [
     name: "Manasvi Sinha",
     title: "Biopharma Solutions Specialist",
     image: `/assets/images/careers/manasvi.jpg`,
+    pic: `{% image "./assets/images/careers/manasvi.jpg", "Aganitha AI Employee: Manasvi Sinha", "xl:h-24 filter grayscale xl:w-24 h-16 w-16 object-cover rounded-full" %}`,
     aspects: [
       `Building complex solutions in biopharma domain and hearing customer appreciation`,
       `UnBoss Culture; every team member is listened to and valued`,
@@ -48,6 +52,7 @@ module.exports = [
     name: "Keerthi Priya Borra",
     title: "Jr Data Scientist",
     image: `/assets/images/careers/keerthi.jpg`,
+    pic: `{% image "./assets/images/careers/keerthi.jpg", "Aganitha AI Employee: Keerthi Priya Borra", "xl:h-24 filter grayscale xl:w-24 h-16 w-16 object-cover rounded-full" %}`,
     aspects: [
       `Building complex solutions in biopharma domain and hearing customer appreciation`,
       `UnBoss Culture; every team member is listened to and valued`,

@@ -101,9 +101,10 @@ module.exports = function (eleventyConfig) {
     return `<span class="italic">${sampleText}</span>`;
   });
   eleventyConfig.addPassthroughCopy({
-    "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
+    "./node_modules/alpinejs/dist/cdn.js": "assets/scripts/alpine.js",
   });
   eleventyConfig.addPassthroughCopy("assets");
+  // eleventyConfig.addPassthroughCopy("./src/rawimages");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addFilter("myFilter", function (value) {
     if (value.match(/in silico|in vitro/gi)) {

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "npx del _site && npx del img",
+    "prestart": "npm run clean",
+    "prebuild": "npm run clean",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf _site",
     "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/tailwind.css --o _site/style.css"
   },
@@ -21,6 +23,7 @@
     "tailwindcss": "^2.2.7"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "del-cli": "^4.0.1"
   }
 }

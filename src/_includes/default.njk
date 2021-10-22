@@ -10,28 +10,86 @@
     {% endif %}
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-
+    <meta name="keywords"
+    content="In silico, Genomics, BioInformatics, ChemInformatics, Computational Chemistry, Artifical Intelligence, Machine Learning, Deep Learning, Enterprise AI, Automation, Knowledge Graph">
+    <link rel="icon" type="image/png" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/favicon-96x96.png">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="/assets/styles/own-carousel.min.css">
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+
     <link rel="stylesheet" href="/assets/styles/nav.css">
     <link rel="stylesheet" href="/assets/styles/styles.css">
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org",
+          "@type": "Corporation",
+          "name": "Aganitha Cognitive Solutions",
+          "url": "http://aganitha.ai/",
+          "logo": "http://aganitha.ai/assets/images/logo-large.png",
+          "description": "Aganitha accelerates drug discovery and development with in silico solutions"
+        }, {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Aganitha Cognitive Solutions",
+          "url": "http://aganitha.ai/",
+          "specialty": [
+            "In silico",
+            "Genomics",
+            "BioInformatics",
+            "ChemInformatics",
+            "Computational Chemistry",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Deep Learning",
+            "Enterprise AI",
+            "Automation",
+            "Knowledge graph"
+          ],
+          "publisher": {
+            "@type": "Corporation",
+            "name": "Aganitha Cognitive Solutions"
+          }
+        }
+      ]
+    </script>
 
-    {% block head %}
-      {% include "header.njk"%}
-    {% endblock %}
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {# <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> #}
+    <script defer src="/assets/scripts/alpine.js"></script>
+
+    {% if env.isProd %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', '{{ env.tracking.gtag }}');
+      </script>
+    {% endif %}
 
   </head>
 
   <body>
-
-    {# {% block header %}
-  {% include "header.njk" %}
-  {% endblock %} #}
+    {% block navbar %}
+      {% include "header.njk"%}
+    {% endblock %}
 
     <div class="mt-16 cursor-default">
       {% block content %}
@@ -44,22 +102,8 @@
     {% endblock %}
 
     <script src="/assets/scripts/own-carousel.min.js"></script>
-    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
     <script src="/assets/scripts/acc.js"></script>
-    <script>
-      // var swiper = new Swiper(".mySwiper", {
-      //   cssMode: true,
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev"
-      //   },
-      //   pagination: {
-      //     el: ".swiper-pagination"
-      //   },
-      //   mousewheel: true,
-      //   keyboard: true
-      // });
-    </script>
+
   </body>
 
 </html>
